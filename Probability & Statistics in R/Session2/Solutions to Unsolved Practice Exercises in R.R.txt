@@ -1,0 +1,79 @@
+#Unsolved
+#1 Write R code to read an Excel file and save it as a Data Frame. 
+#Hint: You might want to explore read.xlsx function in xlsx library in R.
+
+require(xlsx)
+myfile<-read.xlsx("myfile.xlsx", sheetName = "Sheet1")
+myfile<-as.data.frame(myfile)
+
+#2 Write R code to read a JSON file in R. You can use any JSON file of your
+# liking.
+
+library("rjson")
+myfile <- fromJSON(file = "input.json")
+
+#3 For the data frame created in #2 of Solved questions, write code to insert 
+# 10 missing values in each of the three columns. You can insert missing values 
+# at random locations. 
+# Hint: Missing values are explained in Lecture notes. You might want to make 
+# use of sample function and the missing value assignment here.
+
+col1 <- sample(1:5,size=200,replace=T)
+col2 <- sample(1:5,size=200,replace=T)
+col3 <- sample(1:5,size=200,replace=T)
+
+df <- data.frame(col1, col2, col3)
+
+random.na<- function(x) { 
+  ind <- sample(1:200, 10)
+  x[ind]<-NA
+  x
+}
+
+df<-apply(df,2,random.na)
+df<-as.data.frame(df)
+df
+
+#4 In continuation of #3, get row numbers in the dataframe that have missing 
+# values in col2. 
+#Hint: You might want to make use of is.na() function in Lecture Notes.
+
+which(is.na(df$col2))
+
+#5 Make use of the Iris dataset we discussed in the class. On the dataset, 
+# perform the following:
+#a. Extract last 10 rows and last 3 columns in the dataset.
+#b. Get only those rows where Species is of type Setosa, and store the results in a dataframe
+
+#a:
+n.row<-nrow(iris)
+n.col<-ncol(iris)
+iris.last3col<-iris[,n.col-2:n.col]
+iris.last3col
+iris.last10row<-tail(iris,10)
+iris.last10row
+
+#b.
+Setosa<-iris[which(iris$Species=="setosa"),]
+
+#6 For any given number, write a function to compute its square root.
+# If the number is negative, then the function should not give an error but 
+# instead should print a message "Negative number provided"
+
+square.root<- function(x) {
+  ifelse(x>0, sqrt(x), "Negative number provided")
+   }
+square.root(-10)
+square.root(10)
+
+#7 Create a vector that has 100 random numbers from 1 to 1000. Write a function 
+# that takes this vector as input and returns a vector that has only those 
+# values that are greater than average of all values in the vector.
+
+v<-sample(1:1000,100)
+func1<-function(x) {
+  avg<-mean(x)
+  newvector<-x[which(x>avg)]
+  newvector
+}
+func1(v)

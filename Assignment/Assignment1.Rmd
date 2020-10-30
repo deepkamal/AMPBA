@@ -1,0 +1,655 @@
+---
+title: "Assignment 1: Probability and Statistics with R"
+author: "Deepkamal Singh / Deepkamal_Singh_AMPBA2021w@isb.edu"
+date: "05/10/2020"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo =TRUE)
+library(knitr)
+```
+**Q1 . If a random variable has the normal distribution with μ= 77.0 and σ = 3.4, find the probability that random variable is:**
+
+    a. less than 72.6
+    b. greater than 88.5
+    c. between 81 and 84
+    d. between 56 and 92
+
+
+***Answer of Q1***
+
+Given its a normal distribution, we establish that
+   
+   1) 68.2% of observations lie within 1 std deviation of mean, 
+   
+   2) In a normal distribution Z-score Z(X) = (X-μ)/σ 
+   
+      therefore Z(72.6) 
+   
+         => Z([(72.6-77)/3.4]) 
+   
+         => 
+```{r}            
+zVal <- ((72.6-77)/3.4)            
+zVal
+```  
+  
+  ***Ref Table 1*** :: Cumulative Probability Dist function table reference (https://www.itl.nist.gov/div898/handbook/eda/section3/eda3671.htm)
+   
+   3) let F(X) be Cumulative Distribution Function, such that **F(X)= ΣP(x<X)**
+   
+   4) With Z score we can use Std Normal prob dist table to derive the prob dist. value, thus we reduce our Normal dist to Standard normal dist by Pt. 2, and we calculate the Z score of our desired value, i.e F(Z(72.6)) = F([(72.6-77)/3.4]) = F([-4.4/3.4]) = F(-1.2941)
+   
+   5) The probability of random variable is less than 72.6: 
+      
+      P(X<72.6), Z Score of 72.6 in normal dist where μ=77 and σ=3.4 is Z(72.6)=>(72.6-77)/3.4=> -1.2941, thus F(-1.2941) is probability of occurrence of variable  between 0 and the Z score is F(-1.2941) in Standard Normal distribution, therefore F(-1.2941) = F(1.2941), 
+      by table 1, F(1.2941) = 0.40147 , And from -ve inf to mean value (0 in std normal distribution) the probability is 0.4999, 
+      thus total probability of random variable being less than 72.6 is 
+   
+      0.4999-0.40147
+      => **9.84%**
+   
+   6) Probability that random variable is grater than 88.5 
+         
+         => P(X>88.5) 
+         
+         => 1 - (F(Z(88.5)) + F(Z(μ))) 
+         
+         => 1 -(F([(88.5-77)/3.4])+0.4999) 
+         
+         => 1 -(F(3.382)+0.4999) 
+         
+         => By table 1 F(3.382)=0.49964 
+         
+         thus P(X>88.5) = 1 - (0.49964+0.4999) = 0.00046 i.e **0.04%**
+   
+   7) Probability that random variable is between 81 and 84: 
+   
+      P(81<X<84) 
+      
+      => F(Z(84))-F(Z(81)) 
+      
+      =>F(2.05) - F(1.17) 
+      
+      => substituting values from table 1 we get
+         
+         P(81>X>84) 
+         
+         => 0.47982 - 0.37900
+         
+         => 0.10082
+         
+         => **10.08%**
+   
+   8) Probability that random variable is between 56 and 92: 
+   
+      P(56<X<92) 
+      
+      => F(Z(96)) - F(Z(56)) 
+      
+      => F([(96-77)/3.4])
+      
+      => F(5.5) - F(-6.17) 
+      
+   here, since both variables |Z score| is above 3, which is extreme limit for a normal distribution, we can deduce that **Probability will tend to 1** 
+   
+   ***Testing with generated random variables***
+   
+```{r}
+
+
+sample_size <-100000
+#taking random sample in Normal dist.
+q1Data <- rnorm(sample_size,mean=77,sd=3.4)
+
+#taking prob dist in another
+pd<-dnorm(q1Data,mean = 77,sd=3.4)
+
+#plot to check distribution - expect bell curve
+plot(q1Data,pd)
+
+```
+
+
+**2. In a car race, the finishing times are normally distributed with mean 145 minutes and standard deviation of 12 minutes.**
+
+    a. Find percentage of car racers whose finish time is between 130 and 160 minutes.
+    b. Find percentage of car racers whose finish time is less than 130 minutes.
+
+
+***Answer of Q2***
+
+here mean=145, std=12
+
+ a) Find percentage of car racers whose finish time is between 130 and 160 minutes: 
+ 
+      P(130<X<160) 
+      
+      => F(Z(160)) - F(Z(130)) 
+      
+      =>  F([160-145]/12) - F([130-145]/12) 
+      
+      => F(1.25)-F(-1.25) 
+      
+      => 2 x F(1.25) 
+      
+      => substituting by Table 1 
+      
+      => 2 x 0.39535 
+      
+      => 0.7887 
+      
+   => **78.87%**
+
+
+ b) Find percentage of car racers whose finish time is less than 130 minutes : 
+ 
+      P(X<130) 
+      
+      => F(0)+F(Z(130)) 
+      
+      => F(0)+F((130-145)/12) 
+      
+      => F(0) + F(-1.25) 
+      
+      => F(0) - F(1.25) 
+      
+      => By Table1 we substitute values 
+      
+      => 0.49999-0.39535 = 0.10464 
+      
+   => ***10.46%***
+ 
+ 
+**3. A test-taker has recently taken an aptitude test with 15 questions. All the questions are True/ False type in nature.**
+
+    a. What is the probability that the student got first five questions correct?
+    b. What is the probability that the student got five questions correct?
+
+***Answer to Q3***
+
+given that Sample Space = 15
+
+number of possible outcomes = Correct/Incorrect = 2
+
+Probability of 1 question being correct = 0.5
+
+  a) Probability of first 5 questions being correct  = (0.5) x (0.5) x (0.5) x (0.5) x (0.5) = 0.03125 = **03.12%**
+
+  b) probability that the student got five questions correct: here we need to calculate probability of at least 5 questions being correct out of 15, as number of possible outcomes are 2, this follows a binomial distribution, which has the property : 
+   
+   ![Binomial Distribution Function](https://wikimedia.org/api/rest_v1/media/math/render/svg/20edfc22372742d64909cf7c7f97593bade88338)
+( _Formula image Courtesy: wikimedia.org_ )
+
+here 
+   
+      n=number of trials i.e 15 
+      
+      p = probability of success in single trial i.e 0.5 
+      
+      q=probability of failure in single trial 
+      
+         => 1-p => 0.5,  
+      
+      k= is number of desired outcomes i.e 5, 
+
+      thus
+
+      P(5) = Combination(15,5) x (0.5)^5 x (0.5)^(15-5)
+
+      => Combination(15,5) x (0.5)^15
+      
+      => 
+```{r}
+#Answer of Q3
+(factorial(15)/(factorial(5)*factorial(10)) )*((0.5)^15)
+```
+
+**4. 68% of the marks in exam are between 35 and 42. Assuming data is normally distributed, what are the mean and standard deviation?**
+
+***Answer of Q4***
+
+Let: mean=$\mu$, Std. deviation=$\sigma$
+
+Given that it is a Normal distribution, 68.2% values lie within ±1 std deviation, 
+
+thus $\mu$ + 1x$\sigma$ = 42
+
+AND  $\mu$ - 1x$\sigma$ = 35
+
+substituting the values in equation
+
+=> $\mu$ + ($\mu$ - 35) = 42
+
+=> $\mu$ = (42+35)/2 = 38.5
+
+therefore $\sigma$=42-$\mu$=3.5
+
+**5. A professor asked students to take two exams. 30% of the class cleared both exams and 55% of the class cleared the first exam. What percentage of class who cleared first exam also cleared the second exam?**
+
+***Answer to Q5***
+
+      Let (A) be the set of students who cleared Exam 1 
+      
+      given, P(A) = 0.55
+      
+      Let (B) be the set of students who cleared Exam 2
+      
+      Thus the set of students who cleared both exam are (A$\cap$B)
+      
+      given P(A$\cap$B) = 0.3
+      
+      To calculate the percentage of class who cleared first exam also cleared the second exam we can formula to derive conditional probability
+      which is 
+      
+      P(B|A) = P(A$\cap$B)/P(A)
+      
+      => 0.3/0.55
+      
+      => 0.5454 
+
+i.e ***54.54%***
+
+**6. In India, 82% of all urban homes have a TV. 62% have a TV and DVD player. What is probability that a home has a DVD player given that the home has a TV.**
+
+***Answer to Q6***
+
+      Let (A) be the set of urban homes that have TV
+      
+      given, P(A) = 0.82
+      
+      Let (B) be the set of urban homes that have DVD
+      
+      Thus the set of urban homes that have both TV and DVD are (A$\cap$B)
+      
+      given P(A$\cap$B) = 0.62
+      
+      To calculate the probability that a home has a DVD player given that the home has a TV, we will use formula to calculate conditional probability
+      which is 
+      
+      P(B|A) = P(A$\cap$B)/P(A)
+      
+      =>  0.62/0.82
+      
+      => 0.756 
+
+i.e ***75.6%***
+
+**7. You toss a coin three times. Assume that the coin is fair. What is the probability of getting?**
+
+    a. All three heads
+    b. Exactly one head
+    c. Given that you have seen exactly one head, what is the probability of getting at-least two heads?
+
+***Answer of Q7***
+
+      Given that coin is fair, thus probability of getting Heads P(H) = 05 = probability of getting Tails P(T) =0.5
+      
+      Probability of getting all 3 Heads = P(H) x P(H) x P(H)
+      
+      => (0.5)^3
+
+=> ***0.125***
+
+To calculate Probability of Getting exactly 1 Head, we consider
+      
+      Sample space => (H or T) and (H or T) and (H orT) => (1+1)x(1+1)x(1+1) = 2x2x2 = 8
+      
+      Sample Space of getting just 1 H => HTT or THT or TTH => 1+1+1 = 3
+      
+      Thus probability of getting exactly 1 H in three tries of a fair coin toss = ***3/8***
+
+
+      Now, Given that first toss is head, the probability of getting at-least two heads implies that next two tries can be favorable if HH,HT or TH comes, total sample cases are HH,TT,HT,TH, thus probability comes as 3/4, this is the probability after we know we have exact 1 H (3/8), thus total probability of getting at least 2 Hs given that we already have 1H is 
+      (3/8)*(3/4) = 9/32
+
+=> 0.2812 or **28.12%**
+
+
+**8. Let x be the random variable that represents the speed of cars. x has μ = 90 and σ = 10. We must find the probability that x is higher than 100 or P(x > 100)**
+
+   Given mean = 90, std = 10, 
+      
+   As distribution of variable x is not specified, thus we can NOT calculate probability that x is higher than 100,
+      
+   However assuming its a ***Normal distribution*** - 
+      
+      P(x > 100 ) = 1-pnorm(100,mean=90,std=10)
+=> 
+```{r}
+#Answer of Q8
+cat((1-pnorm(100,mean=90,sd=10))*100,"%")
+```
+
+**9. The blue M&M was introduced in 1995. Before then, the color mix in a bag of plain M&Ms was (30% Brown, 20% Yellow, 20% Red, 10% Green, 10% Orange, 10% Tan). Afterward it was (24% Blue, 20% Green, 16% Orange, 14% Yellow, 13% Red, 13% Brown). A friend of mine has two bags of M&Ms, and he tells me that one is from 1994 and one from 1996. He will not tell me, which is which, but he gives me one M&M from each bag. One is yellow and one is green. What is the probability that the yellow M&M came from the 1994 bag?**
+
+   Given that:
+   
+   Before 1995, in a Bag of M&M
+   
+   P(Br)=30% => 0.3
+   
+   P(Y) = 0.2
+   
+   P(R) = 0.2
+   
+   P(G) = 0.1
+   
+   P(O) = 0.1
+   
+   P(T) = 0.1
+   
+   P(Bl)= 0.0
+   
+   After 1995
+   
+   P(Bl)= 0.24
+   
+   P(Br) = 0.13
+   
+   P(Y) = 0.14
+   
+   P(R) = 0.13
+   
+   P(G) = 0.20
+   
+   P(O) = 0.16
+   
+   P(T) = 0.0
+   
+   Let the Bags be named B1 and B2
+   
+   since likelihood of choosing any bag between B1 and B2 is same,i.e 0.5
+   
+   now, if Bag chosen is from 1994, 
+      
+      probability of getting Yellow from Bag1 P(Y) = 0.2 and Green from Bag2 P(G)=0.2
+      
+      total probability = 0.2 x 0.2 = 0.04
+      
+      Since bag1 is chosen, total probability with Bag1 P(B1)= 0.5 x 0.04 = 0.02
+
+   alternatively, 
+      
+      probability of getting Yellow from Bag2 P(Y) = 0.14 and Green from Bag1 P(G)=0.1
+
+      total probability  = 0.14 x 0.1 = 0.014
+      
+      Since bag2 is chosen, total probability with Bag2 P(B2) = 0.5 x 0.014 = 0.007
+
+
+      Since it can be Bag1 OR bag2 , final probability :
+      
+      P(B1) + P(B2)
+      
+      => 0.02 + 0.007
+
+=> **0.27**
+   
+   
+**10. Find the daily stock price of Wal-Mart for the last three months. (A good source for the data is http://moneycentral.msn.com or Yahoo Finance or Google Finance (there are many more such sources). You can ask for the three-month chart and export the data to a spreadsheet.)**
+
+    a. Calculate the mean and the standard deviation of the stock prices.
+    b. Get the corresponding data for Kmart and calculate the mean and the standard deviation.
+    c. The coefficient of variation (CV) is defined as the ratio of the standard deviation over the mean. Calculate the CV of Wal-Mart and Kmart stock prices.
+    d. If the CV of the daily stock prices is taken as an indicator of risk of the stock, how do Wal-Mart and Kmart stocks compare in terms of risk? (There are better measures of risk, but we will use CV in this exercise.)
+    e. Get the corresponding data of the Dow Jones Industrial Average (DJIA) and compute its CV. How do Wal- Mart and Kmart stocks compare with the DJIA in terms of risk?
+    f. Suppose you bought 100 shares of Wal‐Mart stock three months ago and held it. What are the mean and the standard deviation of the daily market price of your holding for the three months?
+`Note: Question referenced from Aczel A., Sounderpandian J., Complete Business Statistics (7ed.)`
+
+
+```{r}
+#Answer of Q10
+
+#data downloaded from MSN - https://www.msn.com/en-us/money/stockdetails/history/nys-wmt/fi-a25ya2, and saved in file wmt.csv
+
+setwd("~/Desktop/")
+
+walmartData <- read.csv('wmt.csv',header=TRUE,colClasses=c("Date"="Date","High"="double","Low"="double","Open"="double","Close"="double","Volume"="double"))
+str(walmartData)
+kable(walmartData, caption="walmart Stock Data (source: https://www.msn.com/en-us/money/stockdetails/history/nys-wmt/fi-a25ya2)")
+
+```
+
+   we will consider column "Close" as Stock price
+   
+   ***a. Calculate the mean and the standard deviation of the stock prices:***
+   
+```{r}
+   wmt.meanOfStockPrice = mean(walmartData[["Close"]])
+   wmt.meanOfStockPrice
+   wmt.stdDeviation =  sd(walmartData[["Close"]])
+   wmt.stdDeviation
+```
+   
+   ***b. Get the corresponding data for Kmart and calculate the mean and the standard deviation.***
+   
+   Since KMart is not available anymore, we are choosing Target - TGT stock symbol
+
+```{r}   
+   #data downloaded from MSN - https://www.msn.com/en-us/money/stockdetails/history/nys-tgt/fi-a246z2, and saved in file tgt.csv
+
+#Date,High,Low,Open,Close,Volume
+targetData <- read.csv('tgt.csv',header=TRUE,colClasses=c("Date"="Date","High"="double","Low"="double","Open"="double","Close"="double","Volume"="double"))
+str(targetData)
+
+kable(targetData, caption="Target Stock Data (source: https://www.msn.com/en-us/money/stockdetails/history/nys-wmt/fi-a25ya2)")
+
+
+```   
+```{r}
+
+#Now we calculate Mean and Std deviation of "Close" column
+
+tgt.meanOfStockPrice <- mean(targetData[["Close"]])
+cat("Mean Stock price for TGT",tgt.meanOfStockPrice)
+
+tgt.stdDeviation <- sd(targetData[["Close"]])
+
+cat("Std Dev Stock price for TGT",tgt.stdDeviation)
+
+```
+
+      c. The coefficient of variation (CV) is defined as the ratio of the standard deviation over the mean. Calculate the CV of Wal-Mart and Target stock prices.
+      
+```{r}
+
+   wmt.CV = (wmt.stdDeviation/wmt.meanOfStockPrice)
+   cat("walmart coefficient of variance for Stock price is ",wmt.CV)
+   tgt.CV = (tgt.stdDeviation/tgt.meanOfStockPrice)
+   cat("Target coefficient of variance for Stock price is ",tgt.CV)
+   
+```
+
+      d. If the CV of the daily stock prices is taken as an indicator of risk of the stock, how do Wal-Mart and Kmart stocks compare in terms of risk? (There are better measures of risk, but we will use CV in this exercise.)
+      
+```{r}
+
+cat("CV of walmart is ",(if(wmt.CV>tgt.CV) "Greater Than" else "Lower Than"), " CV of target")
+
+
+```
+
+***Comparing the Coeff of Variance of walmart and Target we find that, walmart CV is lower than target CV, since CV is ratio of mean and std dev - this means walmart stock price fluctuates less from the centrality of stock price as compared to Target stock price.***
+
+      e. Get the corresponding data of the Dow Jones Industrial Average (DJIA) and compute its CV. How do Wal- Mart and Kmart stocks compare with the DJIA in terms of risk?
+
+```{r}
+# loading data of DJIA 
+
+   #data downloaded from MSN - https://www.msn.com/en-us/money/stockdetails/history/nys-tgt/fi-a246z2, and saved in file tgt.csv
+
+#Date,High,Low,Open,Adj Close, Close,Volume
+djiData <- read.csv('DJI.csv',header=TRUE,colClasses=c("Date"="Date","High"="double","Low"="double","Open"="double","AdjClose"="double","Close"="double","Volume"="double"))
+str(djiData)
+
+kable(djiData, caption="Dow Jone Stock Data (source: https://finance.yahoo.com/quote/%5EDJI/history?p=%5EDJI)")
+
+```
+
+```{r}
+
+#Now we calculate Mean and Std deviation of "Close" column for DJIA
+
+dji.meanOfStockPrice <- mean(djiData[["Close"]])
+cat("Mean Stock price for DJI",dji.meanOfStockPrice)
+
+dji.stdDeviation <- sd(djiData[["Close"]])
+
+cat("Std Dev Stock price for DJI",dji.stdDeviation)
+
+dji.CV =  dji.stdDeviation / dji.meanOfStockPrice
+
+cat("CV of for DJI",dji.CV)
+
+```
+
+By direct comparison we see that CV of walmart (`0.04609334`) is slightly higher than CV of DJI (`0.0311753`) i.e Industrial average CV of Stock price, whereas CV of stock price of Target (`0.1114402`) is much higher than industrial average - this gives us insight that Walmart stocks are though less stable than industrial average but Target stocks are comparatively more unstable than other stocks in Industry. conclusion is wal-mart stock price rates are steadier than Target stock prices, this is not an indication of which stocks are faring better and which will provide more returns. _That can be obtained by taking average of Z score of everyday stock price, a increasing positive Z score will mean rising prices, negative score will mean average degrading prices._
+
+    f. Suppose you bought 100 shares of Wal‐Mart stock three months ago and held it. What are the mean and the standard deviation of the daily market price of your holding for the three months?
+
+***Since bought amount of shares = 100 , investment cost will be 100 x StockPriceOnPurchaseDate , lets create another column in our `walmartData`
+
+```{r}
+
+walmartData["investment"] = walmartData[['Close']]*100
+str(walmartData)
+
+wmt.investmentMean = mean(walmartData[['investment']])
+wmt.investmentMean
+cat("mean of daily market price of holding : ",wmt.investmentMean)
+wmt.stdDevOfInvestment = sd(walmartData[['investment']])
+wmt.stdDevOfInvestment
+cat("Std Deviation of daily market price of holding : ",wmt.stdDevOfInvestment)
+wmt.CVOfInvestment = wmt.stdDevOfInvestment/wmt.investmentMean
+wmt.CVOfInvestment  #Will always come same as wmt.CV as we are just scaling and dividing with equally scaled values
+```
+
+
+**11. For this problem, consider the dataset Prob_Assignment_Dataset.xlsx attached. As the vigilant monitors of the Zappos.Com website, we are obsessed with who is coming to our website and what they do during their visit. This challenge requires you to look at data like that which Analytics teams at Zappos would use to assess the overall performance of the business.**
+
+    The data set is a fictional representation of actual data sets that we work with. Perform univariate descriptive analysis on the variables, and submit a short description explaining any insights or trends you discovered. Include graphs, data tables, and other helpful visuals to communicate your discoveries. You do not have to work on all the variables (select any 3-4 that are of most interest to you).
+    
+***Answer of Q11***
+
+Loading the data using "`readxl`" package, we see the sheet name is `Example_Data`
+```{r}
+library("readxl")
+library("dplyr")
+library("ggplot2")
+assignmentDataset <- read_excel("Prob_Assignment_Dataset.xlsx", sheet = "Example_Data")
+
+str(assignmentDataset%>%filter(is.na(gross_sales )))
+
+str(assignmentDataset)
+
+```
+
+After analyzing the Structure of data using `str(assignmentDataset)` we see that 
+      
+      - Data contains 21061 observations for 12 variables or columns
+      - Data is for year 2013 from 1st January to 31 Dec 2013, 
+      - We see there are 6 sites, each reporting respective figures for visits, sessions, orders,gross_sales etc
+      - gross_sales data is not available for 9576 records `str(assignmentDataset%>%filter(is.na(gross_sales )))`
+
+Lets process total visits per site and then visualize the data
+
+```{r}
+#Total visits per site
+visitsPerSite<-aggregate(assignmentDataset[c("visits","orders")],by=assignmentDataset["site"],FUN=sum)
+
+visitsPerSite
+```
+
+we will define new Column `conversion_rate` which will tell us orders per visit for every site
+
+```{r}
+
+visitsPerSite["conversion_rate"] = visitsPerSite$orders/visitsPerSite$visits
+
+summary(visitsPerSite)
+
+barplot(visitsPerSite$conversion_rate,
+        legend=factor(visitsPerSite$site),
+        main = "Conversion rate for Site",
+        xlab = "Sites",
+        ylab = "Conversion Ratio",
+        names.arg = visitsPerSite$site,
+        col = factor(visitsPerSite$site),
+        horiz = FALSE,
+        args.legend = list(x = "topright", bty = "n", inset=c(-0.05, -0.07)))
+
+```
+this visualization shows us clearly that `Tabular` site is giving best results in terms of conversion above `6%` where as `Pinnacle` site is least effective in converting a visit to sale, comparatively `Botly` and `Widgetry` are fairing better than `Acme` , `Pinnacle` and `Sortly`.
+
+Lets now take `Date` also in consideration and find out Monthly spread of visits for each site
+
+```{r}
+visitsPerSitePerDay<-aggregate(assignmentDataset$visits,by=assignmentDataset[c("day","site")],FUN=sum)
+
+str(visitsPerSitePerDay)
+monthlySiteVisits<-visitsPerSitePerDay%>%mutate(month = as.integer(format(day, "%m"))) %>%group_by(month, site)%>%summarise(total = sum(x))
+
+str(monthlySiteVisits)
+
+monthlySiteVisits
+ggplot(data = monthlySiteVisits, aes(x=month, y=total)) + geom_line(aes(colour=site))+scale_x_continuous(breaks = seq(1,12, by = 1))
+
+```
+
+we see that most visits are visible for `Acme` site,However the difference is far higher than other sites, thus in same plot monthly fluctuations on other sites are not apparent anymore, we will filter out visits from `Acme` and plot the view again
+
+
+```{r}
+
+monthlyVisitsWithoutAcme <-monthlySiteVisits%>%filter(site!="Acme")
+monthlyVisitsWithoutAcme
+ggplot(data = monthlyVisitsWithoutAcme, aes(x=month, y=total)) + geom_line(aes(colour=site))+scale_x_continuous(breaks = seq(1,12, by = 1))
+
+```
+
+Observing the visualization of visits per site per month, we conclude that
+
+      - February and July months are having drop in visits, thus more marketing/advertising required in these months
+      - December month has higher visits, thus site hosting infrastructure need to be prepared for the load
+      - `Sortly` site visits are increasing by high rate with the end of the year, `Acme` site's growth rate is much higher compared to others
+      - `Tabular` site which we know has highest conversion rate is not receiving higher visits, thus more marketing/advertising to be invested on promotion of this site as compared to others
+
+
+**12. Consider the same dataset as earlier. Now perform bi-variate data analysis as discussed in last class to find out relationships between different variables. Write a short description on what you find in the analyses along with any tables, graphs. You do not have to analyse all variables, any 3‐4 variables that interest you most should be the focus here.**
+
+```{r}
+#Answer of Q12
+
+#correlating Checkouts done i.e orders made vs carts created
+plot(assignmentDataset$add_to_cart, assignmentDataset$orders, main="Order vs Carts", xlab="Cart", ylab="Checkout/Orders")
+
+```
+
+We have information of Platform from where end user is accessing the sites, we also have bounces and visits for each site - if we plot bounces per visit aggregated by every distinct platform, we can understand browse behaviour of users with respect to each platform, thus
+
+```{r}
+#Correlating Platform vs Bounces - this is indicative of bug on site specific to a platform
+platformBounces<-aggregate(assignmentDataset[c("bounces","visits")],
+                           by=assignmentDataset["platform"],FUN=sum)
+
+platformBounces["BPerV"] = platformBounces$bounces/platformBounces$visits
+barplot(platformBounces$BPerV,
+        legend=factor(platformBounces$platform),
+        main = "Bounce per Visits for Platform",
+        xlab = "Platform",
+        ylab = "Bounce Ratio",
+        names.arg = platformBounces$platform,
+        col = factor(platformBounces$platform),
+        horiz = FALSE,
+        args.legend = list(x = "topright", bty = "n", inset=c(-0.10, 0)))
+
+```
+
+
+This plot shows which platform has high bounce rates - As this can be indicative of platform specific behavior of site, this report can be taken out after every periodic release upgrade to infer if there is any platform specific issues faced by end user,As when bounce rate becomes high on given day for specific platform, it will mean that site has some bugs for that platform. 
+Alternatively this report can be taken out to perform A/B testing after rolling out some specific feature on individual platform
+
+likewise, several other correlation can be established to infer different relationship between observations and a hypothesis can be build and validated with next set of data.
+
+=====================================================================================================================
