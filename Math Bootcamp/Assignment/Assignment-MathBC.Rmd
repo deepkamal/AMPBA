@@ -1,0 +1,258 @@
+---
+title: "Math bootcamp Assignment"
+author: "Deepkamal Singh / Deepkamal_Singh_AMPBA2021w@isb.edu"
+date: "05/11/2020"
+---
+
+********
+
+**Q1. Explain the role of matrix algebra in data science.**
+
+  
+    - Basic computer operations - I/O
+    
+    - Linear algebra 
+ 
+    - Linear transformation
+    
+    - Image processing
+    
+    - Graphics, VFX and Video Processing
+    
+    - Machine Learning, Deep Learning  - Convolutional Neural networks, Generated Adversarial networks
+
+********
+
+**Q2. Consider two matrices ${A}$ and ${B}$. Dimensions for both the matrices is ${nxn}$. When will the following identity be true:** 
+  
+  $(A+B){^2}=A^2+B^2+2AB$
+
+***Answer to Q2***
+
+The equation $(A+B){^2}=A^2+B^2+2AB$ given that ${A}$ and ${B}$ are matrices, can be true only when matrix product ${AB}={BA}$
+
+because:
+
+\begin{aligned}
+    (A+B){^2}=(A+B).(A+B)
+   \\ \ \\
+   => (A+B){^2}=(A.A+A.B+B.A+B.B)
+   \\ \ \\   
+   => (A+B){^2}=(A^2+A.B+B.A+B^2)
+
+
+   Since Matrices do not follow Commutative property of multiplication, thus $ It\ is\ NOT\ true \ for\ all\ A\ and\ B\ such\ that:\ BA=AB$
+   
+   $\therefore$ equation is true ${IF\ and\ only\ if\ :\ AB=BA}$
+   
+   $\therefore \\(A+B){^2}=(A^2+AB+BA+B^2) =>(A^2+2AB+B^2) \iff  AB=BA \\ (A+B){^2}\not=(A^2+2AB+B^2) \iff  AB\not=BA$
+   
+\end{aligned}   
+
+********
+
+**Q3.**
+
+$$
+A= \left(\begin{array}{cc} 
+1 & 2 & 3\\
+5 & 6 & 7
+\end{array}\right)
+ B=
+\left(\begin{array}{cc} 
+-1 & -3\\ 
+-5 & 6\\
+7 & 8
+\end{array}\right)
+$$
+    
+  a. Find $AB$ Show all steps
+    
+  b. Find $BA$. Show all steps
+  
+***Answer to Q3***
+
+  *Conformable Matrices* : Given A and B are matrices, they are called conformable only if the number of columns of A equals the number of rows of B.
+  
+  *Multiplicity*   : If A and B are matrices then multiplication of A and B is only possible with A and B are conformable
+  
+  Here A is `2x3` Matrix, and B is `3x2` matrix  
+    
+    - by definition of conformability A and B are conformable since row(A)=col(B)
+
+    - Also, by definition of conformability B and A are conformable since row(B)=col(A)
+    
+thus matrix product ${AB}$ and ${BA}$ both are possible
+
+Finding ${AB}$
+
+  
+  \begin{aligned}
+  
+  AB = \left(\begin{array}{cc} 
+  1 & 2 & 3\\
+  5 & 6 & 7
+  \end{array}\right). \left(\begin{array}{cc} 
+  -1 & -3\\ 
+  -5 & 6\\
+  7 & 8
+  \end{array}\right) 
+  
+  \\ \ \\
+  
+  => AB  = \left(\begin{array}{cc} 
+  1\times(-1)+2\times(-5)+3\times7 & 1\times(-3)+2\times6+3\times8\\
+  5\times(-1)+6\times(-5)+7\times7 & 5\times(-3)+6\times6+7\times8\\
+  \end{array}\right)
+  
+  \\ \ \\
+  => AB  = \left(\begin{array}{cc} 
+  -1-10+21 & -3+12+24\\
+  -5-30+49 & -15+36+56\\
+  \end{array}\right)
+  
+  \\ \ \\
+  
+  => AB  = \left(\begin{array}{cc} 
+  -1-10+21 & -3+12+24\\
+  -5-30+49 & -15+36+56\\
+  \end{array}\right)
+  \\ \ \\
+  \therefore  Answer\ is \\ \ \\
+  
+  \left(\begin{array}{cc} 
+  10 & 33\\
+  14 & 71\\
+  \end{array}\right)
+  
+  \end{aligned}
+  
+
+Finding ${BA}$
+
+
+  \begin{aligned}
+  
+  BA = \left(\begin{array}{cc} 
+  -1 & -3\\ 
+  -5 & 6\\
+   7 & 8
+  \end{array}\right) . \left(\begin{array}{cc} 
+  1 & 2 & 3\\
+  5 & 6 & 7
+  \end{array}\right)
+  
+  \\ \ \\
+  
+  => BA  =  \left(\begin{array}{cc} 
+  (-1)\times1+(-3)\times5 & (-1)\times2+(-3)\times6 & (-1)\times3+(-3)\times7\\ 
+  (-5)\times1+6\times5    & (-5)\times2+6\times6    & (-5)\times3+6\times7\\
+  7\times1+8\times5       & 7\times2+8\times6       & 7\times3+8\times7\\
+  \end{array}\right)
+  
+  \\ \ \\
+  => BA  =  \left(\begin{array}{cc} 
+  -1-15     & -2-18     & -3-21\\ 
+  -5+30     & -10+36    & -15+42\\
+  7+40      & 14+48     & 21+56\\
+  \end{array}\right)
+  
+  \\ \ \\
+  
+  => BA  =  \left(\begin{array}{cc} 
+  -16   & -20 & -24\\ 
+   25   & -26 & 27\\
+   47   & 62  & 77\\
+  \end{array}\right)
+  \\ \ \\
+  \therefore  Answer\ is \\ \ \\
+  
+  \left(\begin{array}{cc} 
+  -16   & -20 & -24\\ 
+   25   & -26 & 27\\
+   47   & 62  & 77\\
+  \end{array}\right)
+  
+  \end{aligned}
+
+
+********
+
+**Q4. Choose one or more names (normal, idempotent, nilpotent or unipotent) for the following matrix**
+
+$$ a. \left(\begin{array}{cc} 
+1 & x\\
+0 & -1
+\end{array}\right) $$
+***Answer to Q4***
+
+For any given square matrix A with dimension pxp
+
+• A is **normal** if $AA’ = A’A$
+
+• A is **idempotent** if $A^2 = A$ 
+
+• A is called **nilpotent** if $A^2=0$
+
+• A is called **unipotent** if $A^2 = I_n$ i.e The square of matrix is the `identity matrix`
+
+here we have given matrix 
+
+\begin{aligned}
+
+A = \left(\begin{array}{cc} 
+1 & x\\
+0 & -1
+\end{array}\right)
+
+This is $2\times2$ matrix, thus its a Square matrix, we will now examine which properties are followed by A 
+
+\end{aligned}
+********
+
+**Q5. For the following matrix, calculate the inverse. Show all the steps.**
+
+$$ a. \left(\begin{array}{cc} 
+1 & -3\\
+5 & -7
+\end{array}\right) $$
+
+
+**Q6. Find the rank of the matrix, Eigen values and vectors of the following matrix. Show all the steps.**
+
+$$
+a. \left(\begin{array}{cc} 
+1 & 2 & 4\\
+3 & 8 & 14\\
+2 & 6 & 13
+\end{array}\right)
+$$ 
+
+********
+
+
+**Q7. Prove**
+
+$(AB)^{-1} = B^{-1}A^{-1}$
+
+
+********
+
+**Q8. Read this article on tensor flow. (https://machinelearningmastery.com/introduction-to-tensors-for-machine-learning/). Write a note on what are tensors? How are they different from vectors and matrices? How are they helpful? Discuss one application of tensors where matrices and vectors can’t be used.**
+
+
+
+********
+
+**Q9. Using ${LU}$ decomposition, decompose the following matrix in to an upper and a lower triangular matrix. Show all the steps**
+
+$$
+a. \left(\begin{array}{cc} 
+1 & 2 & 4\\
+3 & 8 & 14\\
+2 & 6 & 13
+\end{array}\right)
+$$ 
+
+********
+********
