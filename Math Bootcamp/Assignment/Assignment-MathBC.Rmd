@@ -29,25 +29,19 @@ date: "05/11/2020"
 
 ***Answer to Q2***
 
-The equation $(A+B){^2}=A^2+B^2+2AB$ given that ${A}$ and ${B}$ are matrices, can be true only when matrix product ${AB}={BA}$
+Given that ${A}$ and ${B}$ are matrices,the equation $(A+B){^2}=A^2+B^2+2AB$ can be true only when matrix product ${AB}={BA}$
 
 because:
-
-\begin{aligned}
-    (A+B){^2}=(A+B).(A+B)
-   \\ \ \\
-   => (A+B){^2}=(A.A+A.B+B.A+B.B)
-   \\ \ \\   
-   => (A+B){^2}=(A^2+A.B+B.A+B^2)
-
-
-   Since Matrices do not follow Commutative property of multiplication, thus $ It\ is\ NOT\ true \ for\ all\ A\ and\ B\ such\ that:\ BA=AB$
+$$\begin{aligned}
+(A+B){^2}=(A+B).(A+B)\\ \ \\ => (A+B){^2}=(A.A+A.B+B.A+B.B)\\ \ \\   => (A+B){^2}=(A^2+A.B+B.A+B^2)
+\end{aligned}$$
    
-   $\therefore$ equation is true ${IF\ and\ only\ if\ :\ AB=BA}$
+   Since Matrices do not follow Commutative property of multiplication, 
+
+   It is\ NOT true for all $A$ and $B$ such  that:  $BA=AB$
    
-   $\therefore \\(A+B){^2}=(A^2+AB+BA+B^2) =>(A^2+2AB+B^2) \iff  AB=BA \\ (A+B){^2}\not=(A^2+2AB+B^2) \iff  AB\not=BA$
-   
-\end{aligned}   
+$$\begin{aligned}
+\therefore\ Equation\ is\ true\ IF\ and\ only\ if\ :\ AB=BA \\ \therefore (A+B){^2}=(A^2+AB+BA+B^2) =>(A^2+2AB+B^2) \iff  AB=BA \\ and\ (A+B){^2}\not=(A^2+2AB+B^2) \iff  AB\not=BA \end{aligned}$$
 
 ********
 
@@ -199,15 +193,45 @@ For any given square matrix A with dimension pxp
 here we have given matrix 
 
 \begin{aligned}
+A = \left(\begin{array}{cc}  1 & x\\ 0 & -1 \end{array}\right)
+\end{aligned}
 
-A = \left(\begin{array}{cc} 
-1 & x\\
-0 & -1
-\end{array}\right)
+as $A$ is $2\times2$ matrix, its a Square matrix. We will now examine which properties are followed by $A$
 
-This is $2\times2$ matrix, thus its a Square matrix, we will now examine which properties are followed by A 
+\begin{aligned}
+
+A' = \left(\begin{array}{cc} 1 & 0 \\ x & -1\end{array}\right)
+\\ \\
+=> AA'=  \left(\begin{array}{cc} 1 & x\\ 0 & -1\end{array}\right).\left(\begin{array}{cc} 1 & 0 \\ x & -1\end{array}\right)
+
+\\
+
+=> \left(\begin{array}{cc}1+x\times x & 0 + (-x) \\
+   0 + (-x)  & 0+ (-1) \times 1 \end{array}\right) 
+\\ 
+AA' =  \left(\begin{array}{cc} (x^2 +1) & -x \\ -x & -1 \end{array}\right) 
+\\ 
+
+\\ 
+\\
+AND 
+\\
+\\
+A \times A = A^2 = \left(\begin{array}{cc} 1 & x\\ 0 & -1 \end{array}\right).\left(\begin{array}{cc} 1 & x\\ 0 & -1 \end{array}\right)
+\\
+=> \left(\begin{array}{cc} 1\times1 + x \times 0  & 1 \times x + x \times (-1) \\ 0 \times 1 + (-1) \times 0 & (-1) \times (-1)\end{array}\right)
+\\
+=> \left(\begin{array}{cc} 1 + 0  & x - x  \\ 0  & 1\end{array}\right)
+\\
+=> \left(\begin{array}{cc} 1  & 0 \\ 0  & 1\end{array}\right)
+\\
+=> A^2 = I_1
 
 \end{aligned}
+
+$\therefore  A$ is a **unipotent** matrix
+
+
 ********
 
 **Q5. For the following matrix, calculate the inverse. Show all the steps.**
