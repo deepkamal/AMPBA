@@ -1,0 +1,8 @@
+Topics illustrated: ill-conditioned data, multicollinearity, spurious correlation (non-causal) due to upward trend . 16 observations, 6 predictors. Data are from A. Beaton, D. Rubin, and J. Barone, "The Acceptability of Regression Solutions: Another Look at Computational Accuracy", Journal of the American Statistical Association, Vol. 71, No. 353, March, 1976, p. 159.  The Longley data (from James W. Longley in 1967) is not proposed as a reasonable model, but rather to pose a challenging test of the accuracy of a regression algorithm and to illustrate extreme variance inflation.
+GNP price deflator
+GNP (millions)
+Total unemployment
+Size of armed forces
+Noninstitutional population age 14 and over
+Year
+Total derived employment

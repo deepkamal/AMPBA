@@ -1,0 +1,26 @@
+
+body {font:16px 'Times New Roman', Arial, Helvetica, sans-serif; padding:0;	margin:20px;}
+
+table {font:16px 'Times New Roman', Arial, Helvetica, sans-serif; margin:2px;}
+
+h1{font-size:20px; margin:20px 0px;}
+
+#quiz{margin:0; padding:0; padding-left:20px; list-style:none;}
+#quiz li{margin:35px 0 50px 0px; padding:0;}
+#quiz li b{padding-right:10px;}
+
+#quiz .answer{list-style-image:none; list-style-type:upper-alpha; padding:0; margin:0; margin-left:55px;}
+#quiz .answer li {font-weight:bold; padding:0; margin:10px 0; }
+#quiz .answer li p {font-weight:normal; padding:0; margin:0px;}
+#quiz .answer li p input{padding:0; margin:0 5px 0 0px; }
+#quiz .answer li p img{padding:0; margin:0 6px;}
+
+#quiz li.correct {padding-left:40px; background:url('images/correct.gif') no-repeat;}
+#quiz li.wrong {padding-left:40px; background:url('images/x.gif') no-repeat;}
+#quiz li.unanswered {padding-left:40px; background:url('images/x.gif') no-repeat;}
+
+#quizoption {margin-left:20px;}
+#quizoption input {height:40px;}
+
+#quizresult b {font-size:20px; padding-left:5px;}
+

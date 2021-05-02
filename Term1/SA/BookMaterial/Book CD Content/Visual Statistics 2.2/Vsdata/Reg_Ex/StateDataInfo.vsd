@@ -1,0 +1,133 @@
+50 states, 131 variables. Main source is the Statistical Abstract of the U.S., 1998. Highway safety and driver data is from the U. S. Department of Transportation web site. Data were entered and checked by Don Smith, and verified by statistics students at Oakland University. This database is intended for educational use only and may not be reproduced or used commercially without prior written permission.
+Aggravated assault rate per 100,000 population in 1996
+Burglary rate per 100,000 population in 1996
+Motor vehicle theft rate per 100,000 population in 1996
+Number of inmates on death row in 1996
+Inmates on death row per 1,000,000 pop in 1996
+State and local corrections employees per 100,000 pop in 1995
+Larceny theft rate per 100,000 population in 1996
+Murder rate per 100,000 population in 1996
+Police officers per 10,000 population in 1996
+Prisoners per 1000 population in 1996
+Prisoners under jurisdiction of state and federal authorities in 1996
+Forcible rape rate per 100,000 population in 1996
+Robbery rate per 100,000 population in 1996
+Population less than 5 years old in thousands in 1997
+Percent of population less than 5 years old in 1997
+Percent of population aged 65 and over in 1997
+Median age of population in 1996
+Percent Asian or Pacific Island origin population in 1997
+Asian or Pacific Island origin population in thousands in 1997
+Percent black population in 1997
+Black population in thousands in 1997
+Percent Hispanic origin population in 1997
+Hispanic origin population in thousands in 1997
+Total population in thousands of persons in 1997
+Percent population change 1990-1995
+Population density in persons per square mile in 1997
+Average weekly state unemployment benefit in dollars in 1996
+DoD contract awards in dollars per 1000 population in 1996
+DoD total contract awards in millions of dollars in 1996
+Average hourly earnings of mfg production workers in 1997
+Energy consumption per capita (million BTU) in 1994
+Fed. grants per capita for highway trust fund and FTA in 1997
+Proportion owner households to total occupied households in 1997
+Personal income per capita in current dollars in 1997
+Local government employees per 10,000 population in 1995
+Labor force participation rate among females in 1996
+Labor force participation rate among males in 1996
+Nuclear power plant percentage of total generation in 1996
+Percentage below the poverty level in 1996
+State gasoline tax rate (cents per gallon) in 1995
+State debt per capita in dollars in 1996
+State and local govt. employees per 10,000 population in 1995
+State government tax collections per capita in 1997
+State and local govt. average October earnings in 1995
+State government expenditure in dollars per capita in 1996
+State sales tax in cents per dollar in 1997
+Unemployment rate, civilian labor force in 1996
+Percent unemployment of females in civilian labor force in 1996
+Percent unemployment of males in civilian labor force in 1996
+Union membership as percent of employed in 1997
+Percent college graduates in population age 25 and over in 1990
+Public high school dropout rate in 1995
+Public K-12 school expenditure per capita in 1997
+Public high school graduation rate in 1995
+Public library spending per 1,000 population in 1994
+Public library spending in $1,000 in 1994
+Daily and Sunday newspaper circulation per capita
+Full-time faculty salary, public university in 1995-96
+K-12 average pupil-teacher ratio in 1995
+Percent of high school graduates taking SAT test in 1997
+Average SAT quantitative test score in 1997
+Average SAT verbal test score in 1997
+Average salary of K-12 teachers in $1,000 in 1997
+Average undergrad tuition and fees at public higher ed institutions in 1996
+Land area in thousands of sq. km. in 1990
+Water area in thousands of sq. km. in 1990
+Total miles of salt-water coastline in 1990
+Percent of state land owned by federal government in 1990
+1 if state is in the midwestern U.S., 0 otherwise
+1 if state is in the northeastern U.S., 0 otherwise
+1 if state is in the southeastern U.S., 0 otherwise
+Water area as percent of total state area in 1990
+1 if state is in the western U.S., 0 otherwise
+Abortions per 1000 women in 1995
+Death rate per 100,000 population due to accidents in 1995
+Hospital beds per thousand population in 1996
+Hospital beds in thousands in 1996
+Live birth rate per 1000 population in 1995
+Death rate per 100,000 population due to cancer in 1995
+Deaths rate per 100,000 population due to diabetes in 1995
+Active non-federal physicians per 100,000 population in 1996
+Number of hazardous waste sites on Superfund list in 1997
+Death rate per 100,000 population due to heart disease in 1995
+Average daily hospital cost in dollars per patient in 1995
+Infant mortality rate in deaths per 1000 live births in 1995
+Percent of births that are low weight (under 5lb 8oz) in 1995
+Death rate due per 100,000 due to pulmonary disease in 1995
+Nurses per 100,000 resident population in 1996
+Death rate per 100,000 population due to stroke in 1995
+Death rate by suicide per 100,000 population in 1995
+Percent of total births by teenage mothers in 1995
+Percentage of children without health insurance in 1996
+Percentage of people without health insurance in 1996
+Democratic Governor in 1997 (1=yes, 0=no)
+Independent Governor in 1997 (1=yes, 0=no)
+Republican Governor in 1997 (1=yes, 0=no)
+Number of Democratic Representatives in the 104th U. S. Congress
+1 if Democratic majority of U.S. Representatives in 104th Congress
+Number of Republican Representatives in the 104th U. S. Congress
+Number of Democratic Senators the 104th U. S. Congress
+1 if Democratic majority of U.S. Senators in 104th Congress
+Number of Republican Senators in the 104th U. S. Congress
+Percent of votes for Repub. candidate in 1996 Presidental election
+Percent of votes for Dem. candidate in 1996 Presidental election
+Percent of votes for Reform candidate in 1996 Presidental election
+Registered voters as percent of voting age population in 1994
+Percent of registered voters who voted for President in 1996
+Average monthly payment per family aid for dependent children in 1996
+Divorce rate per 1000 population in 1995
+Per capita children in out-of-home care in 1995
+Marriage rate per 1000 population in 1995
+Percent of total births by unmarried women in 1995
+Percent of population living in urban areas in 1996
+Blood alcohol concentration limit for legal intoxication in 1995
+Auto Insurance expenditures per insured vehicle in 1996
+Ratio of licensed drivers to private and commercial vehicles registered in 1997
+Percent of licensed drivers who are male in 1997
+Number of drivers per 1000 driving age population in 1997
+Number of drivers per 1000 total resident population in 1997
+Number of state drivers licenses issued in thousands in 1997
+Fatality rate per 1000 drivers in 1997
+Fatality rate per 1000 population in 1997
+Fatality rate per 1000 vehicles in 1997
+1 if state had a motorcycle helmet law in 1995, 0 otherwise
+Nonfatal injury rate per 1000 drivers in 1997
+Nonfatal injury rate per 1000 population in 1997
+Nonfatal injury rate per 1000 vehicles in 1997
+Annual vehicle miles per driver in 1997
+Annual vehicle miles per capita in 1997
+Annual vehicle miles per vehicle in 1997
+Number of registered vehicles in thousands in 1997
+

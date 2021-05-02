@@ -1,0 +1,7 @@
+Topic illustrated: outliers. 52 observations, 5 predictors. Data is from Modern Healthcare, Vol. 28, No. 12, March 23, 1998, pp. 32-38.  Data are for educational use only and are not intended to assess corporate performance. 83 of the original 135 firms were omitted because some information was unavailable. Data were entered by statistics student Douglas H. Hogg, Jr.
+Number of architects employed by company
+Number of engineers employed by company
+Number of years firm has been involved in healthcare projects
+Number of states in which firm operates
+Percentage of firm's total work that is healthcare projects
+Total fees (millions)

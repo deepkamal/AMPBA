@@ -1,0 +1,6 @@
+Topics illustrated: outliers, collinearity. 252 observations, 4 predictors. Variables are a subset of a data set provided by Roger W. Johnson, Fitting Percentage of Body Fat to Simple Body Measurements, Journal of Statistics Education, 1996.  Original data were supplied by Dr. A. Garth Fisher, Human Performance Research Center, Brigham Young University, Provo, Utah. Some errors seem to exist (e.g., body densities for cases 48, 76, and 96 seem to have one digit in error as can be seen from the two body fat percentage values).  Note the presence of a man (case 42) over 200 pounds in weight who is less than 3 feet tall (the height should presumably be 69.5 inches, not 29.5 inches). Percent body fat estimates are truncated to zero when negative (case 182).
+Age (in years)
+Height (in inches)
+Abdomen circumference (cm) at the umbilicus and level with the iliac crest 
+Thigh circumference (cm)
+Percent body fat using Siri's equation: 495/Density - 450  (density in gm/cm^3)

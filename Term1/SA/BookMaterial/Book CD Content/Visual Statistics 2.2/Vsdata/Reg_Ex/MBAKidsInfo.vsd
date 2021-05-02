@@ -1,0 +1,9 @@
+Topics illustrated: outliers in residuals, significance versus fit, effect of sample size on t-statistics. 265 observations, 7 predictors. Dependent variable is the ideal number of children for a married couple. Independent variables are gender, parents' family size, parent dominance, political orientation, and attendance at religious services. Data is from a survey of MBA students in six classes at a medium-size public AACSB-accredited business school in the north central U.S in September, 1990 and again in February, 1998. Any respondent whose replies were incomplete or ambiguous was excluded.
+Gender of respondent (male=0, female=1)
+Counting self, number of children your parents had
+1 if response is 1 or 2 on dominant parent question, 0 otherwise
+1 if response is 4 or 5 on dominant parent question, 0 otherwise
+1 if liberal political orientation, 0 otherwise (choices were liberal, middle-of-road, conservative)
+1 if conservative political orientation, 0 otherwise (choices were liberal, middle-of-road, conservative)
+Times in last year you attended formal religious services
+Your opinion of ideal number of children for married couple

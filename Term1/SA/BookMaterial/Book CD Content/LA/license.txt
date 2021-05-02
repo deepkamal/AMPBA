@@ -1,0 +1,101 @@
+IMPORTANT NOTICE
+
+Copyright (C)2009 by The McGraw-Hill Companies, Inc.
+All rights reserved.
+
+Use of this product (the "Product") is subject to the
+terms below ("License Agreement") and any others that
+may be set forth in the Help or About menu of this Product.  
+
+LICENSE AGREEMENT
+
+LICENSE:  Throughout this License Agreement, "you" shall
+mean either the individual or the entity whose agent opens
+this package.  You are granted a non-exclusive and non-
+transferable license to use the Product only on a single
+computer (i.e., a single CPU) for your personal educational
+purposes only, subject to the restrictions herein.  
+
+COPYRIGHT; RESTRICTIONS ON USE AND TRANSFER:  All rights
+(including copyright) in and to the Product are owned by
+McGraw-Hill and its licensors.  You may not copy, decompile,
+disassemble, reverse engineer, modify, reproduce, create
+derivative works of, transmit, distribute, sublicense, store
+in a database or retrieval system of any kind, rent or transfer
+the Product, or any portion thereof, in any form or by any
+means (including electronically  or otherwise), and may not
+use the Product except as expressly permitted herein.  You
+must reproduce the copyright notices, trademark notices,
+legends and logos of McGraw-Hill and its licensors that
+appear on the Product on the back-up copy of the Product
+which you are permitted to make hereunder.  All rights in
+the Product not expressly granted herein are reserved by
+McGraw-Hill and its licensors.
+
+TERM:  This License Agreement is effective until terminated.
+It will terminate if you fail to comply with any term or
+condition of this License Agreement.  Upon termination,
+you are obligated to return to McGraw-Hill the Product
+together with all copies thereof and to purge all copies
+of the Product included in any and all computer facilities. 
+
+DISCLAIMER OF WARRANTY:  THE PRODUCT OF THE PRODUCT ARE
+LICENSED "AS IS." McGRAW-HILL, ITS LICENSORS AND THE
+AUTHORS MAKE NO WARRANTIES, EXPRESS OR IMPLIED, AS TO
+RESULTS TO BE OBTAINED BY ANY PERSON OR ENTITY FROM USE
+OF THE PRODUCT AND/OR ANY INFORMATION OR DATA INCLUDED
+THEREIN.  McGRAW-HILL, ITS LICENSORS AND THE AUTHORS MAKE
+NO EXPRESS OR IMPLIED WARRANTIES OF MERCHANTABILITY OR
+FITNESS FOR A PARTICULAR PURPOSE OR USE WITH RESPECT TO
+THE PRODUCT OR AS TO THE ACCURACY, COMPLETENESS, CURRENTNESS
+OR RESULTS TO BE OBTAINED FROM THE PRODUCT.  NEITHER
+McGRAW-HILL NOR ANY OF ITS LICENSORS OR AUTHORS WARRANT
+THAT THE FUNCTIONS CONTAINED IN THE PRODUCT WILL MEET YOUR
+REQUIREMENTS OR THAT THE OPERATION OF THE PRODUCT WILL BE
+UNINTERRUPTED OR ERROR FREE.  NEITHER MCGRAW-HILL NOR ANY
+OF ITS LICENSORS OR AUTHORS SHALL BE LIABLE TO YOU OR TO
+ANY USER OF THE PRODUCT OR ANYONE ELSE FOR ANY INACCURACY,
+ERROR OR OMISSION, REGARDLESS OF CAUSE, IN THE PRODUCT OR
+ITS CONTENTS, OR FOR ANY DAMAGES RESULTING THEREFROM. YOU
+ASSUME THE ENTIRE RISK WITH RESPECT TO THE QUALITY AND
+PERFORMANCE OF THE PRODUCT.  McGraw-Hill, its licensors
+and authors make no guarantee that you will pass any
+certification exam by using this Product. 
+
+LIMITATION OF LIABILITY:  NEITHER McGRAW-HILL, ITS LICENSORS
+NOR THE AUTHORS SHALL BE LIABLE FOR ANY INDIRECT, SPECIAL OR
+CONSEQUENTIAL DAMAGES, SUCH AS BUT NOT LIMITED TO, LOSS OF
+ANTICIPATED  PROFITS OR BENEFITS, RESULTING FROM THE USE OR
+INABILITY TO USE THE PRODUCT EVEN IF ANY OF THEM HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  THIS LIMITATION
+OF LIABILITY SHALL APPLY TO ANY CLAIM OR CAUSE WHATSOEVER
+WHETHER SUCH CLAIM OR CAUSE ARISES IN CONTRACT, TORT, OR
+OTHERWISE.  Some states do not allow the exclusion or
+limitation of indirect, special or consequential damages,
+so the above limitation may not apply to you.
+
+U.S. GOVERNMENT RESTRICTED RIGHTS:  Any software included
+in the Product is provided with restricted rights subject
+to subparagraphs (c) (1) and (2) of the Commercial Computer
+Software-Restricted Rights clause at 48 C.F.R. 52.227-19.
+The terms of this Agreement applicable to the use of the
+data in the Product are those under which the data are
+generally made available to the general public by McGraw-Hill.
+Except as provided herein, no reproduction, use, or disclosure
+rights are granted with respect to the data included in the
+Product and no right to modify or create derivative works
+from any such data is hereby granted. 
+
+GENERAL:  This License Agreement constitutes the entire
+agreement between the parties relating to the Product.
+The terms of any Purchase Order shall have no effect on the
+terms of this License Agreement.  Failure of McGraw-Hill to
+insist at any time on strict compliance with this License
+Agreement shall not constitute a waiver of any rights under
+this License Agreement.  This License Agreement shall be
+construed and governed in accordance with the laws of the
+State of New York.  If any provision of this License Agreement
+is held to be contrary to law, that provision will be enforced
+to the maximum extent permissible and the remaining provisions
+will remain in full force and effect.
+

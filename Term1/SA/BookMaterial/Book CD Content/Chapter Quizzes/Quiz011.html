@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Chapter 11 Quiz - Multiple Regression</title>
+<link rel="stylesheet" type="text/css" href="quiz.css" >
+<script language="javascript" src="quiz.js"></script>
+</head>
+
+<body>
+<h1>Chapter 11 Quiz - Multiple Regression</h1>
+<form name="quiz" method="get" onSubmit="gradeTest(this);return(false);">
+<ul id="quiz">
+<li><b>1.</b>When the null hypothesis, H<sub>0</sub>: <span style="font-family:Symbol">b<sub>1&nbsp;</sub></span>=&nbsp;<span style="font-family:Symbol">b<sub>2&nbsp;</sub></span>=&nbsp;<span style="font-family:Symbol">b</sub></span><sub>3</sub> =&nbsp;<sub> </sub>0, is rejected, the interpretation should be:
+	<ol class="answer">
+	 <li><p><input type="radio" name="answer1" value="0">There is no linear relationship between y and any of the three independent variables</p></li>
+	 <li><p><input type="radio" name="answer1" value="1">There is a regression relationship between y and at least one of the three independent variables</p></li>
+	 <li><p><input type="radio" name="answer1" value="0">All three independent variables have a slope of zero</p></li>
+	 <li><p><input type="radio" name="answer1" value="0">All three independent variables have equal slopes</p></li>
+	 <li><p><input type="radio" name="answer1" value="0">There is a regression relationship between y and all three independent variables</p></li>
+	</ol></li>
+<li><b>2.</b>Suppose that in a multiple regression the F is significant, but none of the t-ratios are significant. This means that:
+	<ol class="answer">
+	 <li><p><input type="radio" name="answer2" value="1">Multicollinearity may be present</p></li>
+	 <li><p><input type="radio" name="answer2" value="0">Autocorrelation may be present</p></li>
+	 <li><p><input type="radio" name="answer2" value="0">The regression is good</p></li>
+	 <li><p><input type="radio" name="answer2" value="0">A nonlinear model would be a better fit</p></li>
+	 <li><p><input type="radio" name="answer2" value="0">None of the above</p></li>
+	</ol></li>
+<li><b>3.</b>What is the difference between R<sup>2</sup> and the adjusted R<sup>2</sup>?
+	<ol class="answer">
+	 <li><p><input type="radio" name="answer3" value="0">The adjusted R<sup>2</sup> always increases as more independent variables are added to the model</p></li>
+	 <li><p><input type="radio" name="answer3" value="0">The adjusted R<sup>2</sup> is smaller in this case because the constant term is negative</p></li>
+	 <li><p><input type="radio" name="answer3" value="1">The adjusted R<sup>2</sup> adjusts explanatory power by the degrees of freedom</p></li>
+	 <li><p><input type="radio" name="answer3" value="0">The adjusted R<sup>2</sup> is always smaller than R<sup>2</sup></p></li>
+	 <li><p><input type="radio" name="answer3" value="0">The adjusted R<sup>2</sup> adjusts explanatory power by division by the standard error of each coefficient</p></li>
+	</ol><br>The data are shown below: <br><br><img width=300 height=100 src="Chap11/image001.jpg"> <br><br>The Minitab regression analysis follows:<br><br><img width=300 height=100 src="Chap11/image002.jpg"><br><br>Analysis of Variance<br><br><img width=300 height=100 src="Chap11/image003.jpg"></li>
+<li><b>4.</b>Write the regression equation, letting undergraduate GPA be variable 1 and standard scores be variable 2.
+	<ol class="answer">
+	 <li><p><input type="radio" name="answer4" value="0">Y = 0.4775 x<sub>1</sub> + 0.0013392x<sub>2</sub></p></li>
+	 <li><p><input type="radio" name="answer4" value="0">Y = 0.2059 + 0.1630x<sub>1 </sub>+ 0.0006693x<sub>2</sub></p></li>
+	 <li><p><input type="radio" name="answer4" value="0">None of the others is correct</p></li>
+	 <li><p><input type="radio" name="answer4" value="1">Y = 1.1066 + 0.4775x<sub>1</sub> + 0.0013392x<sub>2</sub></p></li>
+	 <li><p><input type="radio" name="answer4" value="0">Not enough information given</p></li>
+	</ol></li>
+<li><b>5.</b>At the 5% level of significance, are undergraduate scores and standard scores significant?
+	<ol class="answer">
+	 <li><p><input type="radio" name="answer5" value="0">Both are significant</p></li>
+	 <li><p><input type="radio" name="answer5" value="0">Neither are significant</p></li>
+	 <li><p><input type="radio" name="answer5" value="1">Only undergraduate GPA is significant</p></li>
+	 <li><p><input type="radio" name="answer5" value="0">Only standard scores are significant</p></li>
+	 <li><p><input type="radio" name="answer5" value="0">Not enough information to determine</p></li>
+	</ol></li>
+<li><b>6.</b>Compute R<sup>2</sup>.
+	<ol class="answer">
+	 <li><p><input type="radio" name="answer6" value="0">99.4%</p></li>
+	 <li><p><input type="radio" name="answer6" value="1">98.6%</p></li>
+	 <li><p><input type="radio" name="answer6" value="0">20.8%</p></li>
+	 <li><p><input type="radio" name="answer6" value="0">Very close to 100%</p></li>
+	 <li><p><input type="radio" name="answer6" value="0">Insufficient information to determine</p></li>
+	</ol></li>
+<li><b>7.</b>All of the following are possible effects of multicollinearity EXCEPT:
+	<ol class="answer">
+	 <li><p><input type="radio" name="answer7" value="0">The variances of regression coefficients estimators may be larger than expected</p></li>
+	 <li><p><input type="radio" name="answer7" value="0">The signs of the regression coefficients may be opposite of what is expected</p></li>
+	 <li><p><input type="radio" name="answer7" value="0">A significant F ratio may result even though the t ratios are not significant</p></li>
+	 <li><p><input type="radio" name="answer7" value="0">Removal of one data point may cause large changes in the coefficient estimates</p></li>
+	 <li><p><input type="radio" name="answer7" value="1">The VIF is zero</p></li>
+	</ol></li>
+<li><b>8.</b>Correlation of the values of variables with values of the same variables lagged one or more time periods back is called:
+	<ol class="answer">
+	 <li><p><input type="radio" name="answer8" value="0">Multicollinearity</p></li>
+	 <li><p><input type="radio" name="answer8" value="0">A transformation</p></li>
+	 <li><p><input type="radio" name="answer8" value="1">Autocorrelation</p></li>
+	 <li><p><input type="radio" name="answer8" value="0">Variance inflation</p></li>
+	 <li><p><input type="radio" name="answer8" value="0">Interaction</p></li>
+	</ol></li>
+<li><b>9.</b>Dummy variables are used when:
+	<ol class="answer">
+	 <li><p><input type="radio" name="answer9" value="1">Qualitative variables are involved in the model</p></li>
+	 <li><p><input type="radio" name="answer9" value="0">Quantitative variables are involved in the model</p></li>
+	 <li><p><input type="radio" name="answer9" value="0">Doing residual analysis</p></li>
+	 <li><p><input type="radio" name="answer9" value="0">Making transformations of quantitative variables</p></li>
+	 <li><p><input type="radio" name="answer9" value="0">None of the above</p></li>
+	</ol></li>
+<li><b>10.</b>A multiple regression model with two independent variables exhibits a highly significant F-ratio, but each variable's individual t-statistic is insignificant. The most likely cause of such a situation is ____________
+	<ol class="answer">
+	 <li><p><input type="radio" name="answer10" value="0">Heteroskedasticity</p></li>
+	 <li><p><input type="radio" name="answer10" value="0">Homoskedasticity</p></li>
+	 <li><p><input type="radio" name="answer10" value="1">Multicollinearity</p></li>
+	 <li><p><input type="radio" name="answer10" value="0">Non-independence of residuals</p></li>
+	 <li><p><input type="radio" name="answer10" value="0">Non-normality of residuals</p></li>
+	</ol></li>
+<li><b>11.</b>In a regression analysis involving a lagged predictor variable, the two-tailed critical lower and upper values for the Durbin-Watson test statistic are, respectively, 1.50 and 1.70. The observed Durbin-Watson test statistic is 1.32. Based on this evidence we would infer _______________.
+	<ol class="answer">
+	 <li><p><input type="radio" name="answer11" value="0">Negative autocorrelation</p></li>
+	 <li><p><input type="radio" name="answer11" value="1">Itive autocorrelation</p></li>
+	 <li><p><input type="radio" name="answer11" value="0">Thing; the test is inconclusive</p></li>
+	 <li><p><input type="radio" name="answer11" value="0">Eteroscedasticity</p></li>
+	 <li><p><input type="radio" name="answer11" value="0">Lticollinearity</p></li>
+	</ol></li>
+<li><b>12.</b>In a multiple regression study with 60 observations, an analyst is considering whether or not to include a fourth predictor variable. The SSE of the model when the fourth variable is included is 28,422. The SSE of the model when the fourth variable is not included is 30,224. Based on the partial F-statistic of ___________ we would conclude that the additional variable ____________ the model.
+	<ol class="answer">
+	 <li><p><input type="radio" name="answer12" value="0">4.71; does not significantly improve</p></li>
+	 <li><p><input type="radio" name="answer12" value="0">5.35; significantly improves</p></li>
+	 <li><p><input type="radio" name="answer12" value="0">1.74; does not significantly improve</p></li>
+	 <li><p><input type="radio" name="answer12" value="0">2.38; does not significantly improve</p></li>
+	 <li><p><input type="radio" name="answer12" value="1">None of the above</p></li>
+	</ol></li>
+</ul>
+<div id="quizoption"><p><img align="absmiddle" src="images/stop.gif"> This is the end of the test.  When you have completed all the questions and reviewed your answers, press the button below to grade the test.<p>
+<input type="submit" value="Grade the Test"></div>
+</form>
+</body>
+</html>

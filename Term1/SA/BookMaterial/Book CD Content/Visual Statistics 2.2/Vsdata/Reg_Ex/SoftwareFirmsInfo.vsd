@@ -1,0 +1,6 @@
+Topics illustrated: collinearity, outliers. 29 observations, 4 predictors. Source is Datamation, Vol. 36, No. 23, December 1, 1990, p. 68. Data are for educational use only and are not intended as a guide to corporate performance. Companies are from a list of the 50 largest software firms, excluding 21 firms that had missing data in any column. Net income is for fiscal 1989. R&D is research and development spending in millions of dollars. Per cent changes are from the prior fiscal year 1988. Data were entered by statistics student Douglas H. Hogg, Jr.
+Research and development spending (millions of dollars)
+Number of employees
+Percent change in revenue over previous year
+Percent change in R&D spending over previous year
+Net income (millions of dollars)

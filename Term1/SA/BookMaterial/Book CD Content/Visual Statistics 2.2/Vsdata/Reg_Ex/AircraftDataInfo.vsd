@@ -1,0 +1,16 @@
+46 piston aircraft, 15 variables. Data are from new and used airplane reports in Flying Magazine (various issues from 1997 to 2000). Data are for educational purposes only and are not intended as a guide to aircraft performance. Stall speed is  in KIAS (knots indicated air speed) in landing configuration (landing flaps, gear down) . Baron 58P figure is not comparable because data were only available with gear up. Weight is reported for a given aircraft as equipped for flight test (weight varies depending on the installed options). Cruise speed generally assumes 65% or 75% power at 8,000 feet (18,000' to 29,000' for turbocharged aircraft). Data were entered by statistics student Douglas H. Hogg, Jr.
+Year
+Stall speed (kts)
+Wing area (sq ft)
+Max takeoff weight (lbs)
+Empty weight (lbs)
+Wing loading (lbs/sqr ft)
+Power loading (lbs/hp)
+Max rate of climb (feet per minute)
+Cruise speed at 65%-75% power (kts)
+Fuel flow (gallons per hour)
+Number of propeller blades
+Turbocharged? (1=Yes, 0=No)
+Number of engines
+Horsepower per engine
+Total horsepower

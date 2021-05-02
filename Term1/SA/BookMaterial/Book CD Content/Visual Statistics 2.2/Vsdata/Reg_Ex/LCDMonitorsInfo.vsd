@@ -1,0 +1,8 @@
+Topics illustrated: outliers, multicollinearity, overfitting a model. 30 observations, 6 predictors. Data is from PC Magazine, Vol. 18, No. 8, April 20, 1999, pp. 134-139. Data are intended for educational use only, not as a guide to selecting an LCD monitor. Brightness was measured as luminance (candelas per square meter) for a white signal of the maximum RGB value (255, 255, 255). Contrast ratio is the luminance difference between white and black RGB signals. A high contrast ratio produces crisp, easy-to-read text. Contrast is the greatest angle (in degrees) from the perpendicular until the contrast ratio fell below 10:1. Color viewing angle is the greatest angle (in degrees) from perpendicular until a noticeable shift in color occurred using the Delta-E industry standard (Delta-E of 1 is barely noticeable, while Delta-E of 5 is noticeable by most people). Hitachi SuperScan is a non-LCD monitor included for comparison. Statistics student Douglas H. Hogg, Jr. entered the data.
+Luminance (candelas per square meter) for a white RGB signal.
+Contrast ratio (luminance difference between white and black RGB signal)
+Horizontal contrast (greatest angle in degrees from perpendicular until contrast ratio fell below 10:1)
+Horizontal color (greatest viewing angle in degrees from perpendicular until noticeable shift in color occurred)
+Vertical contrast (greatest angle in degrees from perpendicular until contrast ratio fell below 10:1)
+Vertical color (greatest viewing angle in degrees from perpendicular until noticeable shift in color occurred)
+Typical street price of monitor

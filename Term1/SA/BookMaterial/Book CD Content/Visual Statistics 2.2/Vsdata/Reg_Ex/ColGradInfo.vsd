@@ -1,0 +1,11 @@
+Topics illustrated: overfitting a model, adjusted R-squared, multicollinearity. 50 observations, 9 predictors. Data are from the 1990 Statistical Abstract of the U.S. Files were prepared by Cindy Hollifield and Douglas Dotterweich of East Tennessee State University and students at Oakland University.
+Public high school dropout rates
+Percent of personal income spent on K-12 education
+Personal income per capita in current dollars
+Percent of population living in urban areas
+Median age of population
+Labor force participation rate among females
+1 if state is in the northeastern U.S., 0 otherwise
+1 is state is in the southeastern U.S., 0 otherwise
+1 if state is in the western U.S., 0 otherwise
+Percent college graduates in population age 25 and over

@@ -1,0 +1,99 @@
+Rapid Linear Growth
+Time series increases by a large but constant amount every period.  This type of trend suggests steady underlying conditions which favor brisk but not accelerating growth.  This pattern would typify demand during periods of strong, steady growth.
+
+Examples
+Sales of new cars during an economic upswing. Orders for plumbing supplies during a period when new construction is expanding.  Job openings for programmers skilled in Windows applications development.
+END
+Slow Linear Growth
+Time series increases by a modest constant amount every period.  This type of trend suggests steady underlying conditions which favor modest growth.  This pattern would typify mature markets for necessities when population is growing slowly, or for luxuries when income is growing slowly.
+
+Examples
+Sales of copier paper.  Job openings for funeral directors.  Bushels of wheat harvested annually.
+END
+No Growth
+Time series has no trend.  This suggests steady underlying conditions.  This pattern would typify mature product markets for replacement of necessities which wear out under conditions of stable population or zero economic growth. 
+
+Examples
+Orders for light bulbs in an office building.  Attendance at basketball games at a high school.  Number of U.S. congressional representatives re-elected.  Job openings for university presidents.
+END
+Slow Linear Decline
+Time series decreases by a modest constant amount every period.  This type of trend suggests steady underlying conditions which favor continuous decline.  This pattern would typify markets for items which are slowly going out of style. 
+
+Examples
+Sales of ribbons for old-style line printers.  Sales of old-style 5-1/4 inch diskettes.  Job openings for residential meter readers or middle-level executives.  Federal support for the arts.
+END
+Rapid Linear Decline
+Time series falls by a large but constant amount every period.  This type of trend suggests steady underlying conditions which favor sharp but not accelerating decline.  This pattern would typify demand for products which are out of fashion.
+
+Examples
+Registrations of autos without daytime running lights.  Job openings for DOS experts.
+END
+Trough Then Peak
+Time series falls, hits a trough, rises, hits a peak, and begins to fall again.  This type of trend suggests cyclical forces which ultimately favor growth.  Such a pattern exists in durable goods industries over the long run or other industries during cycles of recession and expansion while population and income grow.
+
+Examples
+Sales of refrigerators or automobiles.  Housing starts when interest rates fluctuate but trend downward.  
+END
+Growth Level Off
+Time series grows at an increasing rate, then slows down.  This type of trend is typical of new business products which eventually reach market saturation, or when other limits are reached.
+
+Examples
+Sales of a new software product.  Total number of telephone customers who use call-waiting.  Acres of irrigated California farmland.
+END
+Trough Then Growth
+Time series declines at first, reaches a valley, then grows at an increasing rate.  This type of trend is typical of sales of new products or services which enjoy initial success, then encounter problems or are shown to have flaws, but eventually find a strategy for success and recover strongly.
+
+Examples
+Housing starts during a recession followed by a boom.  U.S. imports as the dollar weakens and then strengthens steadily.
+END
+Accelerating Growth
+Time series grows at an ever-increasing rate with no end in sight.  Such trends may exist for sales of "fad" products or innovative goods and services.  Accelerating growth may only be possible over finite intervals for many products, although long-run prices of non-renewable resources may rise without apparent bounds.
+
+Examples
+Price of first-growth lumber over the last 50 years.  Sales of cellular phones.  World population for the last 1000 years.
+END
+Slowing Growth
+Time series grows at an ever-slowing rate.  Slowing growth may occur when market penetration has been achieved or when an industry approaches maturity and products approach the end of their life cycle.
+
+Examples
+Sales of books about Excel.  Number of Americans who vacation in Europe every summer.  Number of new jobs in the service sector.
+END
+Peak Then Trough
+Time series rises, hits a peak, falls, hits a trough, and begins to rise again but not back to the former level.  This type of trend suggests cyclical forces which ultimately favor decline.  Such a pattern exists in sales or employment in durable goods industries whose products are losing consumer interest or cyclical services with weakening appeal.
+
+Examples
+Employment of hourly assembly workers in a developed nation's automobile industry.  Worldwide sales of nuclear-reactor cores.  Sales of full-size automobiles in the last 50 years.
+END
+Decline Level Off 
+Time series falls at an increasing rate, then begins to flatten out.  This type of trend suggests a one-time shift in consumer preferences to a lower level of demand.  For a firm, this could be "downsizing" to a stable level.
+
+Examples
+Rentals of a new video release (very high at first, but drop off rapidly toward a core level of repeat viewers).  Employment in an industry that is "getting lean" (the new required level of management after downsizing is the asymptote).  
+END
+Peak Then Decline
+Time series hits a peak, then declines at an increasing rate.  This trend could apply to a product that was initially popular, but proved dangerous or was supplanted by a strong competitor.
+
+Examples
+Silicone breast implants.  Cabbage patch doll sales.  Sales of DOS.  Ratings of a new television series that didn't keep its audience interest after the first few episodes. 
+END
+Accelerating Decline 
+Time series falls at an increasing rate.  This type of trend suggests a total loss of market, as might occur if a product is proven dangerous or is supplanted by a much better competitor.  A sales trend must stop at zero is reached, although a profit trend could go negative (until bankruptcy occurs).
+
+Examples
+Sales of a good DOS software package that wasn't redesigned for Windows.  Population of an endangered species.
+END
+Slowing Decline 
+Time series falls at a decreasing rate.  This type of trend suggests that a new, stable level may be reached.  In sales, a core market may remain after a volatile market is lost to competitors.  In technology, limits may be approached.
+
+Examples
+Price per megabyte of computer memory chips.  Tons of ozone-destroying chemicals released over the last decade.
+END
+Random Trend
+A trend will be chosen randomly from the 15 prototypes shown above.  You can reveal the trend by pressing the Reveal Trend button.
+END
+Do-It-Yourself Controls
+Use three scroll bars to achieve the desired trend shape, which will be displayed in a small window.  You can use a trial-and-error method until you get what you want.
+END
+Do-It-Yourself Equation
+Specify your own equation by entering parameters for linear, quadratic, cubic, or exponential trend.  This option is for people who like equations instead of scroll bars.  The resulting trend will be shown in a small window so you can see the effects of your decisions.
+END

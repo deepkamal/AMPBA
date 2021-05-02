@@ -1,0 +1,12 @@
+Topics illustrated: binary variables, sample size limitation, causal logic. 50 observations, 10 predictors. Alcoholism screening test score and patient demographic characteristics are a subset of variables from an independent research project by master's degree candidates Judy Grucz and Noreen Johnson. A high score suggests increased severity of alcohol dependency. Data were entered by statistics student Douglas H. Hogg, Jr.
+Patient's age
+0 if female, 1 if male
+1 if strong religious upbringing, 0 otherwise
+1 if earned some college credit, 0 otherwise
+Number of times married
+1 if own or buying a home, 0 otherwise
+1 if member of a union, 0 otherwise
+Length of employment (years)
+Number of times ever arrested
+1 if history of non-alcohol drug use, 0 otherwise
+Score on 24-question alcoholism screening test

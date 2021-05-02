@@ -1,0 +1,3540 @@
+"Chapter 6"
+"Ch. 6. Visualizing Random Samples"
+7
+"&Introduction"
+1
+1
+"&Concepts"
+2
+1
+"&Scenarios"
+3
+5
+"Pop. &Templates"
+8
+1
+"&Databases"
+9
+3
+"&Do-It-Yourself"
+12
+3
+"&More Info."
+15
+2
+16
+5
+1
+11
+0
+0
+5
+12
+13
+0
+0
+5
+25
+11
+0
+0
+7
+36
+8
+1
+0
+7
+44
+8
+2
+0
+7
+52
+8
+3
+0
+7
+60
+8
+4
+0
+5
+68
+5
+0
+0
+5
+73
+11
+0
+0
+8
+84
+6
+0
+1
+8
+90
+6
+0
+2
+5
+96
+12
+0
+0
+5
+108
+8
+0
+0
+5
+116
+8
+0
+0
+5
+124
+17
+0
+0
+5
+141
+13
+0
+0
+11
+"IQ Test Scores"
+"25 adults are randomly selected and given an IQ test. An individual whose IQ score is above 130 is often considered gifted. What percent of adults appear to be gifted in the population? Investigate the population by examining the sample. Repeat the experiment as designed or modify it as desired."
+"IQ Score"
+"1"
+"100"
+"10"
+"0"
+"0"
+"0"
+"0"
+"-1"
+"25"
+"8"
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+"Filling a Prescription"
+"Druggists in a pharmacy are expected to fill a prescription in 3 to 7 minutes. Pharmacists are observed filling 50 prescriptions. How often are the company's expectations being met? Investigate the population by examining the sample. Repeat the experiment as designed or modify it as desired."
+"Minutes to Fill Prescription"
+"1"
+"5"
+"1"
+"0"
+"0"
+"0"
+"0"
+"-1"
+"50"
+"8"
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+"Pipe Production"
+"A firm produces pipe that is certified to withstand more than 2900 pounds per square inch (psi) before bursting. Suppose that 200 pipes are tested. How often is the company's certification incorrect? Investigate the population by examining the sample. Repeat the experiment as designed or modify it as desired."
+"PSI before Failure"
+"1"
+"3000"
+"40"
+"0"
+"0"
+"0"
+"0"
+"-1"
+"200"
+"16"
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+"Accuracy of an Archer"
+"An archer practices by shooting 10 arrows at a target, moves to a new position, and shoots 10 arrows at another target. She moves through a total of 10 positions. After shooting 100 arrows, she measures the distance (in cm) of each arrow from the exact center of the bulls-eye. What is her median distance from the target's center? Investigate the population by examining the sample. Repeat the experiment as designed or modify it as desired."
+"Distance from Center (cm)"
+"11"
+"0"
+"6"
+"0"
+"24"
+"0"
+"0"
+"-1"
+"100"
+"6"
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+"Sum of Two Random Numbers"
+"Each student in a class of 75 is asked to select two random numbers (using the RND button on his/her calculator) and add them together. What is the mode of the sum? Investigate the population by examining the sample. Repeat the experiment as designed or modify it as desired."
+"Sum of Two Numbers"
+"9"
+"0"
+"2"
+"1"
+"0"
+"0"
+"0"
+"-1"
+"75"
+"5"
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+"Smoke Stack Emissions"
+"A coal-fired electric power plant emits sulfur dioxide (SO2). The power plant continuously measures these emissions and daily records its average emissions. To be in compliance with the EPA, a plant's daily emissions can exceed 140 parts per billion (ppb) only one day per year and must average below 30 ppb for the entire year. Suppose that 182 samples (half a year) are taken. Is the power plant in compliance? Investigate the population by examining the sample. Repeat the experiment as designed or modify it as desired."
+"Daily SO2 Emissions (ppb)"
+"0"
+"191"
+"180"
+"17"
+"21"
+"1"
+"0"
+"-1"
+"182"
+"9"
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+"Light Bulb Failures"
+"A light bulb manufacturer tests the life expectancy of its light bulbs (in hours). They do this in a laboratory that tests 300 light bulbs at a time. What is the mean life expectancy of a light bulb? Investigate the population by examining the sample. Repeat the experiment as designed or modify it as desired."
+"Hours until Failure"
+"8"
+".001"
+"0"
+"0"
+"0"
+"0"
+"0"
+"-1"
+"300"
+"8"
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+"Heights of Students"
+"In a statistics class 30 students (15 male and 15 female) are asked their heights in inches. What is the standard deviation of student heights? Investigate the population by examining the sample. Repeat the experiment as designed or modify it as desired."
+"Height (inches)"
+"0"
+"168"
+"21"
+"11"
+"19"
+"2"
+"0"
+"-1"
+"30"
+"5"
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+"Choosing a Lottery Number"
+"One popular lottery game is to pick a 3 digit number between 000 and 999. Ten previous winning numbers are selected. What percentage of numbers selected are 750 or above? Investigate the population by examining the sample. Repeat the experiment as designed or modify it as desired."
+"Lottery Number"
+"7"
+"0"
+"999"
+"0"
+"0"
+"0"
+"0"
+"-1"
+"10"
+"4"
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+"Magic Urn without Replacement"
+"You select 5 balls out of an urn containing 25 balls. Each ball is imprinted with a number 1, 2, or 3. Investigate the population by examining the sample. Repeat the experiment as designed or modify it as desired (each time you select this scenario the number of balls having a 1, 2, or 3 is changed)."
+"Number on Ball"
+"10"
+"25"
+"0"
+"0"
+"0"
+"0"
+"0"
+"0"
+"5"
+"3"
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+"Magic Urn with Replacement"
+"You select a ball out of an urn and record the number written on the ball (1, 2, or 3) and return the ball to the urn. You repeat this 20 times. Investigate the population by examining the sample. Repeat the experiment as designed or modify it as desired (each time you select this scenario the number of balls having a 1, 2, or 3 is changed)."
+"Number on Ball"
+"10"
+"25"
+"0"
+"0"
+"0"
+"0"
+"0"
+"-1"
+"20"
+"5"
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+"IQ Test Scores"
+"25 adults are randomly selected and given an IQ test. An individual whose IQ score is above 130 is often considered gifted. What percent of adults appear to be gifted in the population? Investigate the population by examining the sample. Repeat the experiment as designed or modify it as desired."
+"IQ Score"
+"1"
+"100"
+"15"
+"0"
+"0"
+"0"
+"0"
+"-1"
+"25"
+"8"
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+""
+62
+"Household Characteristics"
+" "
+1
+"Household size and demographic characteristics of the person who responded to the survey."
+"group"
+""
+""
+#TRUE#
+#FALSE#
+"Household Size"
+" "
+2
+"Number of people in household."
+"\vsdata\ces\ces2.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Children Under 18"
+" "
+2
+"Number of children below age eighteen."
+"\vsdata\ces\ces9.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Persons 65 and Over"
+" "
+2
+"Number of persons over age sixty-four."
+"\vsdata\ces\ces10.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Education"
+" "
+2
+"Highest education of any adult in household (1=elementary, 2=some H.S., 3= H.S. graduate, 4=some college, 5=college graduate, 6=postgraduate, 7=never attended school)."
+"\vsdata\ces\ces6.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Race of Respondent"
+" "
+2
+"Race of respondent (1=White, 2=Black, 3=Asian, 4=American Indian, 5=Other)."
+"\vsdata\ces\ces14.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Sex of Respondent"
+" "
+2
+"Sex of respondent (1=Male, 2=Female)."
+"\vsdata\ces\ces33.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Housing and Vehicles"
+" "
+1
+"Characteristics of the dwelling and vehicles owned by persons in the household."
+"group"
+""
+""
+#TRUE#
+#FALSE#
+"Rental value of property"
+" "
+2
+"Approximate rental value of property."
+"\vsdata\ces\ces15.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Number of Rooms"
+" "
+2
+"Number of rooms in living quarters."
+"\vsdata\ces\ces17.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Dwelling Location"
+" "
+2
+"Binary variable set to 1 for urban dwelling, 2 for rural dwelling."
+"\vsdata\ces\ces3.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Number of Vehicles"
+" "
+2
+"Number of vehicles owned by persons in the household."
+"\vsdata\ces\ces21.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Income"
+" "
+1
+"Household earning and taxes in the last 12 months."
+"group"
+""
+""
+#TRUE#
+#FALSE#
+"Family Earnings"
+" "
+2
+"Family earnings in the last 12 months."
+"\vsdata\ces\ces7.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Other Income"
+" "
+2
+"Household income other than earnings, child support, and alimony."
+"\vsdata\ces\ces8.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Alimony and Child Support"
+" "
+2
+"Amount of alimony and child support paid (-) or received (+) in the last 12 months."
+"\vsdata\ces\ces1.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Personal Taxes"
+" "
+2
+"Total personal taxes (federal, state, and local income taxes, property taxes, and FICA) paid in the last 12 months."
+"\vsdata\ces\ces20.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Investments and Assets"
+" "
+1
+"Household investments and financial assets."
+"group"
+""
+""
+#TRUE#
+#FALSE#
+"Investments"
+" "
+2
+"Amount spent on stocks, bonds or mutual funds in the last 12 months."
+"\vsdata\ces\ces11.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Bank Accounts"
+" "
+2
+"Account of household balances at banks, savings and loans, etc."
+"\vsdata\ces\ces18.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Stocks and Bonds"
+" "
+2
+"Estimated value of household holdings of stocks, bonds, and securities, and U.S. savings bonds."
+"\vsdata\ces\ces19.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Expenditures"
+" "
+1
+"Household spending during the last 12 months."
+"group"
+""
+""
+#TRUE#
+#FALSE#
+"Total Expenditures"
+" "
+2
+"Total household expenditures in the last 12 months."
+"\vsdata\ces\ces22.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Food"
+" "
+2
+"Total food expenditures in the last 12 months."
+"\vsdata\ces\ces23.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Housing"
+" "
+2
+"Total housing expenditures in the last 12 months."
+"\vsdata\ces\ces24.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Apparel"
+" "
+2
+"Total apparel expenditures in the last 12 months."
+"\vsdata\ces\ces25.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Transportation "
+" "
+2
+"Transportation expenditures in the last 12 months."
+"\vsdata\ces\ces26.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Health Care"
+" "
+2
+"Health care expenditures in the last 12 months."
+"\vsdata\ces\ces27.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Entertainment"
+" "
+2
+"Entertainment expenditures in the last 12 months."
+"\vsdata\ces\ces28.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Personal Care"
+" "
+2
+"Personal care expenditures in the last 12 months."
+"\vsdata\ces\ces29.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Education"
+" "
+2
+"Education expenditures in the last 12 months."
+"\vsdata\ces\ces30.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Insurance and Pension"
+" "
+2
+"Insurance and pension expenditures in the last 12 months."
+"\vsdata\ces\ces31.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Charitable Contributions"
+" "
+2
+"Charitable contributions to churches, and other organizations in the last 12 months."
+"\vsdata\ces\ces4.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"College Student Support"
+" "
+2
+"Household contribution to support of college students in the last 12 months."
+"\vsdata\ces\ces5.vsd"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Household Characteristics"
+" "
+1
+"Demographic and other background characteristics of the household."
+"group"
+""
+""
+#TRUE#
+#FALSE#
+"Household Size"
+" "
+2
+"The number of people in the household."
+"\vsdata\ces\diary1.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Children"
+" "
+2
+"The number of children in the household."
+"\vsdata\ces\diary2.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Older Persons"
+" "
+2
+"The number of people over age 64 in the household."
+"\vsdata\ces\diary3.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Urban"
+" "
+2
+"Binary variable coded 1 for urban, 2 for rural."
+"\vsdata\ces\diary7.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Income and Food Expenditures"
+" "
+1
+"Household weekly income and main expenditure categories."
+"group"
+""
+""
+#TRUE#
+#FALSE#
+"Net Weekly Income"
+" "
+2
+"Average weekly income (net of taxes) for the household."
+"\vsdata\ces\diary4.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Food Stamps"
+" "
+2
+"The average weekly amount of food stamps received over the last 12 months."
+"\vsdata\ces\diary5.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Average Grocery Bill"
+" "
+2
+"The average weekly amount spent on groceries over the last year."
+"\vsdata\ces\diary6.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Food Away from Home"
+" "
+2
+"The amount spent on food away from home during the diary week."
+"\vsdata\ces\diary8.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Food Purchased for Home"
+" "
+2
+"The amount spent on food for home use during the diary week."
+"\vsdata\ces\diary9.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Grocery Items"
+" "
+1
+"Household expenditure on various categories of grocery items."
+"group"
+""
+""
+#TRUE#
+#FALSE#
+"Cereals"
+" "
+2
+"The amount spent on cereals during the diary week."
+"\vsdata\ces\diary10.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Bake Products"
+" "
+2
+"The amount spent on bake products during the diary week."
+"\vsdata\ces\diary11.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Beef/Pork"
+" "
+2
+"The amount spent on beef and pork during the diary week."
+"\vsdata\ces\diary33.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Poultry"
+" "
+2
+"The amount spent on poultry during the diary week."
+"\vsdata\ces\diary14.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Seafood"
+" "
+2
+"The amount spent on seafood during the diary week."
+"\vsdata\ces\diary15.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Dairy"
+" "
+2
+"The amount spent on dairy products (including eggs) during the diary week."
+"\vsdata\ces\diary34.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Fresh Fruits and Vegetables"
+" "
+2
+"The amount spent on fresh fruits and vegetables during the diary week."
+"\vsdata\ces\diary35.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Processed Fruits and Veg"
+" "
+2
+"The amount spent on processed fruits and vegetables during the diary week."
+"\vsdata\ces\diary36.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Sweets"
+" "
+2
+"The amount spent on candy and other sweets during the diary week."
+"\vsdata\ces\diary23.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Non-alcoholic Beverages"
+" "
+2
+"The amount spent on non-alcoholic beverages during the diary week."
+"\vsdata\ces\diary24.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Oils"
+" "
+2
+"The amount spent on oils during the diary week."
+"\vsdata\ces\diary25.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Other Food"
+" "
+2
+"The amount spent on other food items during the diary week."
+"\vsdata\ces\diary26.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Alcoholic Beverages"
+" "
+2
+"The amount spent on alcoholic beverages during the diary week."
+"\vsdata\ces\diary27.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Smoking Supplies"
+" "
+2
+"The amount spent on smoking supplies during the diary week."
+"\vsdata\ces\diary28.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Pet Food"
+" "
+2
+"The amount spent on pet food during the diary week."
+"\vsdata\ces\diary29.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Housecleaning Supplies"
+" "
+2
+"The amount spent on housecleaning supplies during the diary week."
+"\vsdata\ces\diary32.vsd"
+"\VSDATA\CES\DIARY0.VSD"
+"Household ID"
+#FALSE#
+#FALSE#
+"Household Size"
+" "
+"Number of people in household."
+"\VSDATA\CES\CES2.VSD"
+"\VSDATA\CES\CES0.VSD"
+"Household ID"
+""
+""
+""
+""
+""
+""
+66
+"In this chapter, you will see that random variation exists whenever sampling occurs Interesting questions that can be answered are:"
+#FALSE#
+0
+"Does increasing the number of histogram intervals always help to reveal a sample's shape?"
+#TRUE#
+0
+"How does the asymmetry of the population affect the appearance of a sample histogram?"
+#TRUE#
+0
+"What problems can arise from using nice histogram intervals instead of covering the actual data range?"
+#TRUE#
+0
+"Remember to work through the 15-minute orientation in the worktext."
+#FALSE#
+0
+"Click on a tab to select data, or click OK to display the default example."
+#FALSE#
+1
+"Here are some of the concepts covered in this chapter:"
+#FALSE#
+0
+"Populations and parameters"
+#TRUE#
+0
+"Random variation"
+#TRUE#
+0
+"Statistical inference"
+#TRUE#
+0
+"Infinite and finite populations"
+#TRUE#
+0
+"Sampling with replacement"
+#TRUE#
+0
+"Histograms and descriptive statistics"
+#TRUE#
+0
+"Outliers"
+#TRUE#
+0
+"To understand these concepts, work the Learning Exercises in the worktext."
+#FALSE#
+1
+"Each scenario is representative of a real situation. An example of the situation is described. Use the scenarios to understand what the data and statistics might look like in each situation."
+#FALSE#
+0
+"Click on one of these categories or choose a different tab:"
+#FALSE#
+0
+"Click on a green category name or turn the page."
+#FALSE#
+1
+"Here are scenarios involving normal populations. "
+#FALSE#
+0
+"Click on a scenario and click OK, or turn the page."
+#FALSE#
+1
+"Here are scenarios involving non-normal populations with one mode."
+#FALSE#
+0
+"Click on a scenario and click OK, or turn the page."
+#FALSE#
+1
+"Here are scenarios involving populations with zero or two modes."
+#FALSE#
+0
+"Click on a scenario and click OK, or turn the page."
+#FALSE#
+1
+"Here are scenarios involving discrete populations."
+#FALSE#
+0
+"Click on a scenario and click OK, or turn the page."
+#FALSE#
+1
+"The templates section lets you select a pre-designed population distribution from which to sample. If you choose Random, the program will select one of the templates for you."
+#FALSE#
+0
+"Clicking on OK will bring up a control panel like the one pictured below so you can select your distribution."
+#FALSE#
+0
+"This section contains a number of data sets from which you can sample."
+#FALSE#
+0
+"Click on one of these categories or choose a different tab:"
+#FALSE#
+0
+"This database contains information on income, assets, and spending patterns of 500 households. Annualized data are based on the last quarter of 1989 and first quarter of 1990 (in 1999 dollars). You may select any of 29 data files and may take samples from that file. The database is a subset of a survey of 5,153 households. Source: U.S. Bureau of Labor Statistics, Consumer Expenditure Survey, 1991."
+#FALSE#
+0
+"This database contains detailed information on one week's grocery spending by 200 households. Data are based on a diary kept during the 4th quarter of 1989 (in 1999 dollars). You may select any of 25 data files and may take samples from that file. The database is a subset of diaries kept by 3,626 households. Source: U.S. Bureau of Labor Statistics, Consumer Expenditure Survey, 1991."
+#FALSE#
+0
+"Click on a green category name or turn the page."
+#FALSE#
+1
+"Consumer Survey"
+#FALSE#
+1
+"This database contains information on income, assets, and spending patterns of 500 households. Annualized data are based on the last quarter of 1989 and first quarter of 1990 (in 1999 dollars). You may select any of 29 data files and may take samples from that file. The database is a subset of a survey of 5,153 households. Source: U.S. Bureau of Labor Statistics, Consumer Expenditure Survey, 1991."
+#FALSE#
+0
+"Select a variable from the panel and click OK, or turn the page."
+#FALSE#
+1
+"Weekly Grocery Expenditure"
+#FALSE#
+1
+"This database contains detailed information on one week's grocery spending by 200 households. Data are based on a diary kept during the 4th quarter of 1989 (in 1999 dollars). You may select any of 25 data files and may take samples from that file. The database is a subset of diaries kept by 3,626 households. Source: U.S. Bureau of Labor Statistics, Consumer Expenditure Survey, 1991."
+#FALSE#
+0
+"Select a variable from the panel and click OK, or turn to the previous page."
+#FALSE#
+1
+"In this section, you can specify your own distributions from which to sample."
+#FALSE#
+0
+"There are two choices. Choose one of them or choose a different tab:"
+#FALSE#
+0
+"Lets you set the distribution's shape by moving scroll bars."
+#TRUE#
+0
+"Lets you choose a theoretical distribution (normal, F, t,...) and specify its parameters."
+#TRUE#
+0
+"Click on a green category name or turn the page."
+#FALSE#
+1
+"User-Created Distributions lets you specify the population distribution's shape using scroll bars. By clicking on the scroll bars you can change the characteristics of the distribution."
+#FALSE#
+0
+"Clicking on OK will bring up a Control Panel like the one pictured below."
+#FALSE#
+0
+"Known Distributions lets you select a theoretical distribution (normal, F, t, ...) and specify its parameters. By typing the parameters you desire you can set whatever characteristics you want the distribution to have."
+#FALSE#
+0
+"Clicking on OK will bring up a Control Panel like the one pictured below."
+#FALSE#
+0
+"Have a look at these related chapters for more information:"
+#FALSE#
+0
+"Chapter 1. Visualizing Univariate Data Analysis"
+#FALSE#
+0
+"This module lets you do analyze one sample using a variety of visual and statistical methods."
+#TRUE#
+0
+"Chapter 5. Visualizing Continuous Distributions"
+#FALSE#
+0
+"This module illustrates the normal, Student's t, F and chi square distributions and lets you vary their parameters."
+#TRUE#
+0
+"Chapter 7. Visualizing the Central Limit Theorem"
+#FALSE#
+0
+"This module allows you to study the behavior of the sample mean in repeated sampling."
+#TRUE#
+0
+"Chapter 13. Visualizing Goodness-of-Fit Tests"
+#FALSE#
+0
+"This module shows how to test whether a sample came from a known population such as the normal or uniform."
+#TRUE#
+0
+"Remember to complete the exercises in the worktext!"
+#FALSE#
+1
+"Here are some McGraw-Hill statistics textbook chapters to help you understand random samples:"
+#FALSE#
+0
+"Aczel/Sounderpandian   COMPLETE BUSINESS STATISTICS, 6/e   Ch. 3"
+#TRUE#
+0
+"Bowerman/O'Connell   BUSINESS STATISTICS IN PRACTICE, 4/e   Ch. 6"
+#TRUE#
+0
+"Bowerman/O'Connell/Orris  ESSENTIALS OF BUSINESS STATISTICS, 2/e   Ch. 6"
+#TRUE#
+0
+"Doane/Seward  APPLIED STATISTICS IN BUSINESS AND ECONOMICS, 1/e   Ch. 2"
+#TRUE#
+0
+"Lind/Marchal/Wathan   BASIC STATISTICS FOR BUSINESS AND ECON, 4/e   Ch. 7"
+#TRUE#
+0
+"Lind/Marchal/Wathan  STATISTICAL TECHNIQUES IN BUS AND ECON, 12/e   Ch. 8"
+#TRUE#
+0
+"Siegel   PRACTICAL BUSINESS STATISTICS, 5/e   Ch. 8"
+#TRUE#
+0
+14
+"Visualizing Random Samples"
+"Concepts"
+"Scenarios"
+"Normal Populations"
+"Non-Normal Populations With 1 Mode "
+"Populations With 0 or 2 Modes"
+"Discrete Populations"
+"Population Templates"
+"Databases"
+"Do-It-Yourself "
+"User-Created Distributions"
+"Known Distributions"
+"More Information"
+"McGraw-Hill References"
+16
+"Normal populations"
+#TRUE#
+0
+0
+2
+"Non-normal populations with 1 mode"
+#TRUE#
+0
+0
+3
+"Populations with 0 or 2 modes"
+#TRUE#
+0
+0
+4
+"Discrete populations"
+#TRUE#
+0
+0
+5
+"Return to the Scenarios contents page"
+#FALSE#
+0
+0
+1
+"Return to the Scenarios contents page"
+#FALSE#
+0
+0
+1
+"Return to the Scenarios contents page"
+#FALSE#
+0
+0
+1
+"Return to the Scenarios contents page"
+#FALSE#
+0
+0
+1
+"Consumer Survey"
+#TRUE#
+0
+0
+2
+"Weekly Grocery Expenditures"
+#TRUE#
+0
+0
+3
+"Return to the Databases contents page"
+#FALSE#
+0
+0
+1
+"Return to the Databases contents page"
+#FALSE#
+0
+0
+1
+"User-Created Distributions"
+#TRUE#
+0
+0
+2
+"Known Distributions"
+#TRUE#
+0
+0
+3
+"Return to the DIY contents page"
+#FALSE#
+0
+0
+1
+"Return to the DIY contents page"
+#FALSE#
+0
+0
+1
+4
+3
+1
+0
+4
+4
+0
+2
+8
+0
+2
+10
+0
+2
+1
+5
+10
+0
+1
+0
+1
+34
+1
+5
+11
+0
+1
+0
+35
+28
+3
+"smp_tmpl.dat"
+"smpl_cnt.dat"
+"smpl_eqn.dat"
+2
+"Sample with replacement"
+#TRUE#
+0
+1
+"Sample with replacement"
+#TRUE#
+0
+1
+0
+153
+2
+1
+1
+1
+1
+1
+7
+0
+1
+1
+2
+1
+1
+3
+1
+1
+4
+1
+7
+0
+1
+1
+5
+1
+7
+0
+1
+7
+0
+1
+1
+6
+1
+2
+2
+2
+1
+7
+2
+7
+0
+2
+1
+8
+2
+1
+9
+2
+1
+10
+2
+1
+11
+2
+1
+12
+2
+1
+13
+2
+1
+14
+2
+7
+0
+2
+7
+0
+2
+1
+15
+2
+2
+3
+3
+1
+16
+3
+1
+17
+3
+7
+0
+3
+3
+1
+3
+3
+2
+3
+3
+3
+3
+3
+4
+3
+7
+0
+3
+7
+0
+3
+1
+18
+3
+2
+4
+4
+1
+19
+4
+4
+1
+4
+7
+0
+4
+1
+20
+4
+7
+0
+4
+7
+0
+4
+3
+5
+4
+2
+5
+5
+1
+21
+5
+4
+2
+5
+7
+0
+5
+1
+22
+5
+7
+0
+5
+7
+0
+5
+3
+6
+5
+2
+6
+6
+1
+23
+6
+4
+3
+6
+7
+0
+6
+1
+24
+6
+7
+0
+6
+7
+0
+6
+3
+7
+6
+2
+7
+7
+1
+25
+7
+4
+4
+7
+7
+0
+7
+1
+26
+7
+7
+0
+7
+7
+0
+7
+3
+8
+7
+2
+8
+8
+1
+27
+8
+1
+28
+8
+7
+0
+8
+6
+1
+8
+2
+9
+9
+1
+29
+9
+1
+30
+9
+7
+0
+9
+3
+9
+9
+1
+31
+9
+3
+10
+9
+1
+32
+9
+7
+0
+9
+7
+0
+9
+1
+33
+9
+1
+34
+10
+1
+35
+10
+5
+1
+10
+8
+1
+10
+1
+36
+10
+3
+11
+10
+1
+37
+11
+1
+38
+11
+5
+2
+11
+8
+2
+11
+1
+39
+11
+3
+12
+11
+2
+10
+12
+1
+40
+12
+1
+41
+12
+7
+0
+12
+3
+13
+12
+1
+42
+12
+7
+0
+12
+3
+14
+12
+1
+43
+12
+7
+0
+12
+7
+0
+12
+1
+44
+12
+2
+11
+13
+1
+45
+13
+1
+46
+13
+7
+0
+13
+6
+2
+13
+7
+0
+13
+7
+0
+13
+3
+15
+13
+2
+12
+14
+1
+47
+14
+1
+48
+14
+7
+0
+14
+6
+3
+14
+7
+0
+14
+7
+0
+14
+3
+16
+14
+2
+13
+15
+1
+49
+15
+7
+0
+15
+1
+50
+15
+1
+51
+15
+7
+0
+15
+1
+52
+15
+1
+53
+15
+7
+0
+15
+1
+54
+15
+1
+55
+15
+1
+56
+15
+1
+57
+15
+7
+0
+15
+7
+0
+15
+7
+0
+15
+1
+58
+15
+2
+14
+16
+1
+59
+16
+7
+0
+16
+7
+0
+16
+1
+60
+16
+1
+61
+16
+1
+62
+16
+1
+63
+16
+1
+64
+16
+1
+65
+16
+1
+66
+16
+7
+0
+16
+7
+0
+16

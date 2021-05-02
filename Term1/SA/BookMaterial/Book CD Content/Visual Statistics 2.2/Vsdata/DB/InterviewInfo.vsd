@@ -1,0 +1,45 @@
+This database contains 39 variables on household characteristics, housing, income, assets, and spending patterns of 500 households. You may take a sample of the households or use the entire database. Annualized data is a sample from 5,153 households interviewed during both the last quarter of 1989 and first quarter of 1990 (dollar values adjusted to 1999 dollars). Source: U.S. Bureau of Labor Statistics, Consumer Expenditure Survey, 1991.
+9 variables that describe the household.
+Number of people in household.
+Binary variable coded 1 if there are children in the household, 0 if not.
+Number of children below age eighteen.
+Binary variable coded 1 if there are adults over age 64 in the household, 0 if not.
+Number of adults over age sixty-four.
+Binary variable coded 1 if any adult in household attended college, 0 if not.
+Highest education of any adult in household (1=elementary, 2=some H.S., 3= H.S. graduate, 4=some college, 5=college graduate, 6=postgraduate, 7=never attended school).
+Race of respondent (1=White, 2=Black, 3=Asian, 4=American Indian, 5=Other).
+Binary variable coded 1 if respondent is male, 0 if female.
+5 variables that describe the household's housing and number of vehicles.
+Approximate rental value of property.
+Number of rooms in living quarters.
+Binary variable coded 1 for urban dwelling, 0 for rural dwelling.
+Binary variable coded 1 if household owns a vehicle, 0 if not.
+Number of vehicles owned by persons in the household.
+7 variables than describe the household's earnings.
+Household earnings in the last 12 months.
+Household income other than earnings, child support, and alimony.
+Binary variable coded 1 if household received alimony or child support in the last 12 months, 0 if not.
+Amount of alimony and child support paid (-) or received (+) in the last 12 months.
+Gross income (household earnings plus other income plus alimony and child support).
+Total personal taxes (federal, state, and local income taxes, property taxes, and FICA) paid in the last 12 months.
+Net income (gross income minus taxes).
+4 variables that describe the household's assets and investments.
+Amount spent on stocks, bonds or mutual funds in the last 12 months.
+Account of household balances at banks, savings and loans, etc.
+Binary variable coded 1 if household owns stocks, bonds, securities, or U.S. savings bonds, 0 if not.
+Estimated value of household holdings of stocks, bonds, and securities, and U.S. savings bonds.
+14 variables that describe the household's expenditures.
+Total household expenditures in the last 12 months.
+Total food expenditures in the last 12 months.
+Total housing expenditures in the last 12 months.
+Total apparel expenditures in the last 12 months.
+Transportation expenditures in the last 12 months.
+Health care expenditures in the last 12 months.
+Entertainment expenditures in the last 12 months.
+Personal care expenditures in the last 12 months.
+Binary variable coded 1 if household made educational expenditures in last 12 months, 0 if not.
+Education expenditures in the last 12 months.
+Insurance and pension expenditures in the last 12 months.
+Binary variable coded 1 if household made contributions to churches, or other organizations in the last 12 months, 0 if not.
+Charitable contributions to churches, and other organizations in the last 12 months.
+Household contribution to support of college students in the last 12 months.

@@ -1,0 +1,15 @@
+Downloading Amazon Reviews with ratings.
+mkdir amazon
+cd amazon
+
+for i in `seq 1 10`; do wget --user-agent="Chrome" "https://www.amazon.in/Apple-iPhone-Plus-Rose-128GB/product-reviews/B01LXMHIOY/?pageNumber=${i}" -O $i.html; done
+for i in `seq 1 10`; do cat ${i}.html |tr '\n' ' '|sed 's/data-hook=\"review-title/\ndata-hook=\"review-title/g'|grep "review-title-content"|awk -F"</span" '{print $1}'|cut -d'>' -f3; done > reviewTitles.txt
+
+for i in `seq 1 10`; do cat ${i}.html |tr '\n' ' '|sed 's/data-hook=\"review-body/\ndata-hook=\"review-body/g'|grep "review-text-content"|awk -F"</span" '{print $1}'|awk -F"<span>" '{print $2}'; done > reviewDescription.txt
+
+for i in `seq 1 10`; do cat $i.html |tr '\n' ' '|sed 's/data-hook=\"review-date/\ndata-hook=\"review-date/g'|grep "data-hook=\"review-date"|awk -F"</span" '{print $1}'|cut -d'>' -f2; done > reviewDate.txt
+
+for i in `seq 1 10`; do grep "stars\" href=\"/gp/customer-reviews" $i.html |awk -F"title=" '{print $2}'|cut -d'"' -f2; done > ratings.txt
+
+for file in reviewTitles.txt reviewDescription.txt reviewDate.txt ratings.txt; do cat ${file}| tr '\t' ' ' > a; mv a ${file}; done
+

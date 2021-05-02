@@ -1,0 +1,11 @@
+Topics illustrated: binary predictors, outliers, adjusted R-squared, insignificant predictors. 222 observations, 9 predictors. This data is a subsample of a sample of birth records taken by the North Carolina State Center for Health and Environmental Statistics. The original sample of 1450 birth records was provided through the courtesy of J. Holcomb of Youngstown State University.
+Sex of child (1=male, 2 = female)
+Race of child(1=white, 2=black/other)
+Age of mother
+Education of mother (years)
+Completed weeks of gestation
+Mother's marital status (1=married, 2=unmarried) 
+Average number of cigarettes smoked daily
+Average number of drinks weekly
+Number of children born of this pregnancy
+Weight of child in ounces

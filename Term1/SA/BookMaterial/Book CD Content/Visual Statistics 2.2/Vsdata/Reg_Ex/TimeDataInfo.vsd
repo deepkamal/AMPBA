@@ -1,0 +1,83 @@
+83 variables, 38 years (1960-1997). Main source: Statistical Abstract of the U.S., 1999. All data are annual rates, seasonally adjusted, and in current dollars unless otherwise stated. Data were entered and checked by statistics students at Oakland University.  This database is intended for educational use only and may not be reproduced or used commercially without prior written permission.
+Business failure rate (per 10,000 listed enterprises)
+Manufacturing capacity utilization rate (percent)
+Corporate profits - manufacturing industries (billions)
+Corporate profits w. inventory val. & cap. cons. allowance (billions)
+Corporate profits tax liability (billions)
+Total new housing units started (thousands)
+Ratio of inventories to final sales of domestic business
+Index of hourly business productivity (1992 = 100)
+Index of real business sector compensation per hour (1992 = 100)
+Percent change in M1 over previous year
+Dow-Jones industrial average of 30 stock prices
+Earnings-price ratio of S&P 500 stocks
+Currency + demand and other check deposits (billions)
+M1 + savings and small time deposits etc. (billions)
+M2 + large time deposits + Eurodollars + term RP's etc. (billions)
+Mean yield on 3-month treasury bills (percent)
+Mean yield on Moody's Aaa corporate bonds (percent)
+Discount rate - Federal Reserve Bank of New York
+Prime rate charged by U.S. banks  (percent)
+Standard and Poor's composite index of 500 stock prices
+Federal government debt at year end (billions)
+Federal government budget deficit (billions)
+Federal government defense spending (billions)
+Federal government nondefense spending (billions)
+State and local government expenditures (billions)
+Federal government employees (thousands)
+Nonagricultural employees - goods-producing industries (thousands)
+Employment-to-population ratio - females 16 and over (percent)
+Employment-to-population ratio - males 16 and over (percent)
+State and local government employees (thousands)
+Employees on nonagricultural payrolls - service industries (thousands)
+Civilian labor force ( millions)
+Labor force participation rate - all civilian workers (percent)
+Labor force participation rate - black female (percent)
+Labor force participation rate - black male (percent)
+Labor force participation rate - white female (percent)
+labor force participation rate - white male (percent)
+Civilian unemployment rate - all workers (percent)
+Civilian unemployment rate - black female workers (percent)
+Civilian unemployment rate - black male workers (percent)
+Civilian unemployment rate - white female workers (percent)
+Civilian unemployment rate - white male workers (percent)
+Personal consumption expenditures (billions)
+Government purchases of goods and services (billions)
+Gross domestic product (billions)
+Gross private domestic investment (billions)
+Imports of goods and services (billions
+Exports of goods and services (billions)
+Net exports ( billions)
+Change in consumer price index (CPI-U) over prior year (percent)
+Consumer price index - urban (CPI-U) for all items  (1982-84  = 100)
+Producer price index,  finished goods  (1982 = 100)
+Average propensity to save as percent of GDP (gross saving)
+Personal consumption expenditures per capita (dollars)
+Total consumer automobile debt (billions)
+Total consumer revolving credit-card debt (billions)
+Total consumer debt outstanding (billions)
+Mortgage debt outstanding on all properties (billions)
+Disposable personal income per capita (current dollars)
+Total personal income (billions)
+Total personal saving (billions)
+Total personal taxes (billions)
+1 if Presidential election year, 0 otherwise
+Binary variable coded 1 if President is a Republican, 0 if not
+Binary variable coded 1 if President is a Democrat 0 if not
+Number of Democrats in House of Representatives
+Number of Republicans in House of Representatives
+Number of Democrats in Senate
+Number of Republicans in Senate
+Number of Democratic governors
+Number of Republican governors
+Number of states where Democrats control the legislature
+Number of states where Democrats and Republicans each control one house
+Number of states where Republicans control the legislature
+Binary variable coded 1 if Democrats control the House of Representatives, 0 if not
+Binary variable coded 1 if Republicans control the House of Representatives, 0 if not
+Binary variable coded 1 if Democrats control the Senate, 0 if not
+Binary variable coded 1 if Republicans control the Senate, 0 if not
+Binary variable coded 1 if the majority of governors are Democratic, 0 if not
+Binary variable coded 1 if the majority of governors are Republican 0 if not
+Binary variable coded 1 if the majority of state legislatures are Democratic, 0 if not
+Binary variable coded 1 if the majority of state legislatures are Republican, 0 if not

@@ -1,0 +1,2437 @@
+<!DOCTYPE html>
+<html dir="" lang="en"
+xml:lang="en">
+
+<head>
+    <title>How companies are using big data and analytics | McKinsey</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-209506966f4b1a90574","applicationID":"688264201","transactionName":"MgRQNxEFCkoFUUZfXgtOfzUgSylYDVxxWV8RE10PDwEWFi1cVlNJ","queueTime":15,"applicationTime":151,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-209506966f4b1a90574",applicationID:"688264201"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1194.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-itunes-app" content="app-id=674902075" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/redesign/resources/images/mck-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/redesign/resources/images/mck-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/redesign/resources/images/mck-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/redesign/resources/images/mck-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/redesign/resources/images/mck-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="/redesign/resources/images/mck-touch-icon-167x167.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/redesign/resources/images/mck-touch-icon-180x180.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="dns-prefetch" href="//cdn.dynamicyield.com" />
+    <link rel="dns-prefetch" href="//st.dynamicyield.com" />
+    <link rel="dns-prefetch" href="//rcom.dynamicyield.com" />
+    <script type="text/javascript">
+        var McKinsey = {"ArticleTemplate":"Legacy","DaysSinceCMSPublication":1012,"ArticleType":"","OriginalPublicationDate":"","SourcePublication":"","PSID":"","RegistrationDate":"","LoginStatus":"logged_out","SitecoreId":"{2124B5C1-3A97-44DD-AEC0-2B141CC6B7BD}","DisplayDate":"4/21/2016","Title":"How companies are using big data and analytics","ContentType":"Article","ServerNumber":""};
+        var McKToggles = {"savedArticle":true,"consentModal":true,"registrationV2":true,"newSearchService":true,"BcGalleryLoader":false};
+    </script>
+    <link rel="preconnect" href="//assets.adobedtm.com" />
+            <script
+            src="//assets.adobedtm.com/31d0cc0e4278bee6dc9b353b467120decd1519fd/satelliteLib-9346a2ee6040383eb51b3a1d1bc70a3454e64e75.js"></script>
+
+
+            <link rel="stylesheet"
+            href='/redesign/resources/css/article-51cd46.css' />
+
+    
+        <meta content="How companies are using big data and analytics" property="og:title" name="title" />
+        <meta content="Just how do major organizations use data and analytics to inform strategic and operational decisions? Senior leaders provide insight into the challenges and opportunities." property="og:description" name="description" />
+        <meta content="McKinsey &amp; Company" property="og:site_name" name="site_name" />
+        <meta content="https://www.mckinsey.com/business-functions/mckinsey-analytics/our-insights/how-companies-are-using-big-data-and-analytics" property="og:url" name="url" />
+        <meta content="index,follow,all" property="" name="robots" />
+        <meta content="https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/How%20companies%20are%20using%20big%20data%20and%20analytics/How-companies-data-1536x1536-300_Standard.jpg" property="og:image" name="image" />
+        <meta content="https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/How%20companies%20are%20using%20big%20data%20and%20analytics/How-companies-data-1536x1536-300_Standard.jpg" property="og:image:url" name="image" />
+        <meta content="{2124B5C1-3A97-44DD-AEC0-2B141CC6B7BD}" property="" name="sid" />
+        <meta content="Article" property="" name="contenttype" />
+        <meta content="Insights &amp; Publications" property="" name="sections" />
+        <meta content="McKinsey Analytics | Interview | April 2016" property="" name="searchresults-tags" />
+        <meta content="@mckinsey" property="" name="twitter:site" />
+        <meta content="summary_large_image" property="" name="twitter:card" />
+        <meta content="How companies are using big data and analytics" property="" name="twitter:title" />
+        <meta content="Just how do major organizations use data and analytics to inform strategic and operational decisions? Senior leaders provide insight into the challenges and opportunities." property="" name="twitter:description" />
+        <meta content="https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/How%20companies%20are%20using%20big%20data%20and%20analytics/How-companies-data-1536x1536-300_Standard.jpg?mw=677&amp;car=42:25" property="" name="twitter:image" />
+        <meta content="How companies are using big data and analytics" property="" name="twitter:image:alt" />
+        <meta content="true" property="" name="mobileready" />
+        <meta content="public" property="" name="accesslevel" />
+        <meta content="false" property="" name="excludefromclientlink" />
+        <meta content="insights" property="" name="articletype" />
+        <meta content="2016-04-21T00:00:00Z" property="" name="itemdate" />
+        <meta content="Analytics" property="" name="practice-name" />
+        <meta content="N38" property="" name="practice-code" />
+            <link href="https://www.mckinsey.com/business-functions/mckinsey-analytics/our-insights/how-companies-are-using-big-data-and-analytics" rel="canonical" />
+
+
+  <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false"}]);</script>
+                          <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="TURRK-8ADJT-WDUC5-TC32E-KV9ND",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"TURRK-8ADJT-WDUC5-TC32E-KV9ND",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="wzakx4lints2gyavakaq-f-e08021cb9-clientnsv4-s.akamaihd.net",i={"ak.v":"30","ak.cp":"19387","ak.ai":parseInt("285213",10),"ak.ol":"0","ak.cr":6,"ak.ipv":4,"ak.proto":"h2","ak.rid":"1591e47c","ak.r":34358,"ak.a2":e,"ak.m":"a","ak.n":"essl","ak.bpcip":"182.64.171.0","ak.cport":49817,"ak.gh":"96.17.168.5","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1611989633","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==B8Fram0yT7iv6kql76exWmyXVNUcyB13hckeFu760hmpR+N/ZbsEN8ei3hzwR2C3psEOFgxIkyEVGjtu3kc7F5kJRCwGxJRm+Jmg9tsShpjAv/QMmQu21SwbVE6hw50GO4R0vR8vD4/RHqzG3e13QWUPHG51+0pG4Z5USj5SeuCemeQu3CoatcELflo3Cv0ct/7cky+Vu8r5Jtpy8sJoV7dEpJ/+maAXSj07Hx28PqejnKcpY9C3KgxKXdRNPxCAoW+nQVLpZXfu62XBbmYqu+vx0RmNwlgJ1r6uGtkubHbOzNVh6i28F2IeX96CQGCOtKtNrEUjuN8xmAuQIi3o85rqKHkuyqMkP+VqrQnb9M4AJ+ErtW8Q8mz28sfdEwJtok34aBTFf54GdrhufJ0nxtEHmXEOLn/BBDurYpSqI+Q=","ak.pv":"243","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var _={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))i["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:n,init:function(){if(!_.i){var a=BOOMR.subscribe;a("before_beacon",_.av,null,null),a("onbeacon",_.rv,null,null),_.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script><script>bazadebezolkohpepadr="1601198937"</script><script type="text/javascript" src="https://www.mckinsey.com/akam/11/5f705950" defer></script></head>
+
+<body class='ngat'>
+    <div data-module="CookieWarning" aria-label="Cookie consent" class="cookie-warning-wrapper">
+    <div class="box">
+        <div class="wrapper">
+            <div class="content-grid">
+                <p class="cookie-message">
+                    <strong>We use cookies essential for this site to function well.</strong>
+                    Please click "Accept" to help us improve its usefulness with additional cookies. Learn about
+                    our use of cookies, and
+                    collaboration with select social media and trusted analytics partners
+                
+                    <a class="cookie-link" href="/cookie-policy" target="_blank">here<span class="visually-hidden">Learn more about cookies, Opens in new
+                            tab</span></a>.
+            
+                </p>
+                <div class="cookie-compliance">
+                    <a href="#" role="button" class="btn btn-fill cookie-btn accept-btn">Accept</a>
+                    <a href="#" role="button" class="text-link cookie-btn dismiss-btn">Use minimal essential
+                        cookies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container body-content">
+        
+
+    
+<form  id="form1" action="/business-functions/mckinsey-analytics/our-insights/how-companies-are-using-big-data-and-analytics" method="post">
+<header class="global-header global-header-r3 navigation-r3    hero-default " data-layer-region="global-header-nav">
+    <div class="logo-container">
+        <a class="menu-toggle" href="javascript:;" aria-label="Toggle hamburger menu" aria-expanded="false" role="button">
+            <span class="hamburger-menu-icon"></span>
+        </a>
+
+            <a href="/" class='names mck-logo-icon half'>
+                <span class="visually-hidden">McKinsey & Company Home</span>
+            </a>
+                <a href="/business-functions/mckinsey-analytics/our-insights" class="names section-name half">McKinsey Analytics</a>
+    </div>
+    
+
+<div class="hamburger-curtain"></div>
+<section class="hamburger-menu hamburger-nav" data-module="HamburgerNavigation" aria-hidden="true" data-layer-region="global-hamburger-nav">
+    <div class="logo-container">
+        <a class="menu-toggle" href="javascript:;" aria-label="Toggle hamburger menu" aria-expanded="true" role="button">
+            <span class="hamburger-menu-icon"></span>
+        </a>
+        <a href="/" class="mck-logo-icon">
+            <span class="visually-hidden">McKinsey & Company Home</span>
+        </a>
+        <button type="button" class="search-nav-button mck-search-icon" aria-label="Toggle search field">
+        </button>
+    </div>
+    <nav class="hamburger-navigation">
+        <!--BEGIN GLOBAL HAMBURGER MENU NAVIGATION-->
+        <ul>
+
+
+<li class='nav-industries has-children '>
+    <a aria-haspopup="true" aria-expanded="false" href='javascript:;'>Industries</a>
+
+        <div class="nav-wrapper">
+            <div class="nav-header">
+                <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                <h3>Industries</h3>
+            </div>
+            <div class="items">
+                        <ul>
+                                <li class=" has-children ">
+                                    <a href="/industries/advanced-electronics/our-insights">
+                                        <span>Advanced Electronics</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Advanced Electronics
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/advanced-electronics/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/advanced-electronics/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/advanced-electronics/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/advanced-electronics/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/aerospace-and-defense/our-insights">
+                                        <span>Aerospace & Defense</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Aerospace & Defense
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/aerospace-and-defense/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/aerospace-and-defense/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/aerospace-and-defense/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/aerospace-and-defense/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/agriculture/our-insights">
+                                        <span>Agriculture</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Agriculture
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/agriculture/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/agriculture/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/agriculture/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/agriculture/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/automotive-and-assembly/our-insights">
+                                        <span>Automotive & Assembly</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Automotive & Assembly
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/automotive-and-assembly/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/automotive-and-assembly/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/automotive-and-assembly/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/automotive-and-assembly/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/chemicals/our-insights">
+                                        <span>Chemicals</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Chemicals
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/chemicals/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/chemicals/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/chemicals/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/chemicals/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/consumer-packaged-goods/our-insights">
+                                        <span>Consumer Packaged Goods</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Consumer Packaged Goods
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/consumer-packaged-goods/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/consumer-packaged-goods/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/consumer-packaged-goods/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/consumer-packaged-goods/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/electric-power-and-natural-gas/our-insights">
+                                        <span>Electric Power & Natural Gas</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Electric Power & Natural Gas
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/electric-power-and-natural-gas/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/electric-power-and-natural-gas/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/electric-power-and-natural-gas/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/electric-power-and-natural-gas/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/engineering-construction-and-building-materials/our-insights">
+                                        <span>Engineering, Construction & Building Materials</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Engineering, Construction & Building Materials
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/engineering-construction-and-building-materials/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/engineering-construction-and-building-materials/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/engineering-construction-and-building-materials/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/engineering-construction-and-building-materials/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/financial-services/our-insights">
+                                        <span>Financial Services</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Financial Services
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/financial-services/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/financial-services/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/financial-services/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/financial-services/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/healthcare-systems-and-services/our-insights">
+                                        <span>Healthcare Systems & Services</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Healthcare Systems & Services
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/healthcare-systems-and-services/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/healthcare-systems-and-services/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/healthcare-systems-and-services/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/healthcare-systems-and-services/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/metals-and-mining/our-insights">
+                                        <span>Metals & Mining</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Metals & Mining
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/metals-and-mining/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/metals-and-mining/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/metals-and-mining/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/metals-and-mining/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/oil-and-gas/our-insights">
+                                        <span>Oil & Gas</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Oil & Gas
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/oil-and-gas/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/oil-and-gas/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/oil-and-gas/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/oil-and-gas/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/paper-forest-products-and-packaging/our-insights">
+                                        <span>Paper, Forest Products & Packaging</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Paper, Forest Products & Packaging
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/paper-forest-products-and-packaging/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/paper-forest-products-and-packaging/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/paper-forest-products-and-packaging/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/paper-forest-products-and-packaging/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/pharmaceuticals-and-medical-products/our-insights">
+                                        <span>Pharmaceuticals & Medical Products</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Pharmaceuticals & Medical Products
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/pharmaceuticals-and-medical-products/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/pharmaceuticals-and-medical-products/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/pharmaceuticals-and-medical-products/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/pharmaceuticals-and-medical-products/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/private-equity-and-principal-investors/our-insights">
+                                        <span>Private Equity & Principal Investors</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Private Equity & Principal Investors
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/private-equity-and-principal-investors/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/private-equity-and-principal-investors/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/private-equity-and-principal-investors/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/private-equity-and-principal-investors/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/public-and-social-sector/our-insights">
+                                        <span>Public & Social Sector</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Public & Social Sector
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/public-and-social-sector/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/public-and-social-sector/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/public-and-social-sector/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/public-and-social-sector/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/real-estate/our-insights">
+                                        <span>Real Estate</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Real Estate
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/real-estate/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/real-estate/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/real-estate/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/real-estate/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/retail/our-insights">
+                                        <span>Retail</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Retail
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/retail/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/retail/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/retail/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/retail/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/semiconductors/our-insights">
+                                        <span>Semiconductors</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Semiconductors
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/semiconductors/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/semiconductors/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/semiconductors/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/semiconductors/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/technology-media-and-telecommunications/our-insights">
+                                        <span>Technology, Media & Telecommunications</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Technology, Media & Telecommunications
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/technology-media-and-telecommunications/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/technology-media-and-telecommunications/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/technology-media-and-telecommunications/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/technology-media-and-telecommunications/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/industries/travel-logistics-and-transport-infrastructure/our-insights">
+                                        <span>Travel, Logistics & Transport Infrastructure</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Travel, Logistics & Transport Infrastructure
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/industries/travel-logistics-and-transport-infrastructure/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/travel-logistics-and-transport-infrastructure/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/travel-logistics-and-transport-infrastructure/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/industries/travel-logistics-and-transport-infrastructure/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                        </ul>
+
+            </div>
+        </div>
+</li>
+
+<li class='nav-functions has-children is-current-page'>
+    <a aria-haspopup="true" aria-expanded="false" href='javascript:;'>Functions</a>
+
+        <div class="nav-wrapper">
+            <div class="nav-header">
+                <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                <h3>Functions</h3>
+
+
+
+            </div>
+            <div class="items">
+                        <ul>
+                                <li class=" has-children ">
+                                    <a href="/business-functions/mckinsey-accelerate/how-we-help-clients">
+                                        <span>Accelerate</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Accelerate
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/mckinsey-accelerate/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/mckinsey-accelerate/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/mckinsey-accelerate/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/mckinsey-accelerate/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/business-functions/mckinsey-digital/how-we-help-clients">
+                                        <span>Digital</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Digital
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/mckinsey-digital/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/mckinsey-digital/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/mckinsey-digital/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/mckinsey-digital/careers">
+                                                                    <span>Careers</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/mckinsey-digital/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/business-functions/m-and-a/our-insights">
+                                        <span>M&A</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        M&A
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/m-and-a/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/m-and-a/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/m-and-a/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/m-and-a/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/business-functions/marketing-and-sales/our-insights">
+                                        <span>Marketing & Sales</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Marketing & Sales
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/marketing-and-sales/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/marketing-and-sales/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/marketing-and-sales/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/marketing-and-sales/solutions/periscope">
+                                                                    <span>Solutions</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/marketing-and-sales/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/business-functions/operations/our-insights">
+                                        <span>Operations</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Operations
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/operations/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/operations/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/operations/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/operations/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/business-functions/organization/our-insights">
+                                        <span>Organization</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Organization
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/organization/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/organization/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/organization/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/organization/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/business-functions/risk/our-insights">
+                                        <span>Risk</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Risk
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/risk/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/risk/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/risk/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/risk/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/business-functions/strategy-and-corporate-finance/our-insights">
+                                        <span>Strategy & Corporate Finance</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Strategy & Corporate Finance
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/strategy-and-corporate-finance/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/strategy-and-corporate-finance/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/strategy-and-corporate-finance/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/strategy-and-corporate-finance/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/business-functions/sustainability/our-insights">
+                                        <span>Sustainability</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Sustainability
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/sustainability/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/sustainability/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/sustainability/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/sustainability/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/business-functions/transformation/our-insights">
+                                        <span>Transformation</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Transformation
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/transformation/our-insights">
+                                                                    <span>Our Insights</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/transformation/how-we-help-clients">
+                                                                    <span>How We Help Clients</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/transformation/our-people">
+                                                                    <span>Our People</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/business-functions/transformation/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                        </ul>
+
+            </div>
+
+
+    <div class="featured ">
+
+            <h6>Featured</h6>
+        <ul>
+                <li>
+                    <a href="/business-functions/mckinsey-accelerate/how-we-help-clients" class="">
+                        <span>Accelerate</span>
+                    </a>
+                        <p>People create and sustain change. Unleash their potential.</p>
+                                            <ul class="list list-chevron u-d-lg-inline u-g-xxs">
+                                <li>
+                                    <a class="icon-xs" href="https://www.mckinsey.com/business-functions/mckinsey-accelerate/how-we-help-clients/mckinsey-academy">
+                                        <span>Academy</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="icon-xs" href="https://www.mckinsey.com/business-functions/mckinsey-accelerate/how-we-help-clients/implementation">
+                                        <span>Implementation</span>
+                                    </a>
+                                </li>
+                        </ul>
+                </li>
+                <li>
+                    <a href="/business-functions/mckinsey-digital/how-we-help-clients" class="">
+                        <span>Digital</span>
+                    </a>
+                        <p>Digital upends old models. Reinvent your business.</p>
+                                            <ul class="list list-chevron u-d-lg-inline u-g-xxs">
+                                <li>
+                                    <a class="icon-xs" href="https://www.mckinsey.com/business-functions/mckinsey-analytics/how-we-help-clients">
+                                        <span>Analytics</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="icon-xs" href="https://www.mckinsey.com/business-functions/mckinsey-digital/leap/overview">
+                                        <span>Business Building</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="icon-xs" href="https://www.mckinsey.com/business-functions/mckinsey-design/how-we-help-clients">
+                                        <span>Design</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="icon-xs" href="https://www.mckinsey.com/business-functions/mckinsey-digital/mckinsey-technology/overview">
+                                        <span>Technology</span>
+                                    </a>
+                                </li>
+                        </ul>
+                </li>
+                <li>
+                    <a href="/business-functions/transformation/our-insights" class="">
+                        <span>Transformation</span>
+                    </a>
+                        <p>Most transformations fail. Flip the odds.</p>
+                                    </li>
+        </ul>
+    </div>
+
+
+
+
+        </div>
+</li>
+
+<li class='nav-featured-insights has-children '>
+    <a aria-haspopup="true" aria-expanded="false" href='javascript:;'>Featured Insights</a>
+
+        <div class="nav-wrapper">
+            <div class="nav-header">
+                <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                <h3>Featured Insights</h3>
+
+
+    <div class="editors-choice  is-hidden-until-desktop">
+
+        <ul>
+                <li>
+                    <a href="/insights" class="cta -arrow">
+                        <span>Explore our featured insights</span>
+                    </a>
+                                    </li>
+        </ul>
+    </div>
+
+            </div>
+            <div class="items">
+                        <h6>TRENDING TOPICS</h6>
+                        <ul>
+                                <li class=" has-children ">
+                                    <a href="/featured-insights/world-economic-forum">
+                                        <span>McKinsey and the World Economic Forum</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        McKinsey and the World Economic Forum
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/featured-insights/world-economic-forum/overview">
+                                                                    <span>Overview</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/featured-insights/world-economic-forum/industry-action-groups/advanced-manufacturing">
+                                                                    <span>Action Groups</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/featured-insights/world-economic-forum/knowledge-collaborations/the-future-of-climate-risk">
+                                                                    <span>Knowledge Collaborations</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/featured-insights/world-economic-forum/davos-agenda">
+                                                                    <span>Davos Agenda</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class="  ">
+                                    <a href="/featured-insights/agile-organizations">
+                                        <span>Agile Organizations</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/featured-insights/artificial-intelligence">
+                                        <span>Artificial Intelligence</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/featured-insights/business-resilience">
+                                        <span>Business Resilience</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/featured-insights/climate-change">
+                                        <span>Climate Change</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/featured-insights/coronavirus-leading-through-the-crisis">
+                                        <span>The Next Normal Beyond Coronavirus</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/featured-insights/corporate-purpose">
+                                        <span>Corporate Purpose</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/featured-insights/diversity-and-inclusion">
+                                        <span>Diversity and Inclusion</span>
+                                    </a>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/featured-insights/future-of-asia">
+                                        <span>Future of Asia</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Future of Asia
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/featured-insights/future-of-asia/overview">
+                                                                    <span>Overview</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/featured-insights/future-of-asia/countries-and-regions">
+                                                                    <span>Countries and Regions</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/featured-insights/future-of-asia/topics">
+                                                                    <span>Topics</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/featured-insights/future-of-asia/videos">
+                                                                    <span>Videos</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/featured-insights/future-of-asia/future-of-asia-podcasts">
+                                                                    <span>Podcasts</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/featured-insights/future-of-asia/contact-us">
+                                                                    <span>Contact Us</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class="  ">
+                                    <a href="/featured-insights/future-of-work">
+                                        <span>Future of Work </span>
+                                    </a>
+                                </li>
+                        </ul>
+
+            </div>
+
+
+    <div class="featured ">
+
+            <h6>Featured</h6>
+        <ul>
+                <li>
+                    <a href="/about-us/covid-response-center/home" class="">
+                        <span>COVID Response Center</span>
+                    </a>
+                        <p>Practical resources to help leaders navigate to the next normal: guides, tools, checklists, interviews and more.</p>
+                                    </li>
+                <li>
+                    <a href="/mgi/overview" class="">
+                        <span>McKinsey Global Institute</span>
+                    </a>
+                        <p>Our mission is to help leaders in multiple sectors develop a deeper understanding of the global economy.</p>
+                                    </li>
+                <li>
+                    <a href="/quarterly/overview" class="">
+                        <span><em>McKinsey Quarterly</em></span>
+                    </a>
+                        <p>Our flagship business publication has been defining and informing the senior-management agenda since 1964.</p>
+                                    </li>
+        </ul>
+    </div>
+
+
+
+    <div class="editors-choice is-hidden-desktop">
+
+        <ul>
+                <li>
+                    <a href="/insights" class="cta -arrow">
+                        <span>Explore our featured insights</span>
+                    </a>
+                                    </li>
+        </ul>
+    </div>
+
+        </div>
+</li>
+
+<li class='nav-careers has-children '>
+    <a aria-haspopup="true" aria-expanded="false" href='javascript:;'>Careers</a>
+
+        <div class="nav-wrapper">
+            <div class="nav-header">
+                <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                <h3>Careers</h3>
+            </div>
+            <div class="items">
+                        <ul>
+                                <li class="  ">
+                                    <a href="/careers/home">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/careers/explore">
+                                        <span>Explore</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/careers/meet-our-people">
+                                        <span>Our People</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/careers/search-jobs">
+                                        <span>Search Jobs</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/careers/interviewing">
+                                        <span>Interviewing</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/careers/students">
+                                        <span>Students</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/careers/experienced-professionals">
+                                        <span>Experienced Professionals</span>
+                                    </a>
+                                </li>
+                        </ul>
+
+            </div>
+        </div>
+</li>
+
+<li class='nav-about-us has-children '>
+    <a aria-haspopup="true" aria-expanded="false" href='javascript:;'>About Us</a>
+
+        <div class="nav-wrapper">
+            <div class="nav-header">
+                <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                <h3>About Us</h3>
+
+
+
+            </div>
+            <div class="items">
+                        <ul>
+                                <li class="  ">
+                                    <a href="/about-us/overview">
+                                        <span>Overview</span>
+                                    </a>
+                                </li>
+                                <li class=" has-children ">
+                                    <a href="/about-us/diversity">
+                                        <span>Diversity</span>
+                                    </a>
+                                            <div class="nav-wrapper">
+                                                <div class="nav-header">
+                                                    <a class="nav-back mck-arrow-left-icon icon-l is-hidden-desktop"></a>
+                                                    <h3>
+                                                        Diversity
+                                                    </h3>
+                                                </div>
+                                                <div class="items">
+                                                    <ul>
+                                                            <li class='item '>
+                                                                <a href="/about-us/diversity/overview">
+                                                                    <span>Overview</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class='item '>
+                                                                <a href="/about-us/diversity/women-at-mckinsey">
+                                                                    <span>Women at McKinsey</span>
+                                                                </a>
+                                                            </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class="  ">
+                                    <a href="/about-us/environmental-sustainability">
+                                        <span>Sustainability</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/about-us/social-responsibility">
+                                        <span>Social Responsibility</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/about-us/media">
+                                        <span>Media</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/about-us/alumni">
+                                        <span>Alumni</span>
+                                    </a>
+                                </li>
+                                <li class="  ">
+                                    <a href="/about-us/new-at-mckinsey-blog">
+                                        <span>McKinsey Blog</span>
+                                    </a>
+                                </li>
+                        </ul>
+
+            </div>
+
+
+    <div class="featured ">
+
+            <h6>Featured</h6>
+        <ul>
+                <li>
+                    <a href="/about-us/covid-response-center/home" class="">
+                        <span>COVID Response Center</span>
+                    </a>
+                        <p>Practical resources to help leaders navigate to the next normal: guides, tools, checklists, interviews and more</p>
+                                    </li>
+                <li>
+                    <a href="/about-us/overview/change-that-matters" class="">
+                        <span>Change that Matters</span>
+                    </a>
+                        <p>Learn what it means for you, and meet the people who create it</p>
+                                    </li>
+                <li>
+                    <a href="/bem/overview" class="">
+                        <span>McKinsey Institute for Black Economic Mobility</span>
+                    </a>
+                        <p>Inspire, empower, and sustain action that leads to the economic development of Black communities across the globe</p>
+                                    </li>
+        </ul>
+    </div>
+
+
+
+
+        </div>
+</li>
+                <li class='nav-locations '>
+                    <a aria-haspopup="true" aria-expanded="false" href='/locations'>Locations</a>
+                </li>
+
+
+        </ul>
+        <!--END GLOBAL HAMBURGER MENU NAVIGATION-->
+        <!--BEGIN GLOBAL HAMBURGER SIGN-IN NAVIGATION-->
+            <div class="react-component" data-module="ReactFactory" data-react-module="ProfileMenu" data-react-value="hamburger">
+            </div>
+        <!--END GLOBAL HAMBURGER SIGN-IN NAVIGATION-->
+    </nav>
+</section>
+
+
+    <section class="top-bar">
+        <div class="top-bar-inner">
+            
+
+    <a href="/business-functions/mckinsey-analytics/our-insights" class="names section-name-desktop -show" style="margin-left: 244px">McKinsey Analytics</a>
+<!-- START- NEW MARKUP FOR NAVIGATION -->
+<nav class="primary-nav" data-module="PrimaryNavigationV2">
+    <ul>
+            <li class='nav-local-our-insights  is-current-page'>
+                <a aria-haspopup="true" aria-expanded="false" href='/business-functions/mckinsey-analytics/our-insights'>Our Insights</a>
+            </li>
+            <li class='nav-local-how-we-help-clients  '>
+                <a aria-haspopup="true" aria-expanded="false" href='/business-functions/mckinsey-analytics/how-we-help-clients'>How We Help Clients</a>
+            </li>
+            <li class='nav-local-our-people  '>
+                <a aria-haspopup="true" aria-expanded="false" href='/business-functions/mckinsey-analytics/our-people'>Our People</a>
+            </li>
+            <li class='nav-local-careers  '>
+                <a aria-haspopup="true" aria-expanded="false" href='/business-functions/mckinsey-analytics/careers'>Careers</a>
+            </li>
+            <li class='nav-local-contact-us  '>
+                <a aria-haspopup="true" aria-expanded="false" href='/business-functions/mckinsey-analytics/contact-us'>Contact Us</a>
+            </li>
+        <li class="has-children visually-hidden more-item" aria-hidden="true">
+            <a href="javascript:;" tabindex="-1" aria-haspopup="true"
+               aria-expanded="false">More<span class="mck-arrow-down-icon icon-xs"></span></a>
+            <div class="nav-wrapper">
+                <ul>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<!-- END- NEW MARKUP FOR NAVIGATION -->
+
+    <div data-module="SearchSuggestions"></div>
+    <div class="search-nav" data-module="SearchNav">
+        <span class="search-nav-input-icon mck-search-icon"></span>
+        <div class="visually-hidden">
+            <span id="searchBoxHelpText">Please use UP and DOWN arrow keys to review autocomplete results. Press enter to select and open the results on a new page.</span>
+            <span id="searchUpdates" aria-live="assertive" aria-atomic="true"></span>
+        </div>
+        <input class="search-nav-input" type="search" title="Search" placeholder="Type to search..."
+               value="" role="combobox" aria-describedby="searchBoxHelpText"
+               aria-owns="searchNavSuggestions" autocomplete="off" aria-autocomplete="list" />
+        <button type="button" class="search-nav-button-close desktop mck-close-icon" aria-label="Close Search">
+        </button> 
+        <button class="search-nav-submit" type="button" name="search" title="Search">Search</button>
+        <ol class="search-nav-suggestions" id="searchNavSuggestions" role="listbox">
+        </ol>
+    </div>
+        </div>
+    </section>
+    <div class="nav-right">
+        <ul>
+                <li class="toggle-search">
+                    <a href="javascript:;" class="search-nav-button mck-search-icon" aria-haspopup="true" aria-expanded="false" aria-label="Toggle search field"></a>
+                    <a href="javascript:;" class="search-nav-button-close mobile mck-close-icon" aria-label="Toggle search field"></a>
+                </li>
+                    <!--Profile Menu Start-->
+                    <li class="toggle-login has-children react-component" aria-expanded="false" aria-haspopup="true" data-module="ReactFactory" data-react-module="ProfileMenu"></li>
+                    <!--Profile Menu Ends-->
+    <li class="toggle-language has-children" aria-expanded="false" aria-haspopup="true">
+        <a href="javascript:;" aria-label="EN">EN<span class="mck-caret-down-icon"></span></a>
+        <ul class="sub-nav">
+                    <li class="active">
+                        <a href="/business-functions/mckinsey-analytics/our-insights/how-companies-are-using-big-data-and-analytics" aria-label="English"><span class="language-code">EN</span>English</a>
+                    </li>
+                    <li>
+                        <a href="/business-functions/mckinsey-analytics/our-insights/how-companies-are-using-big-data-and-analytics/pt-br" aria-label="Português "><span class="language-code">PT</span>Português </a>
+                    </li>
+        </ul>
+    </li>
+         </ul>
+    </div>
+</header>
+
+
+    <div class= id="skipToMain" data-layer-region="body">
+        
+
+    <script type="application/ld+json">
+        {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How companies are using big data and analytics",
+  "image": "https://www.mckinsey.com/~/media/McKinsey/Business Functions/McKinsey Digital/Our Insights/How companies are using big data and analytics/How-companies-data-1536x1536-300_Standard.jpg",
+  "author": [],
+  "publisher": {
+    "@type": "Organization",
+    "name": "McKinsey & Company",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.mckinsey.com/~/media/Thumbnails/Mck_Logo"
+    }
+  },
+  "url": "https://www.mckinsey.com",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.mckinsey.com/business-functions/mckinsey-analytics/our-insights/how-companies-are-using-big-data-and-analytics"
+  },
+  "datePublished": "2016-04-21",
+  "dateCreated": "2016-04-21",
+  "dateModified": "2018-04-23",
+  "description": "Just how do major organizations use data and analytics to inform strategic and operational decisions? Senior leaders provide insight into the challenges and opportunities."
+}
+    </script>
+
+<main>
+	<section class="nga-hero-section default -bg-deep-blue  " data-opacity=1 data-module="HeroFactory">
+			<div class="text-bg-gradient "></div>
+		
+<div data-module="MediaFactory" class="media-container  nga-animate hero-media-container   no-parallaxed" data-parallax-size="" 
+data-img-ph-src=/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/How%20companies%20are%20using%20big%20data%20and%20analytics/How-companies-data-1536x1536-300_Standard.jpg?mw=767&amp;car=160:125&amp;cq=50 data-img-tab-src=/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/How%20companies%20are%20using%20big%20data%20and%20analytics/How-companies-data-1536x1536-300_Standard.jpg?mw=1536&amp;car=8:5&amp;cq=50&amp;tco=300 data-img-desk-src=/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/How%20companies%20are%20using%20big%20data%20and%20analytics/How-companies-data-1536x1536-300_Standard.jpg?mw=1536&amp;car=72:35&amp;cq=50&amp;tco=300>
+		<div class="text-opaque-bg" style="opacity:0"></div>
+	</div>
+
+		<div class="hero-text-container">
+			<div class="wrapper">
+				<div class="content-wrapper">
+					<h1 class="headline nga-animate" itemprop="headline">
+						How companies are using big data and analytics
+					</h1>
+					<footer class="nga-animate">
+						<time class="hero-article-info">April 21, 2016</time>
+						<span class="hero-article-info"> | Interview</span>
+					</footer>
+				</div>
+				<div>
+					<a href="javascript://" class="mck-arrow-down-icon"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<section class="nga-article-metadata" data-module="ArticleMetaDataFactory" data-layer-region="article-body-header">
+	<div class="wrapper" data-module="Article">
+		<div class="sticky-share-wrapper">
+			
+<div class="sticky-share" data-module="ShareFactory">
+    <div class="share-menu cta-container -align-horizontal -margin-tight" data-module="InteractiveFactory">
+        <i id="share-menu-open-interactive" class="visually-hidden">Open interactive popup</i>
+		
+        <a 
+			href="javascript://" class="mck-linkedin2-icon icon-radial" 
+			data-cid="soc-web" role="button" title="Share on LinkedIn"
+			data-layer-event-prefix="CTA Link" data-layer-action="click"
+			data-layer-category="share" data-layer-subcategory="social"
+			data-layer-subcategory2="linkedin" data-layer-text="Share on LinkedIn"></a>
+        <a 
+			href="javascript://" class="mck-twitter-icon icon-radial" 
+			data-cid="soc-web" role="button" title="Share on Twitter"
+			data-layer-event-prefix="CTA Link" data-layer-action="click"
+			data-layer-category="share" data-layer-subcategory="social"
+			data-layer-subcategory2="twitter" data-layer-text="Share on Twitter"></a>
+        <a 
+			href="javascript://" class="mck-facebook-thin-icon icon-radial" 
+			data-cid="soc-web" role="button" title="Share on Facebook"
+			data-layer-event-prefix="CTA Link" data-layer-action="click"
+			data-layer-category="share" data-layer-subcategory="social"
+			data-layer-subcategory2="facebook" data-layer-text="Share on Facebook"></a>
+        <a href="mailto:?subject=From%20mckinsey.com%3a%20How%20companies%20are%20using%20big%20data%20and%20analytics&body=I%20recommend%20you%20visit%20mckinsey.com%20to%20read%3a%0d%0a%0d%0aHow%20companies%20are%20using%20big%20data%20and%20analytics%0d%0ahttps%3a%2f%2fwww.mckinsey.com%2fbusiness-functions%2fmckinsey-analytics%2four-insights%2fhow-companies-are-using-big-data-and-analytics%3fcid%3deml-web" 
+			class="mck-email-icon icon-radial" role="button" title="Send by email"
+			data-layer-event-prefix="CTA Link" data-layer-action="click"
+			data-layer-category="share" data-layer-subcategory="email"
+			data-layer-text="Email this article to a colleague"></a>
+        <a data-click-track="true"  
+			class=" mck-print-icon icon-radial"
+			aria-labelledby=share-menu-open-interactive role="button" 
+			title="Print this article" href="#/signin/print" 
+			data-restricted='print' 
+			data-layer-event-prefix="CTA Link" data-layer-action="click"
+			data-layer-category="share" data-layer-subcategory="print"
+			data-layer-text="Print this article"></a>
+            <div class="flyout-menu" data-module="DownloadFactory">
+                <a data-click-track="true" rel="nofollow" class="mck-download-icon icon-radial download-article" role="button" title="Download this article" href="javascript:;"></a>
+                <ul>
+                            <li>
+                                <a class=" mck-download2-icon download_0-article"
+                                    data-click-track="true" href="/~/media/McKinsey/Business Functions/McKinsey Digital/Our Insights/How companies are using big data and analytics/How companies are using big data and analytics.pdf?shouldIndex=false" data-restricted='link'
+                                    role="button" aria-labelledby="share-menu-open-interactive" target="_blank" data-cid="soc-web"
+                                    data-layer-event-prefix="Download Link" data-layer-action="click" 
+                                    data-layer-report-type="Interview"
+                                    data-layer-file-name="how-companies-are-using-big-data-and-analytics"
+                                    data-layer-report-name="how-companies-are-using-big-data-and-analytics>Interview">
+                                    Article (PDF -50KB)
+                                </a>
+                            </li>
+                </ul>
+            </div>
+                    <div class="react-component" data-module="ReactFactory" data-react-module="SaveArticle"></div>
+    </div>
+</div>
+
+		</div>
+	</div>
+</section>
+<section class="nga-article-metadata sticky" aria-hidden="true" data-layer-region="article-sticky-toolbar">
+	<div class="wrapper">
+		<div class="sticky-share-wrapper">
+			<div class="sticky-share-title">How companies are using big data and analytics</div>
+			
+<div class="sticky-share" data-module="ShareFactory">
+    <div class="share-menu cta-container -align-horizontal -margin-tight" data-module="InteractiveFactory">
+        <i id="share-menu-open-interactive" class="visually-hidden">Open interactive popup</i>
+		
+        <a 
+			href="javascript://" class="mck-linkedin2-icon icon-radial" 
+			data-cid="soc-web" role="button" title="Share on LinkedIn"
+			data-layer-event-prefix="CTA Link" data-layer-action="click"
+			data-layer-category="share" data-layer-subcategory="social"
+			data-layer-subcategory2="linkedin" data-layer-text="Share on LinkedIn"></a>
+        <a 
+			href="javascript://" class="mck-twitter-icon icon-radial" 
+			data-cid="soc-web" role="button" title="Share on Twitter"
+			data-layer-event-prefix="CTA Link" data-layer-action="click"
+			data-layer-category="share" data-layer-subcategory="social"
+			data-layer-subcategory2="twitter" data-layer-text="Share on Twitter"></a>
+        <a 
+			href="javascript://" class="mck-facebook-thin-icon icon-radial" 
+			data-cid="soc-web" role="button" title="Share on Facebook"
+			data-layer-event-prefix="CTA Link" data-layer-action="click"
+			data-layer-category="share" data-layer-subcategory="social"
+			data-layer-subcategory2="facebook" data-layer-text="Share on Facebook"></a>
+        <a href="mailto:?subject=From%20mckinsey.com%3a%20How%20companies%20are%20using%20big%20data%20and%20analytics&body=I%20recommend%20you%20visit%20mckinsey.com%20to%20read%3a%0d%0a%0d%0aHow%20companies%20are%20using%20big%20data%20and%20analytics%0d%0ahttps%3a%2f%2fwww.mckinsey.com%2fbusiness-functions%2fmckinsey-analytics%2four-insights%2fhow-companies-are-using-big-data-and-analytics%3fcid%3deml-web" 
+			class="mck-email-icon icon-radial" role="button" title="Send by email"
+			data-layer-event-prefix="CTA Link" data-layer-action="click"
+			data-layer-category="share" data-layer-subcategory="email"
+			data-layer-text="Email this article to a colleague"></a>
+        <a data-click-track="true"  
+			class=" mck-print-icon icon-radial"
+			aria-labelledby=share-menu-open-interactive role="button" 
+			title="Print this article" href="#/signin/print" 
+			data-restricted='print' 
+			data-layer-event-prefix="CTA Link" data-layer-action="click"
+			data-layer-category="share" data-layer-subcategory="print"
+			data-layer-text="Print this article"></a>
+            <div class="flyout-menu" data-module="DownloadFactory">
+                <a data-click-track="true" rel="nofollow" class="mck-download-icon icon-radial download-article" role="button" title="Download this article" href="javascript:;"></a>
+                <ul>
+                            <li>
+                                <a class=" mck-download2-icon download_0-article"
+                                    data-click-track="true" href="/~/media/McKinsey/Business Functions/McKinsey Digital/Our Insights/How companies are using big data and analytics/How companies are using big data and analytics.pdf?shouldIndex=false" data-restricted='link'
+                                    role="button" aria-labelledby="share-menu-open-interactive" target="_blank" data-cid="soc-web"
+                                    data-layer-event-prefix="Download Link" data-layer-action="click" 
+                                    data-layer-report-type="Interview"
+                                    data-layer-file-name="how-companies-are-using-big-data-and-analytics"
+                                    data-layer-report-name="how-companies-are-using-big-data-and-analytics>Interview">
+                                    Article (PDF -50KB)
+                                </a>
+                            </li>
+                </ul>
+            </div>
+                    <div class="react-component" data-module="ReactFactory" data-react-module="SaveArticle"></div>
+    </div>
+</div>
+
+		</div>
+	</div>
+	<div class="progress-bar"></div>
+</section>
+		<section class="hero-deck">
+			<div class="wrapper">
+				<div class="deck-content">
+					<div class="deck-content-wrapper">
+						<div class="animation-marker-before-deck-content"></div>
+						Just how do major organizations use data and analytics to inform strategic and operational decisions? Senior leaders provide insight into the challenges and opportunities.
+					</div>
+				</div>
+			</div>
+		</section>
+    <div class="wrapper">
+        <div class="article-body-wrapper " itemtype="http://schema.org/Article" id="divArticleBody"
+             data-layer-region="article-body">
+            <article class="main-copy text-longform main" itemprop="articleBody">
+    <section class="nga-download-resources nga-most-popular-and-download" data-module="DownloadFactory" data-layer-region="downloads-right-rail">
+        <h3 class="section-header">DOWNLOADS</h3>
+        <i id="download-sidebar-open-interactive" class="visually-hidden">Open interactive popup</i>
+        <div class="block-list text-s">
+            <div class="item">
+
+                <div class="text-wrapper">
+                    <div class="cta-container -align-horizontal">
+                            <a href="/~/media/McKinsey/Business Functions/McKinsey Digital/Our Insights/How companies are using big data and analytics/How companies are using big data and analytics.pdf?shouldIndex=false" class="single-text-link mck-download2-icon"
+                                aria-labelledby="download-sidebar-open-interactive" target="_blank"
+                                data-restricted='link' data-layer-event-prefix="Download Link"
+                                data-layer-action="click" 
+                               data-layer-report-type="Interview"
+                               data-layer-file-name="how-companies-are-using-big-data-and-analytics" 
+                               data-layer-report-name="how-companies-are-using-big-data-and-analytics>Interview">
+                                <span>Article (PDF-50KB)</span>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <p>
+<strong>Few dispute that</strong> organizations have more data than ever at their disposal. But actually deriving meaningful insights from that data&mdash;and converting knowledge into action&mdash;is easier said than done. We spoke with six senior leaders from major organizations and asked them about the challenges and opportunities involved in adopting advanced analytics: Murli Buluswar, chief science officer at AIG; Vince Campisi, chief information officer at GE Software; Ash Gupta, chief risk officer at American Express; Zoher Karu, vice president of global customer optimization and data at eBay; Victor Nilson, senior vice president of big data at AT&amp;T; and Ruben Sigala, chief analytics officer at Caesars Entertainment. An edited transcript of their comments follows.</p>
+<h4>
+Interview transcript</h4>
+<h3>Challenges organizations face in adopting analytics</h3>
+<p>
+<strong>Murli Buluswar, chief science officer, AIG:</strong> The biggest challenge of making the evolution from a knowing culture to a learning culture&mdash;from a culture that largely depends on heuristics in decision making to a culture that is much more objective and data driven and embraces the power of data and technology&mdash;is really not the cost. Initially, it largely ends up being imagination and inertia.</p>
+<div class="inline-video text-s  " data-module="VideoFactory" data-instance="video1">
+    <div class="video-wrapper">
+            <video id="myExperience4854460463001"
+                   data-video-id="4854460463001"
+                   data-account="1971571337001"
+                   data-player=HkOJqCPWdb
+                   data-embed="default"
+                   data-application-id
+                   class="video-js"
+                   controls></video>
+    </div>
+    <!-- Inline assets are not editable via page editor. Do we still need editable fields? -->
+    <div class="inline-video-title">
+            <div class="eyebrow">Video </div>
+                    </div>
+</div>
+
+
+<p>
+What I have learned in my last few years is that the power of fear is quite tremendous in evolving oneself to think and act differently today, and to ask questions today that we weren&rsquo;t asking about our roles before. And it&rsquo;s that mind-set change&mdash;from an expert-based mind-set to one that is much more dynamic and much more learning oriented, as opposed to a fixed mind-set&mdash;that I think is fundamental to the sustainable health of any company, large, small, or medium.</p>
+<p>
+<strong>Ruben Sigala, chief analytics officer, Caesars Entertainment:</strong> What we found challenging, and what I find in my discussions with a lot of my counterparts that is still a challenge, is finding the set of tools that enable organizations to efficiently generate value through the process. I hear about individual wins in certain applications, but having a more sort of cohesive ecosystem in which this is fully integrated is something that I think we are all struggling with, in part because it&rsquo;s still very early days. Although we&rsquo;ve been talking about it seemingly quite a bit over the past few years, the technology is still changing; the sources are still evolving.</p>
+<p>
+<strong>Zoher Karu, vice president, global customer optimization and data, eBay:</strong> One of the biggest challenges is around data privacy and what is shared versus what is not shared. And my perspective on that is consumers are willing to share if there&rsquo;s value returned. One-way sharing is not going to fly anymore. So how do we protect and how do we harness that information and become a partner with our consumers rather than kind of just a vendor for them?</p>
+<h2>Capturing impact from analytics</h2>
+<p>
+<strong>Ruben Sigala:</strong> You have to start with the charter of the organization. You have to be very specific about the aim of the function within the organization and how it&rsquo;s intended to interact with the broader business. There are some organizations that start with a fairly focused view around support on traditional functions like marketing, pricing, and other specific areas. And then there are other organizations that take a much broader view of the business. I think you have to define that element first.</p>
+<div class="inline-video text-s  " data-module="VideoFactory" data-instance="video2">
+    <div class="video-wrapper">
+            <video id="myExperience4854490119001"
+                   data-video-id="4854490119001"
+                   data-account="1971571337001"
+                   data-player=HkOJqCPWdb
+                   data-embed="default"
+                   data-application-id
+                   class="video-js"
+                   controls></video>
+    </div>
+    <!-- Inline assets are not editable via page editor. Do we still need editable fields? -->
+    <div class="inline-video-title">
+            <div class="eyebrow">Video </div>
+                    </div>
+</div>
+
+
+<p>
+That helps best inform the appropriate structure, the forums, and then ultimately it sets the more granular levels of operation such as training, recruitment, and so forth. But alignment around how you&rsquo;re going to drive the business and the way you&rsquo;re going to interact with the broader organization is absolutely critical. From there, everything else should fall in line. That&rsquo;s how we started with our path.</p>
+
+<p>
+<strong>Vince Campisi, chief information officer, GE Software:</strong> One of the things we&rsquo;ve learned is when we start and focus on an outcome, it&rsquo;s a great way to deliver value quickly and get people excited about the opportunity. And it&rsquo;s taken us to places we haven&rsquo;t expected to go before. So we may go after a particular outcome and try and organize a data set to accomplish that outcome. Once you do that, people start to bring other sources of data and other things that they want to connect. And it really takes you in a place where you go after a next outcome that you didn&rsquo;t anticipate going after before. You have to be willing to be a little agile and fluid in how you think about things. But if you start with one outcome and deliver it, you&rsquo;ll be surprised as to where it takes you next.</p>
+<aside class="text-l span-right disruptor" data-layer-region="disruptor-1up">
+		<img src="/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/The%20need%20to%20lead%20in%20data%20and%20analytics/Insights_The-need-to-lead-in-data-and-analytics536x1536_0.jpg?mh=145&amp;car=16:9" alt="" />
+	<div class="disruptor-content">
+			<span class="title headline">
+				The need to lead in data and analytics
+			</span>
+							<div class="module-footer">
+				<div class="cta-container -align-horizontal">
+						<a class="cta -arrow" href="/business-functions/mckinsey-digital/our-insights/the-need-to-lead-in-data-and-analytics"
+						aria-label="">Read the article</a>
+				</div>
+			</div>
+	</div>
+</aside>
+
+<p>
+<strong>Ash Gupta, chief risk officer, American Express:</strong> The first change we had to make was just to make our data of higher quality. We have a lot of data, and sometimes we just weren&rsquo;t using that data and we weren&rsquo;t paying as much attention to its quality as we now need to. That was, one, to make sure that the data has the right lineage, that the data has the right permissible purpose to serve the customers. This, in my mind, is a journey. We made good progress and we expect to continue to make this progress across our system.</p>
+<p>
+The second area is working with our people and making certain that we are centralizing some aspects of our business. We are centralizing our capabilities and we are democratizing its use. I think the other aspect is that we recognize as a team and as a company that we ourselves do not have sufficient skills, and we require collaboration across all sorts of entities outside of American Express. This collaboration comes from technology innovators, it comes from data providers, it comes from analytical companies. We need to put a full package together for our business colleagues and partners so that it&rsquo;s a convincing argument that we are developing things together, that we are colearning, and that we are building on top of each other.</p>
+<h2>Examples of impact</h2>
+<p>
+<strong>Victor Nilson, senior vice president, big data, AT&amp;T:</strong> We always start with the customer experience. That&rsquo;s what matters most. In our customer care centers now, we have a large number of very complex products. Even the simple products sometimes have very complex potential problems or solutions, so the workflow is very complex. So how do we simplify the process for both the customer-care agent and the customer at the same time, whenever there&rsquo;s an interaction?</p>
+<p>
+We&rsquo;ve used big data techniques to analyze all the different permutations to augment that experience to more quickly resolve or enhance a particular situation. We take the complexity out and turn it into something simple and actionable. Simultaneously, we can then analyze that data and then go back and say, &ldquo;Are we optimizing the network proactively in this particular case?&rdquo; So, we take the optimization not only for the customer care but also for the network, and then tie that together as well.</p>
+<p>
+<strong>Vince Campisi:</strong> I&rsquo;ll give you one internal perspective and one external perspective. One is we are doing a lot in what we call enabling a digital thread&mdash;how you can connect innovation through engineering, manufacturing, and all the way out to servicing a product. [For more on the company&rsquo;s &ldquo;digital thread&rdquo; approach, see &ldquo;<a href="/business-functions/organization/our-insights/ges-jeff-immelt-on-digitizing-in-the-industrial-space">GE&rsquo;s Jeff Immelt on digitizing in the industrial space</a>.&rdquo;] And, within that, we&rsquo;ve got a focus around brilliant factory. So, take driving supply-chain optimization as an example. We&rsquo;ve been able to take over 60 different silos of information related to direct-material purchasing, leverage analytics to look at new relationships, and use machine learning to identify tremendous amounts of efficiency in how we procure direct materials that go into our product.</p>
+<p>
+An external example is how we leverage analytics to really make assets perform better. We call it asset performance management. And we&rsquo;re starting to enable digital industries, like a digital wind farm, where you can leverage analytics to help the machines optimize themselves. So you can help a power-generating provider who uses the same wind that&rsquo;s come through and, by having the turbines pitch themselves properly and understand how they can optimize that level of wind, we&rsquo;ve demonstrated the ability to produce up to 10 percent more production of energy off the same amount of wind. It&rsquo;s an example of using analytics to help a customer generate more yield and more productivity out of their existing capital investment.</p>
+<h2>Winning the talent war</h2>
+<p>
+<strong>Ruben Sigala:</strong> Competition for analytical talent is extreme. And preserving and maintaining a base of talent within an organization is difficult, particularly if you view this as a core competency. What we&rsquo;ve focused on mostly is developing a platform that speaks to what we think is a value proposition that is important to the individuals who are looking to begin a career or to sustain a career within this field.</p>
+<div class="inline-video text-s  " data-module="VideoFactory" data-instance="video3">
+    <div class="video-wrapper">
+            <video id="myExperience4854589745001"
+                   data-video-id="4854589745001"
+                   data-account="1971571337001"
+                   data-player=HkOJqCPWdb
+                   data-embed="default"
+                   data-application-id
+                   class="video-js"
+                   controls></video>
+    </div>
+    <!-- Inline assets are not editable via page editor. Do we still need editable fields? -->
+    <div class="inline-video-title">
+            <div class="eyebrow">Video </div>
+                    </div>
+</div>
+
+
+<p>
+When we talk about the value proposition, we use terms like having an opportunity to truly affect the outcomes of the business, to have a wide range of analytical exercises that you&rsquo;ll be challenged with on a regular basis. But, by and large, to be part of an organization that views this as a critical part of how it competes in the marketplace&mdash;and then to execute against that regularly. In part, and to do that well, you have to have good training programs, you have to have very specific forms of interaction with the senior team. And you also have to be a part of the organization that actually drives the strategy for the company.</p>
+<p>
+<strong>Murli Buluswar:</strong> I have found that focusing on the fundamentals of why science was created, what our aspirations are, and how being part of this team will shape the professional evolution of the team members has been pretty profound in attracting the caliber of talent that we care about. And then, of course, comes the even harder part of living that promise on a day-in, day-out basis.</p>
+<p>
+Yes, money is important. My philosophy on money is I want to be in the 75th percentile range; I don&rsquo;t want to be in the 99th percentile. Because no matter where you are, most people&mdash;especially people in the data-science function&mdash;have the ability to get a 20 to 30 percent increase in their compensation, should they choose to make a move. My intent is not to try and reduce that gap. My intent is to create an environment and a culture where they see that they&rsquo;re learning; they see that they&rsquo;re working on problems that have a broader impact on the company, on the industry, and, through that, on society; and they&rsquo;re part of a vibrant team that is inspired by why it exists and how it defines success. Focusing on that, to me, is an absolutely critical enabler to attracting the caliber of talent that I need and, for that matter, anyone else would need.</p>
+<h2>Developing the right expertise</h2>
+<p>
+<strong>Victor Nilson:</strong> Talent is everything, right? You have to have the data, and, clearly, AT&amp;T has a rich wealth of data. But without talent, it&rsquo;s meaningless. Talent is the differentiator. The right talent will go find the right technologies; the right talent will go solve the problems out there.</p>
+<p>
+We&rsquo;ve helped contribute in part to the development of many of the new technologies that are emerging in the open-source community. We have the legacy advanced techniques from the labs, we have the emerging Silicon Valley. But we also have mainstream talent across the country, where we have very advanced engineers, we have managers of all levels, and we want to develop their talent even further.</p>
+<p>
+So we&rsquo;ve delivered over 50,000 big data related training courses just this year alone. And we&rsquo;re continuing to move forward on that. It&rsquo;s a whole continuum. It might be just a one-week boot camp, or it might be advanced, PhD-level data science. But we want to continue to develop that talent for those who have the aptitude and interest in it. We want to make sure that they can develop their skills and then tie that together with the tools to maximize their productivity.</p>
+<p><strong>Zoher Karu:</strong> Talent is critical along any data and analytics journey. And analytics talent by itself is no longer sufficient, in my opinion. We cannot have people with singular skills. And the way I build out my organization is I look for people with a major and a minor. You can major in analytics, but you can minor in marketing strategy. Because if you don&rsquo;t have a minor, how are you going to communicate with other parts of the organization? Otherwise, the pure data scientist will not be able to talk to the database administrator, who will not be able to talk to the market-research person, who which will not be able to talk to the email-channel owner, for example. You need to make sound business decisions, based on analytics, that can scale.</p>            </article>
+                <div class="about-authors" id="divAboutAuthors" role="contentinfo"
+                     data-layer-region="article-about-authors">
+                    <h2 class="c-title is-align-center">About the author(s)</h2>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="author-details meta-xs">
+                                    <p><strong>Murli Buluswar</strong> is chief science officer at AIG, <strong>Vince Campisi</strong> is chief information officer at GE Software, <strong>Ash Gupta</strong> is chief risk officer at American Express, <strong>Zoher Karu</strong> is vice president of global customer optimization and data at eBay, <strong>Victor Nilson</strong> is senior vice president of big data at AT&amp;T, and <strong>Ruben Sigala</strong> is chief analytics officer at Caesars Entertainment.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="columns">
+                        <div class="column">
+                            <div class="react-component cta-container -align-horizontal -align-center"
+                                 data-module="ReactFactory" data-react-module="Link"
+                                 data-react-value='{"text": "Talk to us","className": "btn","component": "Contact", "context": { "endpoint": "talkToUs" }}'>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="rail text-s"></div>
+        </div>
+    </div>
+</main>
+
+    <div class="wrapper article-closer" id="divarticlecloser" data-layer-region="related-articles">
+            <section class="up three-up">
+        <h2 class="section-header section-header--centered">
+            Related Articles
+        </h2>
+        <div class="text-s block-list">
+                <article class="item">
+                    <div class="image">
+                        <a href="/business-functions/mckinsey-digital/our-insights/the-need-to-lead-in-data-and-analytics" tabindex="-1" aria-hidden="true">
+                            <img alt="" src="/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/The%20need%20to%20lead%20in%20data%20and%20analytics/Insights_The-need-to-lead-in-data-and-analytics536x1536_0_Standard.jpg?mw=605&amp;car=211:119">
+                        </a>
+                    </div>
+                    <div class="text-wrapper">
+                        <span class="eyebrow">
+                            Survey
+                        </span>
+                        <a class="item-title-link" href="/business-functions/mckinsey-digital/our-insights/the-need-to-lead-in-data-and-analytics">
+                            <h3 class="headline -arrow">The need to lead in data and analytics</h3>
+                        </a>
+                    </div>
+                    <!-- /text-wrapper -->
+                </article>
+                <!-- /item -->
+                <article class="item">
+                    <div class="image">
+                        <a href="/industries/technology-media-and-telecommunications/our-insights/big-data-getting-a-better-read-on-performance" tabindex="-1" aria-hidden="true">
+                            <img alt="" src="/~/media/McKinsey/Industries/Technology%20Media%20and%20Telecommunications/High%20Tech/Our%20Insights/Big%20data%20getting%20a%20better%20read%20on%20performance/q16_web_big%20data_482690667_1536x1536_Original.jpg?mw=605&amp;car=211:119">
+                        </a>
+                    </div>
+                    <div class="text-wrapper">
+                        <span class="eyebrow">
+                            Article - <em>McKinsey Quarterly</em>
+                        </span>
+                        <a class="item-title-link" href="/industries/technology-media-and-telecommunications/our-insights/big-data-getting-a-better-read-on-performance">
+                            <h3 class="headline -arrow">Big data: Getting a better read on performance</h3>
+                        </a>
+                    </div>
+                    <!-- /text-wrapper -->
+                </article>
+                <!-- /item -->
+                <article class="item">
+                    <div class="image">
+                        <a href="/industries/financial-services/our-insights/transforming-into-an-analytics-driven-insurance-carrier" tabindex="-1" aria-hidden="true">
+                            <img alt="" src="/~/media/McKinsey/Industries/Financial%20Services/Our%20Insights/Transforming%20into%20an%20analytics%20driven%20insurance%20carrier/Transforming%20insurance_1536x1536_Original.jpg?mw=605&amp;car=211:119">
+                        </a>
+                    </div>
+                    <div class="text-wrapper">
+                        <span class="eyebrow">
+                            Article
+                        </span>
+                        <a class="item-title-link" href="/industries/financial-services/our-insights/transforming-into-an-analytics-driven-insurance-carrier">
+                            <h3 class="headline -arrow">Transforming into an analytics-driven insurance carrier</h3>
+                        </a>
+                    </div>
+                    <!-- /text-wrapper -->
+                </article>
+                <!-- /item -->
+        </div>
+    </section>
+
+    </div>
+
+
+
+    </div>
+
+    <div class="wrapper">
+        <div class="article-body-form">
+            
+        </div>
+    </div>
+</form>
+<input type="hidden" id="hidCookie" />
+<input type="hidden" class="cookie-consent-toggle" value="true">
+
+    </div>
+
+
+
+
+
+<div class="subscribe-sticky span-full-width hidden" data-layer-region="sticky-subscription-footer">
+    <div class="unsubscribed">
+        <form novalidate forms-v2>
+            <div class="wrapper">
+                <div class="content-grid">
+
+
+                    <h3 for="sticky-subscribe-email" class="sticky-title">Sign up for emails on new {PRACTICE_NAME} articles</h3>
+                    <p class="is-hidden-mobile">Never miss an insight. We&#39;ll email you when new articles are published on this topic.</p>
+
+                    
+                    <div class="field is-horizontal-always form-guest-user visually-hidden">
+                        <div class="control c-email is-size-md">
+                            <input type="email" id="sticky-subscribe" name="signupemail"
+                            placeholder="Email address" class="input"
+                            data-msg-email="Please provide a valid email address." data-msg-required="Please provide your email address."
+                            aria-invalid="false" aria-describedby="sticky-subscribe-email-error"
+                            data-error-message="Something went wrong. Please try again later." />
+                            <div class="help-block" role="alert" id="sticky-subscribe-email-error"></div>
+                        </div>
+                        <div class="control">
+                            <input class="is-hidden-mobile btn btn-medium btn-compact" type="submit" role="alert"
+                            value="Subscribe" aria-label="submit For email alerts">
+                            <button class="is-hidden-tablet btn btn-medium btn-fill mck-link-arrow-icon" type="submit"
+                            aria-label="submit For email alerts"></button>
+                        </div>
+                    </div>
+                    
+                    <div class="field form-content form-loggedin-user visually-hidden">
+                        <div class="control">
+                            <input type="submit" role="alert" class="btn btn-medium" value="Subscribe"
+                            aria-label="Subscribe">
+                        </div>
+                        <div class="alert error visually-hidden">
+                            <span>Something went wrong. Please try again later.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="subscribed visually-hidden">
+        <div class="wrapper">
+            <div class="content-grid">
+                <p for="sticky-subscribe-email" class="sticky-title">
+
+                    <span class="mck-check-icon"></span> Subscribed to {PRACTICE_NAME} email alerts.
+                </p>
+                <a href="#/signin/one-click/%2Fuser-registration%2Fmanage-account%2Fedit-subscriptions"
+                class="subscription-link"></a>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:;" class="mck-close-icon icon-l icon-radial-hover" data-layer-event-prefix="UI Item"
+    data-layer-action="click" data-layer-category="sticky-footer" data-layer-subcategory="close"
+    data-layer-text="close-sticky-footer"></a>
+</div>
+<!--googleoff: all-->
+
+    <footer class="global-footer " id="MainFooter" data-module="GlobalFooter" data-layer-region="global-footer">
+        <section class="footer-container">
+            <div class="mck-logo-icon">
+                <span class="visually-hidden">
+                    McKinsey&Company
+                </span>
+            </div>
+            <div class="subscription-links-container">
+
+
+<div class="subscription-detail" id="EmailBlock">
+    <div class="subscribe-cta">
+        <p class="box-description">
+            Select topics and stay current with our latest insights
+        </p>
+        <a href="/user-registration/register" class="cta -arrow">
+            Subscribe
+        </a>
+    </div>
+
+    <form novalidate forms-v2 class="form-content" id="subscribeForm" method="post"
+          action="/user-registration/register" data-authenticated-action="https://www.mckinsey.com/user-registration/manage-account/edit-subscriptions">
+
+        <label for="signupemail">
+            Subscribe
+        </label>
+        <p class="description">
+            Select topics and stay current with our latest insights
+        </p>
+        
+            <div class="field-group u-g-xs">
+                <div class="field">
+                    <div class="control" id="InputEmailBlock">
+                        <input type="email" id="signupemail" name="signupemail" placeholder="Email address"
+                            data-msg-email="Please provide a valid email address."
+                            data-msg-required="Please provide your email address." 
+                            aria-invalid="false"
+                            aria-describedby="signupemail-error" />
+                    </div>
+                    <span class="help is-state-error" role="alert" id="signupemail-error"></span>
+                </div>
+                <div class="field u-flex-unset">
+                    <div class="control">
+                        <input aria-label="submit For email alerts" type="submit" value="Submit" id="Submit" class="btn btn-compact" />
+                    </div>
+                </div>
+			</div>
+
+    </form>
+</div>
+                <div class="links-detail">
+                        <ul class="utility-links">
+                                <li><a href="/contact-us" >Contact us</a></li>
+                                <li><a href="/frequently-asked-questions/our-insights" >FAQ</a></li>
+                                <li><a href="/privacy-policy" >Privacy policy</a></li>
+                                <li><a href="/cookie-policy" >Cookie policy</a></li>
+                                <li><a href="/terms-of-use" >Terms of use</a></li>
+                                <li><a href="/local-language-information" >Local language information</a></li>
+                                <li><a href="/accessibility-statement" title="Accessibility statement" >Accessibility statement</a></li>
+                        </ul>
+                                            <div class="cta-container -align-horizontal -margin-tight" id="SocialLinksBlock">
+<a href="https://www.linkedin.com/company/mckinsey" class="mck-linkedin-thin-icon icon-radial" target="_blank" aria-label="LinkedIn" title="McKinsey on LinkedIn" ></a><a href="https://twitter.com/McKinsey" class="mck-twitter-icon icon-radial" target="_blank" aria-label="Twitter" title="McKinsey on Twitter" ></a><a href="https://www.facebook.com/mckinsey" class="mck-facebook-thin-icon icon-radial" target="_blank" aria-label="Facebook" title="McKinsey on Facebook" ></a><a href="https://www.youtube.com/mckinsey" class="mck-youtube-icon icon-radial" target="_blank" aria-label="YouTube" title="McKinsey YouTube Channel" ></a><a href="https://www.mckinsey.com/insights/rss.aspx" class="mck-rss-icon icon-radial" target="_blank" aria-label="RSS" title="McKinsey RSS Feed" ></a>                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-inner footer-container">
+                <div class="app-container">
+                    <div class="app-description" id="AppDescriptionBlock">
+                        McKinsey Insights - Get our latest thinking on your iPhone, iPad, or Android device.
+                    </div>
+                    <div class="app-links" id="AppLinksBlock">
+                            <a href="https://itunes.apple.com/us/app/id674902075?mt=8" class="app-store" target="_blank"
+							data-layer-event-prefix="CTA Link" data-layer-action="click"
+							data-layer-category="mobileApp" data-layer-subcategory="download">
+                                <img src="/~/media/Images/Global/appleappstore.svg" alt="Download on the App Store">
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.mckinsey.mckinseyinsights" class="google-play" target="_blank"
+							data-layer-event-prefix="CTA Link" data-layer-action="click"
+							data-layer-category="mobileApp" data-layer-subcategory="download">
+                                <img src="/~/media/Images/Global/googleplaystore.svg" alt="Download Android app on Google Play">
+                            </a>
+                    </div>
+                </div>
+            
+            <div class="copyright">
+                © 1996-2021 McKinsey & Company
+            </div>
+        </section>
+    </footer>
+<!--googleon: all-->
+        <!-- Import Auth component for Modal -->
+        <div class="react-component" data-module="ReactFactory" data-react-module="AppRouter"></div>
+        <script src="/redesign/resources/js/runtime.8cfc2604048183295e31.js"></script>
+        <script src="/redesign/resources/js/shared.part.bd5c3427be0306d23f00.js"></script>
+        <script src="/redesign/resources/js/app.part.aebc9d1509947783b1f0.js"></script>
+    <div id="aria-help-live" class="visually-hidden" aria-live="polite"></div>
+    <div id="modal-root"></div>
+
+            <script type="text/javascript">_satellite.pageBottom();</script>
+
+    
+<noscript><img src="https://www.mckinsey.com/akam/11/pixel_5f705950?a=dD1iZWJkNmJlOTI1MzFkYTgzZmNmNzlhZjkwOTQ1YzhlOTFmNzcwNDhjJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript><script type="text/javascript" >var _cf = _cf || []; _cf.push(['_setFsp', true]);  _cf.push(['_setBm', true]);  _cf.push(['_setAu', '/staticweb/00cbf9bfa17ti213c7dd72b71104f0b7d']); </script><script type="text/javascript"  src="/staticweb/00cbf9bfa17ti213c7dd72b71104f0b7d"></script></body>
+
+</html>

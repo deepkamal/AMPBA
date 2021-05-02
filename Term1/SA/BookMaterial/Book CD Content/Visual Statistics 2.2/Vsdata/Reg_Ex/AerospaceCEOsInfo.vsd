@@ -1,0 +1,5 @@
+Topic illustrated: collinearity, outliers, adjusted R-squared, lack of fit. 23 observations, 3 predictors. Data are from Aviation Week and Space Technology, Vol. 140, No. 22, May 30, 1994, p. 41. Data are for educational purposes only and are not intended for investment decisions. Compensation data is from fiscal year company proxy statements. Sales data is from Standard & Poor's Compustat, a division of McGraw-Hill, Inc. Two firms are excluded from the original list of 25 because data was missing from one or more columns. Return is the year-end value of $100 investment in the company made 1 year and 5 years earlier, respectively, including share-price appreciation and dividends. Data were entered by statistics student Douglas H. Hogg, Jr.
+Year-end value of $100 investment in the company made 1 year earlier
+Year-end value of $100 investment in the company made 5 years earlier
+Total sales in millions of dollars
+CEO's total short- and long-term compensation (salary, bonus, restricted stock payouts, other) to nearest thousand.

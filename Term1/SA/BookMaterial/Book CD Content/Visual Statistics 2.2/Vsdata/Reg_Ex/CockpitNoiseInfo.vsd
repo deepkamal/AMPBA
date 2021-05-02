@@ -1,0 +1,8 @@
+Topics illustrated: binary variables, squared predictors, tests of non-linearity, definitional variance inflation. 61 observations, 6 predictors. Aircraft models were 727-232 or 727-295. Sound level was measured by a pilot in seven different aircraft at the first officer's left ear position using a hand-held meter. Sound level is measured in decibels (db). For reference, 60 db is a normal conversation, 75 is a typical vacuum cleaner, 85 is city traffic, 90 is a typical hair dryer, 110 is a chain saw. Some airspeeds were converted from Mach numbers to knots indicated air speed (KIAS) or nautical miles per hour. Altitude is in thousands of feet above mean sea level (MSL). Data courtesy of Capt. Robert E. Hartl, a member of the Air Line Pilots Association.
+1 if measured during climb flight phase, 0 otherwise
+1 if measured during descent flight phase, 0 otherwise
+Airspeed is in knots per hour (indicated air speed) 
+Altitude is in thousands of feet above mean sea level (MSL)
+Speed squared (for nonlinearity test)
+Altitude squared (for nonlinearity test)
+Sound level at the first officer's left ear position (decibels)

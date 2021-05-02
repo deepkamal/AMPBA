@@ -1,0 +1,507 @@
+---
+title: "Math bootcamp Assignment"
+author: "Deepkamal Singh / Deepkamal_Singh_AMPBA2021w@isb.edu"
+date: "05/11/2020"
+---
+
+********
+
+**Q1. Explain the role of matrix algebra in data science.**
+
+
+
+***Answer to Q1***
+  
+Matrix algebra has vast applications in computer programming and thus data science.
+
+Computers can only compute for any problem if there is an algorithm specifically designed based on the input variables of the problem,
+
+Mathematically we can transform problems into algebraic equations and Matrix algebra is generalized mathematical algorithm to solve any such kind of equations,thus Matrix Algebra makes it possible for computer to solve multivariate equations with a general algorithm and hence covering huge variety of problem domains, to name few
+
+    - Basic computer operations - I/O and addressing
+    - All problems that can be solved with Linear algebra
+    - Linear transformation problems
+    - Image processing
+    - Graphics, VFX and Video Processing
+    - Augmented reality and Virtual reality
+    - Video gaming and interactive media industry
+    - AI - Machine Learning, Deep Learning, unsupervised learning - Convolution Neural networks, Generated Adversarial networks
+
+**Without Matrix Algebra, modern day computing is not possible at all**
+
+********
+\newpage
+**Q2. Consider two matrices ${A}$ and ${B}$. Dimensions for both the matrices is ${n \times n}$. When will the following identity be true:** 
+  
+  $(A+B){^2}=A^2+B^2+2AB$
+
+
+
+***Answer to Q2***
+
+Given that ${A}$ and ${B}$ are matrices,the equation $(A+B){^2}=A^2+B^2+2AB$ can be true only when matrix product ${AB}={BA}$
+
+because:
+$$\begin{aligned}
+(A+B){^2}=(A+B).(A+B)\\ \ \\ => (A+B){^2}=(A.A+A.B+B.A+B.B)\\ \ \\   => (A+B){^2}=(A^2+A.B+B.A+B^2)
+\end{aligned}$$
+   
+   Since Matrices do not follow Commutative property of multiplication, 
+
+   It is\ NOT true for all $A$ and $B$ such  that:  $BA=AB$
+   
+$$\begin{aligned}
+\therefore\ Equation\ is\ true\ IF\ and\ only\ if\ :\ AB=BA \\ \therefore (A+B){^2}=(A^2+AB+BA+B^2) =>(A^2+2AB+B^2) \iff  AB=BA \\ and\ (A+B){^2}\not=(A^2+2AB+B^2) \iff  AB\not=BA \end{aligned}$$
+
+********
+\newpage
+**Q3.**
+
+$$
+A= \left[\begin{array}{cc} 
+1 & 2 & 3\\
+5 & 6 & 7
+\end{array}\right]
+ B=
+\left[\begin{array}{cc} 
+-1 & -3\\ 
+-5 & 6\\
+7 & 8
+\end{array}\right]
+$$
+    
+  a. Find $AB$ Show all steps
+    
+  b. Find $BA$. Show all steps
+
+
+
+***Answer to Q3***
+
+  *Conformable Matrices* : Given A and B are matrices, they are called conformable only if the number of columns of A equals the number of rows of B.
+  
+  *Multiplicity*   : If A and B are matrices then multiplication of A and B is only possible with A and B are conformable
+  
+  Here A is `2x3` Matrix, and B is `3x2` matrix  
+    
+    - by definition of conformability A and B are conformable since row(A)=col(B)
+
+    - Also, by definition of conformability B and A are conformable since row(B)=col(A)
+    
+thus matrix product ${AB}$ and ${BA}$ both are possible
+
+Finding ${AB}$
+
+  
+  \begin{aligned}
+  
+  AB = \left[\begin{array}{cc} 
+  1 & 2 & 3\\
+  5 & 6 & 7
+  \end{array}\right]. \left[\begin{array}{cc} 
+  -1 & -3\\ 
+  -5 & 6\\
+  7 & 8
+  \end{array}\right] 
+  
+  \\ \ \\
+  
+  => AB  = \left[\begin{array}{cc} 
+  1\times(-1)+2\times(-5)+3\times7 & 1\times(-3)+2\times6+3\times8\\
+  5\times(-1)+6\times(-5)+7\times7 & 5\times(-3)+6\times6+7\times8\\
+  \end{array}\right]
+  
+  \\ \ \\
+  => AB  = \left[\begin{array}{cc} 
+  -1-10+21 & -3+12+24\\
+  -5-30+49 & -15+36+56\\
+  \end{array}\right]
+  
+  \\ \ \\
+  
+  => AB  = \left[\begin{array}{cc} 
+  -1-10+21 & -3+12+24\\
+  -5-30+49 & -15+36+56\\
+  \end{array}\right]
+  \\ \ \\
+  \therefore  Answer\ is \\ \ \\
+  
+  \left[\begin{array}{cc} 
+  10 & 33\\
+  14 & 71\\
+  \end{array}\right]
+  
+  \end{aligned}
+  
+
+Finding ${BA}$
+
+
+  \begin{aligned}
+  
+  BA = \left[\begin{array}{cc} 
+  -1 & -3\\ 
+  -5 & 6\\
+   7 & 8
+  \end{array}\right] . \left[\begin{array}{cc} 
+  1 & 2 & 3\\
+  5 & 6 & 7
+  \end{array}\right]
+  
+  \\ \ \\
+  
+  => BA  =  \left[\begin{array}{cc} 
+  (-1)\times1+(-3)\times5 & (-1)\times2+(-3)\times6 & (-1)\times3+(-3)\times7\\ 
+  (-5)\times1+6\times5    & (-5)\times2+6\times6    & (-5)\times3+6\times7\\
+  7\times1+8\times5       & 7\times2+8\times6       & 7\times3+8\times7\\
+  \end{array}\right]
+  
+  \\ \ \\
+  => BA  =  \left[\begin{array}{cc} 
+  -1-15     & -2-18     & -3-21\\ 
+  -5+30     & -10+36    & -15+42\\
+  7+40      & 14+48     & 21+56\\
+  \end{array}\right]
+  
+  \\ \ \\
+  
+  => BA  =  \left[\begin{array}{cc} 
+  -16   & -20 & -24\\ 
+   25   & -26 & 27\\
+   47   & 62  & 77\\
+  \end{array}\right]
+  \\ \ \\
+  \therefore  Answer\ is \\ \ \\
+  
+  \left[\begin{array}{cc} 
+  -16   & -20 & -24\\ 
+   25   & -26 & 27\\
+   47   & 62  & 77\\
+  \end{array}\right]
+  
+  \end{aligned}
+
+
+********
+\newpage
+**Q4. Choose one or more names (normal, idempotent, nilpotent or unipotent) for the following matrix**
+
+$$ a. \left[\begin{array}{cc} 
+1 & x\\
+0 & -1
+\end{array}\right] $$
+
+
+
+***Answer to Q4***
+
+For any given square matrix A with dimension pxp
+
+• A is **normal** if $AA’ = A’A$
+
+• A is **idempotent** if $A^2 = A$ 
+
+• A is called **nilpotent** if $A^2=0$
+
+• A is called **unipotent** if $A^2 = I_n$ i.e The square of matrix is the `identity matrix`
+
+the given matrix is
+
+$$\begin{aligned}
+A = \left[\begin{array}{cc}  1 & x\\ 0 & -1 \end{array}\right]
+\end{aligned}$$
+as $A$ is $2\times2$ matrix, its a Square matrix. We will now examine which properties are followed by $A$
+
+  \begin{aligned}
+  
+  A' = \left[\begin{array}{cc} 1 & 0 \\ x & -1\end{array}\right]
+  \\ \\ 
+  => AA'= \left[\begin{array}{cc} 1 & x\\ 0 & -1\end{array}\right].\left[\begin{array}{cc} 1 & 0 \\ x & -1\end{array}\right]
+  \\ \\ 
+  => \left[\begin{array}{cc}1+x\times x & 0 + (-x) \\
+     0 + (-x)  & 0+ (-1) \times (-1) \end{array}\right] 
+  \\ \\ 
+  AA' =  \left[\begin{array}{cc} (x^2 +1) & -x \\ -x & 1 \end{array}\right] 
+  \\ \\ 
+  
+Finding\ A'A \\
+  
+  A'A  =  \left[\begin{array}{cc} 1 & 0 \\ x & -1\end{array}\right].\left[\begin{array}{cc} 1 & x\\ 0 & -1\end{array}\right]
+  \\ \\
+  => \left[\begin{array}{cc} 1\times1+0 & 1\times x+0 \\ x\times1 + 0 & x \times x + (-1)\times(-1) \end{array}\right]
+  \\ \\
+  => A'A = \left[\begin{array}{cc} 1 & x \\ x & x^2 + 1 \end{array}\right]
+  \\ \\ 
+  A'A \not= AA'
+  \\ \\ 
+  
+  Now\ finding\ A \times A
+  
+  \\ \\ 
+  A \times A = A^2 = \left[\begin{array}{cc} 1 & x\\ 0 & -1 \end{array}\right].\left[\begin{array}{cc} 1 & x\\ 0 & -1 \end{array}\right]
+  \\ \\ 
+  => A^2 = \left[\begin{array}{cc} 1\times1 + x \times 0  & 1 \times x + x \times (-1) \\ 0 \times 1 + (-1) \times 0 & (-1) \times (-1)\end{array}\right]
+  \\ \\ 
+  => A^2 = \left[\begin{array}{cc} 1 + 0  & x - x  \\ 0  & 1\end{array}\right]
+  \\ \\ 
+  => A^2 = \left[\begin{array}{cc} 1  & 0 \\ 0  & 1\end{array}\right] 
+  
+  \end{aligned}
+
+$=> A^2 = I_2$
+
+$\therefore  A$ is a **unipotent** matrix
+
+
+********
+\newpage
+**Q5. For the following matrix, calculate the inverse. Show all the steps.**
+
+$$ a. \left[\begin{array}{cc} 
+1 & -3\\
+5 & -7
+\end{array}\right] $$
+
+
+
+***Answer to Q5***
+
+Inverse of $2\times2$ matrix is defined as
+
+$(A_{(2\times2)})^{-1} =  {\frac {1} {det(A)}} . Adj(A)$
+
+Given
+
+$$\begin{aligned}=> A = \left[\begin{array}{cc} 1 & -3\\ 5 & -7 \end{array}\right]\\ \\=> det(A) = a_{11} \times a_{22} - a_{12}\times a_{21}\\ \\=> det(A) = (1 \times (-7)) - (-3\times 5) = -7 + 15\\ \\=> det(A) = 8 \\\end{aligned}$$
+
+Now Adjoint of $2\times2$ matrix is
+
+$$\begin{aligned}Adj(A_{(2\times2)}) = \left[\begin{array}{cc} a_{22} & -a_{12} \\ -a_{21} & a_{11} \end{array}\right] \end{aligned}$$
+Substituting values
+
+$$\begin{aligned}Adj(A)=\left[\begin{array}{cc} -7 & -(-3) \\ -5 & 1 \end{array}\right]\\ \\ =>Adj(A)=\left[\begin{array}{cc} -7 & 3 \\ -5 & 1 \end{array}\right] \end{aligned}$$
+
+$\therefore$ Inverse of A is 
+
+$$\begin{aligned}A^{-1}= \frac {1} {det(A)} . Adj(A)\\ \\ => A^{-1}=\frac 1 8 .\left[\begin{array}{cc} -7 & -(-3) \\ -5 & 1 \end{array}\right]\\ \\ => A^{-1}= \left[\begin{array}{cc} -7/8 & 3/8 \\ -5/8 & 1/8 \end{array}\right] \end{aligned}$$
+
+
+********
+
+\newpage
+
+**Q6. Find the rank of the matrix, Eigen values and vectors of the following matrix. Show all the steps.**
+
+$$
+a. \left[\begin{array}{cc} 
+1 & 2 & 4\\
+3 & 8 & 14\\
+2 & 6 & 13
+\end{array}\right]
+$$ 
+
+
+***Answer to Q6***
+
+Rank of Matrix $\rho$ for $A_{m\times n}$ is defined as maximum number of linearly independent rows (or) maximum number of linearly independent columns, whichever is lower
+
+$\therefore$ Rank of the matrix $A_{m\times n}$ if $m<n$ is $\rho(A)≤m$ OR if $n<m$ is $\rho(A)≤n$
+
+here $A$ is given as $3\times3$ matrix
+
+$$
+\begin{aligned}
+A_{3\times3} = \left[\begin{array}{cc} 
+1 & 2 & 4\\
+3 & 8 & 14\\
+2 & 6 & 13
+\end{array}\right]
+\end{aligned}
+$$
+
+**Rank of this matrix $(3 \times 3) \ is\ \rho(A) ≤ 3$**
+
+$$\begin{aligned}=> a_1 \times \left[\begin{array}{cc} 1 & 2 & 4\end{array}\right] + a_2 \times \left[\begin{array}{cc} 3 & 8 & 14\end{array}\right] + a_3 \times \left[\begin{array}{cc} 2 & 6 & 13\end{array}\right] = 0  \iff a_1 = a_2 = a_3 =0 \\ Equations:\\ => a_1+ 3a_2 + 2a_3 = 0 \\=> 2a_1+ 8a_2 + 6a_3 = 0 \\=> 4a_1+ 14a_2 + 13a_3 = 0 \\\end{aligned}$$
+
+Solving the equations we see that there are trivial solution for $a_1=a_2=a_3=0$ thus all rows are linearly independent
+
+$\therefore$ **Rank of Matrix**
+$\rho(A_{3 \times 3}) = 3$
+
+
+**Finding Eigen values**
+
+By definition, If $S$ is an $n \times n$ matrix, then the eigen values of $S$ are roots of characteristic equation $S$
+
+$│S-λI_n│=0$
+
+here $S_{3\times3} = \left[\begin{array}{cc} 1 & 2 & 4\\3 & 8 & 14\\2 & 6 & 13\end{array}\right]$
+
+$$\begin{aligned}=> S-\lambda I_3 = \left[\begin{array}{cc} 1 & 2 & 4\\3 & 8 & 14\\2 & 6 & 13\end{array}\right] - \lambda\left[\begin{array}{cc} 1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{array}\right]\\ \\=>\left[\begin{array}{cc} 1 & 2 & 4\\3 & 8 & 14\\2 & 6 & 13\end{array}\right] - \left[\begin{array}{cc} \lambda & 0 & 0\\0 & \lambda & 0\\0 & 0 & \lambda\end{array}\right] \\ \\ => S-\lambda I_3 = \left[\begin{array}{cc} 1-\lambda & 2 & 4\\3 & 8-\lambda & 14\\2 & 6 & 13-\lambda\end{array}\right] \end{aligned}$$
+
+Taking determinant:
+
+$=> |S-\lambda| = \left|\begin{array}{cc} 1-\lambda & 2 & 4\\3 & 8-\lambda & 14\\2 & 6 & 13-\lambda\end{array}\right|$
+
+$=> (1-\lambda)\left|\begin{array}{cc} 8-\lambda & 14\\6 & 13-\lambda\end{array}\right| - 2\left|\begin{array}{cc} 3 & 14\\2 & 13-\lambda\end{array}\right| + 4\left|\begin{array}{cc} 3 & 8-\lambda\\2 & 16\end{array}\right|$
+
+$=> (1-\lambda)((8-\lambda)(13-\lambda)-14\times6) - 2(3\times(13-\lambda)-14\times2) +4(3\times6-2\times(8-\lambda))$
+
+Solving and factoring further we get 
+
+$=> (1-\lambda)(\lambda^2-21\lambda+6)) = 0$
+
+$=> \lambda = 1, \frac {21+\sqrt{417}} 2, \frac {21-\sqrt{417}} 2$
+
+$\therefore$ **Eigen values of given matrix are** $1, \frac {21+\sqrt{417}} 2 \ and \ \frac {21-\sqrt{417}} 2$
+
+***Finding Eigen vectors***
+
+By definition: 
+
+$$\begin{aligned}
+\left[\begin{array}{cc} 1 & 2 & 4\\3 & 8 & 14\\2 & 6 & 13\end{array}\right]\left[\begin{array}{cc} X_1\\X_2\\X_3\end{array}\right] = \lambda \left[\begin{array}{cc} X_1\\X_2\\X_3\end{array}\right] \\
+\\ 
+where\ \lambda_{1} = 1, \lambda_{2} = \frac {21+\sqrt{417}} 2 \ , \lambda_{3} =  \ \frac {21-\sqrt{417}} 2 \\
+\end{aligned}$$
+
+Eigen Vectors:
+
+$$\begin{aligned}\left[\begin{array}{cc} 1 & 2 & 4\\3 & 8 & 14\\2 & 6 & 13\end{array}\right]\left[\begin{array}{cc} X_1\\X_2\\X_3\end{array}\right] = 1 \times \left[\begin{array}{cc} X_1\\X_2\\X_3\end{array}\right] \\=> \left[\begin{array}{cc} 1X_{1}+2\times X_{2}+4 \times X_{3} \\3X_{1}+8\times X_{2}+14 \times X_{3}\\2\times X_{1}+6\times X_{2}+13 \times X_{3}\end{array}\right] = \left[\begin{array}{cc} X_1\\X_2\\X_3\end{array}\right] \\=> \left[\begin{array}{cc} X_{1}+2X_{2}+4X_{3} \\3X_{1}+8X_{2}+14X_{3}\\2X_{1}+6X_{2}+13X_{3}\end{array}\right] - \left[\begin{array}{cc}X_1\\X_2\\X_3\end{array}\right]= \left[\begin{array}{cc} X_1\\X_2\\X_3\end{array}\right] -\left[\begin{array}{cc} X_1\\X_2\\X_3\end{array}\right] \\ \\=> \left[\begin{array}{cc} 0+2X_{2}+4X_{3} \\3X_{1}+7X_{2}+14X_{3}\\2X_{1}+6X_{2}+12X_{3}\end{array}\right] = \left[\begin{array}{cc} 0\\0\\0\end{array}\right]\\ \\ \therefore\\Equation\ 1: 2X_{2}+4X_{3}=0 \\Equation\ 2: 3X_{1}+7X_{2}+14X_{3}=0 \\Equation\ 3: 2X_{1}+6X_{2}+12X_{3}=0\\ \\From\ Eq\ 1: X_2 = -2X_3 \\substituting\ in\ Eq2\ and\ 3\ we\ get\ :\\X_1 = 0\end{aligned}$$
+
+since these three equations become linearly dependent when $X_1=0$ , we can not derive values for $X_2$ and $X_3$ when $\lambda = 1$
+
+the same process can be applied for $\lambda_{2} = \frac {21+\sqrt{417}} 2 \ and\ \lambda_{3} =  \ \frac {21-\sqrt{417}} 2$ , 
+
+***Calculating using `R`***
+
+```{R}
+knitr::opts_chunk$set(echo = FALSE)
+library(Matrix)
+
+r1 <- c(1,2,4)
+r2 <- c(3,8,14)
+r3 <- c(2,6,13)
+m <-matrix(c(r1,r2,r3),nrow=3,ncol=3,byrow=TRUE)
+print("Matrix is:")
+print(m)
+rankMatrix(m)
+
+print("Eigen values and vectors are:")
+eigen(m)
+```
+
+********
+\newpage
+
+**Q7. Prove**
+
+$(AB)^{-1} = B^{-1}A^{-1}$
+
+
+
+***Answer to Q7***
+
+Lets find product of $(AB)$ and $B^{-1}A^{-1}$
+  
+  $(AB)B^{-1}A^{-1} \\=> AIA^{-1} \\=> AA^{-1} \\=>(AB)B^{-1}A^{-1} = I$
+  
+  Similarity if we see product of $B^{-1}A^{-1}$ and $(AB)$
+  
+  $B^{-1}A^{-1}(AB) \\=> B^{-1}IB \\=> B^{-1}B \\=> B^{-1}A^{-1}(AB) = I$
+  
+  Since both products are equal to same identity matrix $I$ 
+  
+  $\therefore (AB)^{-1} = B^{-1}A^{-1}$
+
+********
+\newpage
+**Q8. Read this article on tensor flow. (https://machinelearningmastery.com/introduction-to-tensors-for-machine-learning/). Write a note on what are tensors? How are they different from vectors and matrices? How are they helpful? Discuss one application of tensors where matrices and vectors can’t be used.**
+
+
+
+***Answer to Q8***
+
+Definition of Tensors
+
+  Tensors are mathematical objects that store numbers and have fundamental properties of `Rank` and `Dimensions` - such that an `n` rank tensor with `m` dimensions has n indexes and $m^n$ components that obey certain transformation rules, 
+    
+  Quoting the article: _A tensor is a generalization of vectors and matrices and is easily understood as a multidimensional array.A vector is a one-dimensional or first order tensor and a matrix is a two-dimensional or second order tensor._
+
+_As a tool, tensors and tensor algebra is widely used in the fields of physics and engineering. It is a term and set of techniques known in machine learning in the training and operation of deep learning models can be described in terms of tensors._
+
+How Tensors are different from vectors and matrices
+
+    Vectors are variable representation of a value that linearly changes and Matrices are used to represent multivariate system of equations in mathematical arrangement, however using Tensors we can not only represent multi-dimensional variables but also represent their transformations, 
+    
+    In simpler terms we can say that just like vectors are collection of scalars, and matrices are collection of vectors the Tensors are collection of matrices where each matrix represents values of the system in different conditions - each condition is represented separately by indices of tensor.
+
+How Tensors are helpful
+
+    Tensors help design computational models for systems that involve variable changes in multiple dimensions, that is the variables in the system are not only in multiple dimensions (>2) but also variable values transforms across the dimensions - stress tensor are an example for such calculations where its efficient to build computational model for object suspended in 3 dimensional space and active forces are applied on it from multiple dimensions, in plain words we can use the computational model to calculate surface area change in a solid cube when external forces are applied on it
+
+Where only Tensors can be used
+
+    In mathematical computing models for calculating values associated with an object in higher dimension field equations, where some particular property of the object varies across more than 2 dimensions can only be derived through use of Tensors, 
+    
+    For example, to calculate relativistic impact of a simple object moving through space can be constructed through a space-time tensor with each index of the tensor storing X-axis, Y-axis and Z-axis values of object and its variation through time-dimension in each item.
+    
+    In general definition - when variables associated with calculations are transforming based on certain factors, Tensors are required to represent the state and perform calculations accordingly. 
+        - specific property values of a Particles moving through any field in Minkowski space can be calculated by forming Tensor [Electromagnetic Field tensor]( https://en.wikipedia.org/wiki/Electromagnetic_tensor) is an example.
+
+***References and Further readings:***
+ 
+     - https://www.tensorflow.org/guide/tensor
+     
+     - https://medium.com/@quantumsteinke/whats-the-difference-between-a-matrix-and-a-tensor-4505fbdc576c
+     
+     - Youtube video by a physicist about Tensors : https://www.youtube.com/watch?v=bpG3gqDM80w
+
+********
+\newpage
+**Q9. Using ${LU}$ decomposition, decompose the following matrix in to an upper and a lower triangular matrix. Show all the steps**
+
+$$
+a. \left[\begin{array}{cc} 
+1 & 2 & 4\\
+3 & 8 & 14\\
+2 & 6 & 13
+\end{array}\right]
+$$ 
+
+
+
+***Answer of Q9***
+
+here we have a $3 \times 3$ matrix , the LU decomposition of matrix $A_{(3 \times 3)}$ can be represented as 
+
+$$\begin{aligned}A_{(3 \times 3)}=\left[\begin{array}{cc}a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{array}\right] \\=>\left[\begin{array}{cc}a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{array}\right] = \left[\begin{array}{cc}1 & 0 & 0 \\ l_{21} & 1 & 0 \\ l_{31} & l_{32} & 1 \end{array}\right]. \left[\begin{array}{cc}u_{11} & u_{12} & u_{13} \\ 0 & u_{22} & u_{23} \\ 0 & 0 & u_{33} \end{array}\right]\\\left[\begin{array}{cc} 1 & 2 & 4\\3 & 8 & 14\\2 & 6 & 13\end{array}\right]=> \left[\begin{array}{cc}U_{11} & U_{12} & U_{13} \\ L_{21}\times U_{11} & L_{21}\times U_{12} + U_{22} & L_{21}\times U_{13} + U_{23} \\ L_{31}\times U_{11} & L_{31}\times U_{12} + L_{32}\times U_{22} & L_{31}\times U_{13}+L_{32}\times U_{23} + U_{33}\end{array}\right]
+\end{aligned}$$
+
+
+By equating values, we derive:
+
+$$\begin{aligned}\\
+U_{11} = 1\\U_{12} = 2\\U_{13}=4 \\ \\
+L_{21} \times U_{11} = 3 => L_{21} = 3\\ \\
+L_{21}\times U_{12} + U_{22} = 8 => U_{22} = 2\\ \\ 
+L_{21}\times U_{13} + U_{23} = 14 => U_{23} = 14-12 =2\\ \\
+L_{31}\times U_{11} = 2 => L_{31}=2\\ \\ 
+L_{31}\times U_{12} + L_{32}\times U_{22}=6\\
+=> 2\times L_{32}=2 \\=> L_{32}=1\\ \\
+L_{31}\times U_{13}+L_{32}\times U_{23} + U_{33}=13\\
+=> 2 \times 1 + U_{33} = 13-8\\
+=> U_{33} = 13-8-2 = 3 \end{aligned}$$
+
+Substituting values:
+
+$$\begin{aligned}\\
+=>\left[\begin{array}{cc}a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{array}\right] = \left[\begin{array}{cc}1 & 0 & 0 \\ l_{21} & 1 & 0 \\ l_{31} & l_{32} & 1 \end{array}\right]. \left[\begin{array}{cc}u_{11} & u_{12} & u_{13} \\ 0 & u_{22} & u_{23} \\ 0 & 0 & a_{33} \end{array}\right]\\
+LU(A_{3\times 3})=>\left[\begin{array}{cc}1 & 0 & 0 \\ 3 & 1 & 0 \\ 2 & 1 & 1 \end{array}\right]. \left[\begin{array}{cc}1 & 2 & 4 \\ 0 & 2 & 2 \\ 0 & 0 & 3 \end{array}\right]
+\end{aligned}$$
+
+********
+
+                             ***********************END OF ASSIGNMENT************************
+
+********

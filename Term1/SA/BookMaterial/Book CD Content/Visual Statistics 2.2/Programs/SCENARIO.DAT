@@ -1,0 +1,99 @@
+SCENARIO 1:
+Quantity of fill in a soft drink bottle
+The bottle capacity is 2000 milliliters (a 2-liter bottle) with some space left over for air.  The process standard deviation is 5.  The machine which fills the bottles can be adjusted to add more or less soft drink.  Every hour a sample of bottles is taken at random from the bottling line and the quantity of soft drink is measured to the nearest milliliter by careful weighing.
+Milliliter
+Hour
+1950 2050 2000 20 1
+1 9 5 1 .1
+2 10 5 2 1
+4 1 4 1 4 2 4 0
+SCENARIO 2:
+Acidity level of commercial cleaning solution
+A commercial cleaning solution works best when its acidity (pH) is 5.0 where lower pH values indicate increasing acidity (pH of 7.0 is neutral, that is neither acid nor base).  The process standard deviation is .06.  The process can be adjusted to raise or lower the acidity as required.  Production lots are produced in cycles lasting one day each.  At the end of every day a sample of containers is taken at random from finished lots and the pH of each is determined to the nearest .01 through chemical analysis.
+pH
+Day
+4 6 5 .1 .01
+.03 .09 .06 .01 .01
+2 10 5 2 1
+1 3 1 3 1 4 1 2
+SCENARIO 3:
+Burst strength of PVC pipe
+The burst strength of a certain type of thin-wall PVC pipe should be 4000 psi (pounds per square inch) with a standard deviation of 40 psi.  The strength of the pipe is affected by a combination of factors including the chemicals used in the plastic, amount and evenness of heat applied, and speed and accuracy of machines used in forming the pipe.  Since testing is both expensive and destructive, a sample is taken from each batch produced.  Not all pipes in the batch will be identical due to variations in the steps of manufacturing.  By testing each pipe until it bursts its ability to withstand pressure can be determined to the nearest pound.
+Psi
+Batch
+3500 4500 4000 10 1
+20 60 40 4 1
+2 10 5 2 1
+4 1 4 1 4 2 4 0
+SCENARIO 4:
+Length of wait at telephone software support group
+A large software vendor offers free telephone assistance to customers who dial a special number.  The desired mean wait time is 90 seconds.  The standard deviation is 20 seconds.  A large staff is available to assist the customers, but at any given moment a number of customers are in the queue waiting for the next available technical support representative.  A sample is taken randomly several times an hour to ascertain the length of the wait.  The queue is considered well-managed if the wait is near 90 seconds.
+Minute
+Hour
+60 120 90 6 1
+10 30 20 5 1
+2 10 5 2 1
+3 1 3 1 3 2 3 0
+SCENARIO 5:
+Diameter of rear axle shafts
+Rear axle shafts for a certain truck are supposed to have a diameter of 8.679 centimeters.  The process standard deviation is .005 centimeters.  Variation exists in actual diameters because the hard-turn machining cell which produces the axle shafts is subject to vibration, wear, and other random perturbations.  Samples are taken every hour and are measured to determine the actual diameter to the nearest .001 centimeter.
+Centimeter
+Hour
+8.592 8.766 8.679 .01 .001
+.002 .008 .005 .002 .001
+2 10 5 2 1
+1 3 1 4 1 5 1 3
+SCENARIO 6:
+Number of missed appointments at HMO clinic
+At a certain large HMO clinic, an average of 12 patients per day miss scheduled appointments.  The standard deviation is 3 patients.  Keeping track of this information requires extra effort by a busy receptionist, so the data is only collected randomly several days per month.  The administration monitors this measurement to detect trends or changes which might require alterations in the scheduling of staff and facilities.  
+Patients
+Month
+8 16 12 1 .1
+2 4 3 .5 .1
+2 10 5 2 1
+2 2 2 2 2 3 2 0
+SCENARIO 7:
+Force effort to activate a switch (newtons)
+A manufacturer of consumer electronic equipment purchases tactile switches from a supplier.  The force required to operate the switch is an important ergonomic factor which affects customer satisfaction.  Too much force means the switch is difficult to engage, while too little force means the switch might be engaged accidentally.  Variation arises from varying purity of raw materials and limitations of manufacturing.  Samples are taken from daily shipments and the activation force is measured to the nearest .001 newton.  Switches are intended to require a mean force of 2.958 newtons.  The process standard deviation is .14 newtons.
+Newtons
+Day
+2.75 3.25 2.958 .01 .001
+.08 .20 .14 .01 .001
+2 10 5 2 1
+1 3 1 4 1 5 1 3
+SCENARIO 8:
+Length of time for well-baby physical exam 
+Babies are supposed to have physical exams at intervals of three months unless they are sick.  A pediatric clinic schedules well-baby physical examinations at the rate of three per hour (20 minutes per exam).  This time allocation assumes a mean of 17 minutes for an exam plus a 3 minute buffer.  The standard deviation is 5 minutes.  There is variation in exam time depending on the baby's age, health, and the number of parent questions.  Each month, randomly chosen well-baby physical exams are timed to the nearest minute.  The goal is to detect changes in the mean or variance that might require revision of the scheduling policy.
+Minute
+Month
+10 30 17 2 .1
+5 10 5 1 .1
+2 10 5 2 1
+2 1 2 1 2 2 2 0
+SCENARIO 9:
+Unreadable bar codes in supermarket checkout lane
+At a certain large supermarket, the optical scanner sometimes fails to read the bar code of a scanned item, forcing the cashier to enter the product code manually. With existing equipment, an average of 90 non-scannable items per hour is expected, with a standard deviation of 15. There is variation due to the types of items purchased, the cashier's expertise in passing items over the scanner, dirt or foreign matter on the scanner, and wrinkled or imperfectly printed bar codes.  At random, checkout lanes are monitored for an hour to measure the non-scan rate.  If the non-scan rate is unacceptable, adjustments or service may be required.
+Non-Scans
+Hour
+60 120 90 10 1
+10 20 15 2 1
+2 10 5 2 1
+3 1 3 1 3 2 3 0
+SCENARIO 10:
+Length of e-mail messages sent over LAN
+Network managers need to know the volume and length of certain types of network traffic, so the network can be tuned to provide acceptable performance at various times of day.  In a certain large organization electronic mail is a major network application.  The length of e-mail messages varies widely.  Experience suggests that between 8:00 AM and 10:00 AM the mean message length is 5.8 kilobytes (kb) with a standard deviation of 2.5 kilobytes, so the network has been optimized on this assumption.  Once every 15 minutes a sample of e-mail message lengths is recorded.  The purpose is to evaluate the network parameters frequently.
+Kilobytes
+Quarter hour
+2.5 9.1 5.8 1 .1
+1 4 2.5 1 .1
+2 10 5 2 1
+2 2 2 2 2 3 2 1
+SCENARIO 11:
+Do-it-yourself: Whatever parameters you wish
+This option allows you to create your own process.  The mean and standard deviation are set to default values which you can alter.  If the range is not available on the controls, you can click on the actual process parameter and type in a number.  You should, however, use judgment to keep the numbers from becoming too large or too small, by shifting decimals or changing units.  For example, 12,300 can be expressed in thousands as 12.3, and .0137 can be expressed as 1.37 hundredths.  It will help keep the formatting nice if your numbers are within reasonable bounds.
+Units
+Interval
+0 1000 500 10 .1
+0 100 50 1 .1
+2 10 5 2 1
+4 2 4 3 4 4 4 2

@@ -1,0 +1,98 @@
+30 years (1960-1997), 89 variables divided into 8 categories (Elections, State of the Economy, Money Supply, Interest Rates, Government Budget, Labor Force, NIPA Variables, and Prices). Main source: Statistical Abstract of the U.S. 1998. All data are annual rates seasonally adjusted and in current dollars unless otherwise stated. Data were entered and checked by statistics students at Oakland University.
+Year
+20 variables describing election results in state and federal elections
+Presidential election year
+Binary variable coded 1 if President is a Republican, 0 if not
+Binary variable coded 1 if President is a Democrat 0 if not
+Number of Democrats in House of Representatives
+Number of Republicans in House of Representatives
+Number of Democrats in Senate
+Number of Republicans in Senate
+Number of Democratic governors
+Number of Republican governors
+Number of states where Democrats control the legislature
+Number of states where Democrats and Republicans each control one house
+Number of states where Republicans control the legislature
+Binary variable coded 1 if Democrats control the House of Representatives, 0 if not
+Binary variable coded 1 if Republicans control the House of Representatives, 0 if not
+Binary variable coded 1 if Democrats control the Senate, 0 if not
+Binary variable coded 1 if Republicans control the Senate, 0 if not
+Binary variable coded 1 if the majority of the governors are Democratic, 0 if not
+Binary variable coded 1 if the majority of the governors are Republican 0 if not
+Binary variable coded 1 if the majority of state legislators are Democratic, 0 if not
+Binary variable coded 1 if the majority of state legislators are Republican, 0 if not
+16 variables describing the state of the U.S. economy
+Binary variable coded 1 if there was a recession during at least 1 month of the year, 0 if not
+Binary variable coded 1 if there was a recession during at least 3 months of the year, 0 if not
+Binary variable coded 1 if there was a recession during at least 4 months of the year, 0 if not
+Binary variable coded 1 if there was a recession during at least 6 months of the year, 0 if not
+Business failure rate (per 10,000 listed enterprises)
+Manufacturing capacity utilization rate (percent)
+Corporate profits - manufacturing industries (billions)
+Corporate profits plus inventory changes minus capital consumption (billions)
+Corporate tax liability (billions)
+Total new housing units started (thousands)
+Ratio of inventories to final sales of domestic business
+Index of hourly business productivity (1992 = 100)
+Index of real business sector compensation per hour (1992 = 100)
+Dow-Jones industrial average of 30 stock prices
+Standard and Poor's composite index of 500 stock prices
+Average stock price to earnings ratio of S&P 500 stocks
+6 variables describing the money supply
+Currency + demand and other check deposits (billions)
+Percent change in M1 over previous year
+M1 + savings and small time deposits etc. (billions)
+Percent change in M2 over previous year
+M2 + large time deposits + Eurodollars + term RP's etc. (billions)
+Percent change in M3 over previous year
+4 interest rate variables
+Mean yield on 3-month treasury bills (percent)
+Mean yield on Moody's Aaa corporate bonds (percent)
+Discount rate - Federal Reserve Bank of New York
+Prime rate charged by U.S. banks  (percent)
+7 variables describing the budget and number of employees in the federal government and state and local government
+Federal government debt at year end (billions)
+Federal government budget (+) surplus, (-) deficit (billions)
+Federal government defense expenditures (billions)
+Federal government nondefense expenditures (billions)
+State and local government expenditures (billions)
+Federal government employees (thousands)
+State and local government employees (thousands)
+15 variables describing the labor force
+Number of employees in nonagricultural goods-producing industries (thousands)
+Female labor force participation rate - ratio of females 16 and over to population (percent)
+Male labor force participation rate - ratio of males 16 and over to population (percent)
+Number of employees in nonagricultural service industries (thousands)
+Civilian labor force (millions)
+Labor force participation rate - all civilian workers (percent)
+Black female labor force participation rate (percent)
+Black male labor force participation rate (percent)
+White female labor force participation rate (percent)
+White male labor force participation rate (percent)
+Civilian unemployment rate - all workers (percent)
+Civilian unemployment rate - black female workers (percent)
+Civilian unemployment rate - black male workers (percent)
+Civilian unemployment rate - white female workers (percent)
+Civilian unemployment rate - white male workers (percent)
+13 variables describing the National Income and Product Accounts
+Personal consumption expenditures (billions)
+Government purchases of goods and services (billions)
+Gross domestic product (billions)
+Gross private domestic investment (billions)
+Imports of goods and services (billions
+Exports of goods and services (billions)
+Net exports (billions)
+Average propensity to save as percent of GDP (gross saving)
+Personal consumption expenditures per capita (dollars)
+Disposable personal income per capita (current dollars)
+Total personal income (billions)
+Total personal saving (billions)
+Total personal taxes (billions)
+7 variables describing prices and consumer debt
+Inflation - percent change in consumer price index for urban consumers (CPI) over prior year
+Consumer price index for urban consumers for all items  (1982-84  = 100)
+Producer price index, finished goods  (1982 = 100)
+Total consumer automobile debt (billions)
+Total consumer revolving credit-card debt (billions)
+Total consumer debt outstanding (billions)
+Mortgage debt outstanding on all properties (billions)

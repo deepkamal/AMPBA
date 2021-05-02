@@ -1,0 +1,24 @@
+None
+There is no control problem.  
+You must be doing things right!
+Random
+The problem has been selected randomly from the following list: cycle, oscillation, instability, level shift, trend, and mixed processes.
+The cause depends on the problem.
+Cycle
+A cycle is a short, repeated series of high measurements followed by a series of low measurements.  Detected visually.  May lead to higher-than-expected frequencies in tails of histogram.
+Industry: worn threads or gears, humidity or temperature fluctuations, operator fatigue, voltage changes, over-adjustment.  Services: duty rotations, employee fatigue, poor scheduling, periodic distractions.
+Oscillation
+Oscillating measurements tend to be near upper or lower edges of the chart with fewer than expected near the centerline.  Detected visually or by runs test.  Variance increases but process mean may stay near centerline.
+Industry: alternating sampling, for example, of two machines, two settings, two inspectors, two gauges.  Services: attempts to compensate for performance variation on the last task, alternating task responsibility between two workers.
+Instability
+Instability is a larger than normal amount of variation.  It shows up as higher-than-expected frequencies in tails of histogram.  Smaller than normal variation is called stratification.
+Industry: untrained operators, over-adjustment, equipment in need of repair, tool wear, defective material.  Services: distractions, poor job design, untrained employees. Stratification may signify the sampling process is flawed, samples come from only one source, or forms are being filled out from memory.
+Level Shift
+Sudden level shift of measurements either above or below the centerline, with histogram shifted but showing no change in variation.  In effect, this is a change in the actual process centerline.
+Industry: new workers, change in equipment, new inspector, new machine setting, new lot of material.  Services: changed environment, new supervisor, misunderstanding of rules.
+Trend
+Trend is a slow, continuous drifting of measurements either up or down from the chart centerline, easily detected visually if enough measurements are taken.  Process variance is unchanged but due to shifting level the cumulative histogram grows skewed in one tail.
+Industry: tool wear, inadequate maintenance, worker fatigue, gradual clogging (dirt, shavings, etc.), drying out of lubricant.  Services: slow relaxing of attention, increasing task flow, bottlenecks.
+Mixed Processes
+A stable mixture of two processes will appear as two groups of measurements, each with its own centerline - often subtle, showing up only in R chart or as a histogram of means which is flatter in the middle and with heavier tails than expected.
+Industry: two machines, two gauges, two shifts (day, night), two inspectors, different lots of material.  Services: different supervisors, two work teams, two shifts.

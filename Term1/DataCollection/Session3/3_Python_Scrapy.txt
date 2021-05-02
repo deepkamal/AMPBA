@@ -1,0 +1,170 @@
+scrapy shell
+fetch("https://www.shopclues.com/mobiles-smartphones.html?facet_brand[]=Apple&fsrc=facet_brand")
+print(response.text)
+
+#access text from tag called title.
+    #response.css("title::text").extract()
+#access value of title attribute of time tag
+    #response.css("time::attr(title)").extract()
+#access text within a tag with class set to comments
+    #response.css('.comments::text').extract()
+    
+response.css('img::attr(title)').extract()
+response.css('img::attr(data-img)').extract()
+orig_price=response.css('.ori_price').css('.p_price::text').extract()
+[x.strip() for x in orig_price]
+response.css('span.prd_discount::text').extract()
+
+#Writing Custom Spiders
+scrapy startproject ourfirstscraper
+cd ourfirstscraper
+
+#Scraping an E-Commerce site
+scrapy genspider shopclues www.shopclues.com/mobiles-smartphones.html?facet_brand[]=Apple&fsrc=facet_brand
+#Image handling
+#Add the following lines to the settings.py file :
+
+ITEM_PIPELINES = {
+  'scrapy.pipelines.images.ImagesPipeline': 1
+}
+IMAGES_STORE = 'tmp/images/'
+
+import scrapy
+
+class ShopcluesSpider(scrapy.Spider):
+   #name of spider
+   name = 'shopclues'
+
+   #list of allowed domains
+   allowed_domains = ['www.shopclues.com/mobiles-smartphones.html?facet_brand[]=Apple&fsrc=facet_brand']
+   #starting url
+   start_urls = ['https://www.shopclues.com/mobiles-smartphones.html?facet_brand[]=Apple&fsrc=facet_brand']
+   #location of csv file
+   custom_settings = {
+       'FEED_URI' : 'tmp/shopclues.csv'
+   }
+
+   def parse(self, response):
+       #Extract product information
+       titles = response.css('img::attr(title)').extract()
+       images = response.css('img::attr(data-img)').extract()
+       orig_price=response.css('.ori_price').css('.p_price::text').extract()
+       prices=[x.strip() for x in orig_price]
+       discounts = response.css('.prd_discount::text').extract()
+
+
+       for item in zip(titles,prices,images,discounts):
+           scraped_info = {
+               'title' : item[0],
+               'price' : item[1],
+               'image_urls' : [item[2]], #Set's the url for scrapy to download images
+               'discount' : item[3]
+           }
+
+           yield scraped_info
+           
+
+scrapy crawl shopclues
+           
+           
+scrapy genspider techcrunch techcrunch.com/feed/
+import scrapy
+
+class TechcrunchSpider(scrapy.Spider):
+    #name of the spider
+    name = 'techcrunch'
+
+    #list of allowed domains
+    allowed_domains = ['techcrunch.com/feed/']
+
+    #starting url for scraping
+    start_urls = ['http://techcrunch.com/feed/']
+
+    #setting the location of the output csv file
+    custom_settings = {
+        'FEED_URI' : 'tmp/techcrunch.csv'
+    }
+
+    def parse(self, response):
+        #Remove XML namespaces
+        response.selector.remove_namespaces()
+
+        #Extract article information
+        titles = response.xpath('//item/title/text()').extract()
+        authors = response.xpath('//item/creator/text()').extract()
+        dates = response.xpath('//item/pubDate/text()').extract()
+        links = response.xpath('//item/link/text()').extract()
+
+        for item in zip(titles,authors,dates,links):
+            scraped_info = {
+                'title' : item[0],
+                'author' : item[1],
+                'publish_date' : item[2],
+                'link' : item[3]
+            }
+
+            yield scraped_info
+
+            
+scrapy crawl techcrunch
+
+====
+
+scrapy shell
+fetch("https://www.amazon.in/s?k=books")
+print(response.text)
+response.css('div[class="a-section aok-relative s-image-fixed-height"]').extract_first() 
+response.css('div[class="a-section aok-relative s-image-fixed-height"]').css('img::attr(alt)').extract() 
+response.css('div[class="a-section aok-relative s-image-fixed-height"]').css('img::attr(src)').extract() 
+response.css('span[class="a-size-medium a-color-base a-text-normal"]::text').extract() 
+response.css('a[class="a-size-base a-link-normal"]::text').extract()
+
+
+scrapy genspider amazonBooks www.amazon.in/s?k=books
+#Image handling
+#Add the following lines to the settings.py file :
+
+ITEM_PIPELINES = {
+  'scrapy.pipelines.images.ImagesPipeline': 1
+}
+IMAGES_STORE = 'tmp/images/'
+
+import scrapy
+
+class AmazonBooksSpider(scrapy.Spider):
+   #name of spider
+   name = 'amazonBooks'
+
+   #list of allowed domains
+   allowed_domains = ['www.amazon.in/s?k=books']
+   #starting url
+   start_urls = ['https://www.amazon.in/s?k=books']
+   #location of csv file
+   custom_settings = {
+       'FEED_URI' : 'tmp/amazonBooks.csv'
+   }
+
+   def parse(self, response):
+       #Extract product information
+       titles=response.css('div[class="a-section aok-relative s-image-fixed-height"]').css('img::attr(alt)').extract() 
+       images=response.css('div[class="a-section aok-relative s-image-fixed-height"]').css('img::attr(src)').extract() 
+       titles2=response.css('span[class="a-size-medium a-color-base a-text-normal"]::text').extract() 
+       authors=response.css('a[class="a-size-base a-link-normal"]::text').extract()
+
+       for item in zip(titles,titles2,images,authors):
+           scraped_info = {
+               'title' : item[0],
+               'title2' : item[1],
+               'image_urls' : [item[2]], #Set's the url for scrapy to download images
+               'author' : item[3]
+           }
+
+           yield scraped_info
+           
+
+scrapy crawl amazonBooks
+
+
+Selector Gadget is also a nice tool to quickly find CSS selector for visually selected elements, which works in many browsers.
+
+https://docs.scrapy.org/en/latest/intro/tutorial.html

@@ -1,0 +1,139 @@
+50 observations on state data (most from 1996 or 1997) for 128 variables divided into 9 categories (Crime, Demographic, Economic, Location and Area, Health, Elections, Social, and Auto Transportation). Main Source: Statistical Abstract of the U.S., 1998.  Highway safety and driver data is from the U. S. Department of Transportation web site <http://www.bts.gov/ntda/fhwa/prod.html>.
+13 variables describing crime and low enforcement within each state
+1996 aggravated assault rate per 100,000 population
+1996 burglary rate per 100,000 population
+1996 motor vehicle theft rate per 100,000 population
+1996 number of inmates on death row
+1996 inmates on death row per 1,000,000 pop
+1995 state and local corrections employees per 100,000 pop
+1996 larceny theft rate per 100,000 population
+1996 murder rate per 100,000 population
+1996 police officers per 10,000 population
+1996 prisoners per 1000 population
+1996 prisoners under jurisdiction of state and federal authorities
+1996 forcible rape rate per 100,000 population
+1996 robbery rate per 100,000 population
+10 variables describing the demographics of each state
+1997 percent of population less than 5 years old
+1997 percent of population aged 65 and over
+1996 median age of population
+1997 percent Asian or Pacific Island origin population
+1997 percent black population
+1997 percent Hispanic origin population
+1997 Hispanic origin population in thousands
+1997 total population in thousands of persons
+1990 - 1995 percent population change
+1997 population density in persons per square mile
+24 variables describing each state's economy
+1996 average weekly state unemployment benefit in dollars
+1996 Department of Defense contract awards in dollars per 1000 population
+1996 Department of Defense total contract awards in millions of dollars
+1997 average hourly earnings of mfg. production workers
+1994 energy consumption per capita (million BTU)
+1997 federal grants per capita for highway trust fund and FTA
+1997 proportion owner households to total occupied households
+1997 personal income per capita in current dollars
+1995 local government employees per 10,000 population
+1996 women's labor force participation rate
+1996 male's labor force participation rate among males
+1996 nuclear power plant percentage of total generation
+1996 percentage below the poverty level
+1995 state gasoline tax rate (cents per gallon)
+1996 state debt per capita in dollars
+1995 state and local govt. employees per 10,000 population
+1997 state government tax collections per capita
+1995 state and local govt. average October earnings
+1996 state government expenditure in dollars per capita
+1997 state sales tax in cents per dollar
+1996 unemployment rate, civilian labor force
+1996 percent unemployment of females in civilian labor force
+1996 percent unemployment of males in civilian labor force
+1997 union membership as percent of employed
+14 variables describing each state's educational climate
+1990 percent college graduates in population age 25 and over
+1995 public high school dropout rate
+1997 public K-12 school expenditure per capita
+1995 public high school graduation rate
+1994 Public library spending per 1,000 population
+1994 Public library spending in $1,000
+1997 Daily and Sunday newspaper circulation per capita
+1995-96 full-time faculty salary, public university
+1995 K-12 average pupil-teacher ratio
+1997 percent of high school graduates taking SAT test
+1997 average SAT quantitative test score
+1997 average SAT verbal test score
+1997 average salary of K-12 teachers in $1,000
+1996 average undergraduate tuition and fees at public higher educational institutions
+9 variables describing each state's physical features and location within the U.S.
+1990 land area in thousands of sq. km.
+1990 water area in thousands of sq. km.
+1990 water area as percent of total state area
+1990 total miles of salt-water coastline
+1990 percent of state land owned by federal government
+1 if state is in the Midwestern U.S., 0 otherwise
+1 if state is in the northeastern U.S., 0 otherwise
+1 is state is in the southeastern U.S., 0 otherwise
+1 if state is in the western U.S., 0 otherwise
+20 variables describing the health and medical resources within each state
+1995 abortions per 1000 women
+1995 death rate per 100,000 population due to accidents
+1996 hospital beds per thousand population
+1996 thousands of hospital beds
+1995 live birth rate per 1000 population
+1995 death rate per 100,000 population due to cancer
+1995 deaths rate per 100,000 population due to diabetes
+1996 active non-federal physicians per 100,000 population
+1997 number of hazardous waste sites on Superfund list
+1995 death rate per 100,000 population due to heart disease
+1995 average daily hospital cost in dollars per patient
+1995 infant mortality rate in deaths per 1000 live births
+1995 percent of births that are low weight (under 5lb 8oz)
+1995 death rate due per 100,000 due to pulmonary disease
+1996 nurses per 100,000 resident population
+1995 death rate per 100,000 population due to stroke
+1995 death rate by suicide per 100,000 population
+1995 percent of total births by teenage mothers
+1996 percentage of children without health insurance
+1996 percentage of people without health insurance
+14 variables describing the results of the 1996 election
+Democratic Governor in 1997 (1=yes, 0=no)
+Independent Governor in 1997 (1=yes, 0=no)
+Republican Governor in 1997 (1=yes, 0=no)
+Number of Democratic Representatives in the 104th U. S. Congress
+1 if Democratic majority of U.S. Representatives in 104th Congress
+Number of Republican Representatives in the 104th U. S. Congress
+Number of Democratic Senators the 104th U. S. Congress
+1 if Democratic majority of U.S. Senators in 104th Congress
+Number of Republican Senators in the 104th U. S. Congress
+Percent of votes for Repub. candidate in 1996 Presidential election
+Percent of votes for Dem. candidate in 1996 Presidential election
+Percent of votes for Reform candidate in 1996 Presidential election
+1994 registered voters as percent of voting age population
+1996 percent of registered voters who voted for President
+6 variables describing social welfare within each state
+1996 average monthly payment per family aid for dependent children
+1995 divorce rate per 1000 population
+1995 per capita children in out-of-home care
+1995 marriage rate per 1000 population
+1995 percent of total births by unmarried women
+1996 percent of population living in urban areas
+18 variables describing automobile transportation within the state
+1995 blood alcohol concentration limit for legal intoxication
+1996 Auto Insurance expenditures per insured vehicle
+1997 number of state drivers licenses issued in thousands
+1997 percent of licensed drivers who are male
+1997 percentage of drivers out of driving age population
+1997 number of registered vehicles in thousands
+1997 ratio of licensed drivers to private and commercial vehicles registered
+1997 number of drivers per 1000 total resident population
+ 1997 fatality rate per 1000 drivers
+1997 fatality rate per 1000 population
+1997 fatality rate per 1000 vehicles
+1 if state had a motorcycle helmet law in 1995, 0 otherwise
+1997 nonfatal injury rate per 1000 drivers
+1997 nonfatal injury rate per 1000 population
+1997 nonfatal injury rate per 1000 vehicles
+1997 annual vehicle miles per driver
+1997 annual vehicle miles per capita
+1997 annual vehicle miles per vehicle
+

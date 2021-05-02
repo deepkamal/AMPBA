@@ -1,0 +1,135 @@
+239 monthly observations (1980:1-1999:11) on 126 variables divided into 8 categories (Time Period, State Unemployment Rates, Labor Force, State of the Economy, Prices, Interest Rates, Money Supply, and Elections). Most variables are Not Seasonally Adjusted. Source: Unemployment data from Bureau of Labor Statistics database, January 2000, <http://stats.bls.gov/top20.html>; other economic data from FRED database, Federal Reserve of St. Louis, January 2000, <http://www.stls.frb.org/fred/>; and election data from Statistical Abstract of the United States.
+19 variables describing the time period
+Year
+Month January = 1
+Period January 1970 = 1
+Binary coded 1 if January, else 0.
+Binary coded 1 if February, else 0.
+Binary coded 1 if March, else 0.
+Binary coded 1 if April, else 0.
+Binary coded 1 if May, else 0.
+Binary coded 1 if June, else 0.
+Binary coded 1 if July, else 0.
+Binary coded 1 if August, else 0.
+Binary coded 1 if September, else 0.
+Binary coded 1 if October, else 0.
+Binary coded 1 if November, else 0.
+Binary coded 1 if December, else 0.
+Binary coded 1 if 1st Quarter, else 0.
+Binary coded 1 if 2nd Quarter, else 0.
+Binary coded 1 if 3rd Quarter, else 0.
+Binary coded 1 if 4th Quarter, else 0.
+52 unemployment rates for the entire U.S., the District of Columbia, and all 50 states, not seasonally adjusted
+US Unemployment Rate, not seasonally adjusted (percent)
+Alabama Unemployment Rate, not seasonally adjusted (percent)
+Alaska Unemployment Rate, not seasonally adjusted (percent)
+Arizona Unemployment Rate, not seasonally adjusted (percent)
+Arkansas Unemployment Rate, not seasonally adjusted (percent)
+California Unemployment Rate, not seasonally adjusted (percent)
+Colorado Unemployment Rate, not seasonally adjusted (percent)
+Connecticut Unemployment Rate, not seasonally adjusted (percent)
+Delaware Unemployment Rate, not seasonally adjusted (percent)
+Florida Unemployment Rate, not seasonally adjusted (percent)
+Georgia Unemployment Rate, not seasonally adjusted (percent)
+Hawaii Unemployment Rate, not seasonally adjusted (percent)
+Idaho Unemployment Rate, not seasonally adjusted (percent)
+Illinois Unemployment Rate, not seasonally adjusted (percent)
+Indiana Unemployment Rate, not seasonally adjusted (percent)
+Iowa Unemployment Rate, not seasonally adjusted (percent)
+Kansas Unemployment Rate, not seasonally adjusted (percent)
+Kentucky Unemployment Rate, not seasonally adjusted (percent)
+Louisiana Unemployment Rate, not seasonally adjusted (percent)
+Maine Unemployment Rate, not seasonally adjusted (percent)
+Maryland Unemployment Rate, not seasonally adjusted (percent)
+Massachusetts Unemployment Rate, not seasonally adjusted (percent)
+Michigan Unemployment Rate, not seasonally adjusted (percent)
+Minnesota Unemployment Rate, not seasonally adjusted (percent)
+Mississippi Unemployment Rate, not seasonally adjusted (percent)
+Missouri Unemployment Rate, not seasonally adjusted (percent)
+Montana Unemployment Rate, not seasonally adjusted (percent)
+Nebraska Unemployment Rate, not seasonally adjusted (percent)
+Nevada Unemployment Rate, not seasonally adjusted (percent)
+New Hampshire Unemployment Rate, not seasonally adjusted (percent)
+New Jersey Unemployment Rate, not seasonally adjusted (percent)
+New Mexico Unemployment Rate, not seasonally adjusted (percent)
+New York Unemployment Rate, not seasonally adjusted (percent)
+North Carolina Unemployment Rate, not seasonally adjusted (percent)
+North Dakota Unemployment Rate, not seasonally adjusted (percent)
+Ohio Unemployment Rate, not seasonally adjusted (percent)
+Oklahoma Unemployment Rate, not seasonally adjusted (percent)
+Oregon Unemployment Rate, not seasonally adjusted (percent)
+Pennsylvania Unemployment Rate, not seasonally adjusted (percent)
+Rhode Island Unemployment Rate, not seasonally adjusted (percent)
+South Carolina Unemployment Rate, not seasonally adjusted (percent)
+South Dakota Unemployment Rate, not seasonally adjusted (percent)
+Tennessee Unemployment Rate, not seasonally adjusted (percent)
+Texas Unemployment Rate, not seasonally adjusted (percent)
+Utah Unemployment Rate, not seasonally adjusted (percent)
+Vermont Unemployment Rate, not seasonally adjusted (percent)
+Virginia Unemployment Rate, not seasonally adjusted (percent)
+Washington Unemployment Rate, not seasonally adjusted (percent)
+West Virginia Unemployment Rate, not seasonally adjusted (percent)
+Wisconsin Unemployment Rate, not seasonally adjusted (percent)
+Wyoming Unemployment Rate, not seasonally adjusted (percent)
+Washington D.C. Unemployment Rate, not seasonally adjusted (percent)
+5 variables that describe other aspects of the U.S. labor force (most are seasonally adjusted)
+U.S. unemployment rate all civilian workers over 16, not seasonally adjusted
+Civilian unemployment rate - all workers (percent) - seasonally adjusted
+Number of unemployed (thousands) - all civilian workers - seasonally adjusted
+Number of employed (thousands) - all civilian workers - seasonally adjusted
+Civilian labor force (thousands), seasonally adjusted
+5 variables that describe the state of the U.S. economy
+Binary variable coded 1 if there was a recession any time during the month, 0 if not
+Index of leading economic indicators 1992 = 100 (Conference Board)
+Index of coincidental economic indicators 1992 = 100 (Conference Board)
+Index of lagging economic indicators 1992 = 100 (Conference Board)
+Retail sales, millions of dollars, not seasonally adjusted         
+6 variables describing prices
+Consumer price index for all urban consumers, not seasonally adjusted, 1982-84 = 100
+Inflation over the past month annualized, based on CPI, not seasonally adjusted
+Inflation over the past 12 months, based on CPI, not seasonally adjusted
+Median expected price change next 12 months in percent (Survey Research Center, University of Michigan)
+Producer Price Index for all commodities, not seasonally adjusted, 1982 = 100
+Oil price in dollars per barrel, West Texas Intermediate (prior 1982, posted price)
+7 variables describing interest rates
+Federal Reserve discount rate
+Bank prime interest rate
+Federal Funds interest rate
+3 month Treasury Bill interest rate, auction average
+6 month Treasury Bill interest rate, auction average
+1 year government bond constant maturity rate
+6 month certificate of deposit rate
+11 variables describing the money supply
+Currency in circulation, not seasonally adjusted (billions)
+Annualized percent change in M0, not seasonally adjusted
+Currency, demand deposits, and other check deposits, not seasonally adjusted (billions)
+Annualized percent change in M1, not seasonally adjusted
+M1 + savings and small time deposits, not seasonally adjusted (billions)
+Annualized percent change in M2, not seasonally adjusted
+M2 + large time deposits + Eurodollars + term RP's, not seasonally adjusted (billions)
+Annualized percent change in M3, not seasonally adjusted
+St. Louis Adjusted Monetary Base, not seasonally adjusted (billions)
+Federal Reserve Board Adjusted Monetary Base, not seasonally adjusted (billions)
+Federal Reserve Board Unadjusted Monetary Base, not seasonally adjusted (billions)
+21 variables describing election results at the national and state level.
+12 months before a Presidential election
+6 months before Congressional elections
+Binary variable coded 1 if President is a Republican, 0 if not
+Binary variable coded 1 if President is a Democrat 0 if not
+Number of Democrats in House of Representatives
+Number of Republicans in House of Representatives
+Number of Democrats in Senate
+Number of Republicans in Senate
+Number of Democratic governors
+Number of Republican governors
+Number of states where Democrats control the legislature
+Number of states where Democrats and Republicans each control one house
+Number of states where Republicans control the legislature
+Binary variable coded 1 if Democrats control the House of Representatives, 0 if not
+Binary variable coded 1 if Republicans control the House of Representatives, 0 if not
+Binary variable coded 1 if Democrats control the Senate, 0 if not
+Binary variable coded 1 if Republicans control the Senate, 0 if not
+Binary variable coded 1 if the majority of the governors are Democratic, 0 if not
+Binary variable coded 1 if the majority of the governors are Republican 0 if not
+Binary variable coded 1 if the majority of state legislatures are Democratic, 0 if not
+Binary variable coded 1 if the majority of state legislatures are Republican, 0 if not

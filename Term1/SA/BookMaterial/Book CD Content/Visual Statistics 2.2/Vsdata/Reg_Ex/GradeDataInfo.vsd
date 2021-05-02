@@ -1,0 +1,18 @@
+79 students, 17 variables. Data covers two sections of introductory statistics taught by the same instructor. Grading is on a scale from 0.0 to 4.0 in increments of 0.1. A project is a written report and oral presentation involving data analysis by teams of 3-4 students. Each team member of the team gets the same grade except for unusual slackness or leadership (team members rate one anothers' contributions). A homework is an individual set of independent learning exercises. A popquiz is an unannounced closed-book 20-minute problem/essay test over topics covered in the last 1-2 weeks. A quiz is an announced 30-minute multiple-choice/problem/essay test that covers 4-5  weeks' material. An exam is an announced multiple-choice/problem/essay test covering everything in the previous 6 weeks. Course is the grade received in the class.
+Semester grade (0.0 to 4.0) for entire course
+1=fall class, 2=winter class (same instructor and time of day)
+Grade (0.0 to 4.0 by .1) on first written and oral project report involving data analysis by teams of 3-4 students
+Grade (0.0 to 4.0 by .1) on second written and oral project report involving data analysis by teams of 3-4 students
+Grade (0.0 to 4.0 by .1) on first set of independent learning exercises.
+Grade (0.0 to 4.0 by .1) on first unannounced 20-minute essay/problem quiz over topics in the last 1-2 weeks
+Grade (0.0 to 4.0 by .1) on second unannounced 20-minute essay/problem quiz over topics in the last 1-2 weeks
+Grade (0.0 to 4.0) on first announced 30-minute mult-choice/problem/essay quiz that covers 4-5  weeks' material
+Grade (0.0 to 4.0) on first 100-minute mult-choice/problem/essay mid-term exam covering 6 weeks' material
+Grade (0.0 to 4.0 by .1) on third written and oral project report involving data analysis by teams of 3-4 students
+Grade (0.0 to 4.0 by .1) on fourth written and oral project report involving data analysis by teams of 3-4 students
+Grade (0.0 to 4.0 by .1) on second set of independent learning exercises.
+Grade (0.0 to 4.0 by .1) on third unannounced 20-minute essay/problem quiz over topics in the last 1-2 weeks
+Grade (0.0 to 4.0 by .1) on fourth unannounced 20-minute essay/problem quiz over topics in the last 1-2 weeks
+Grade (0.0 to 4.0) on second announced 30-minute mult-choice/problem/essay quiz that covers 4-5  weeks' material
+Grade (0.0 to 4.0) on second 100-minute mult-choice/problem/essay mid-term exam covering 6 weeks' material
+Average grade (0.0 to 4.0) on two 100-minute mult-choice/problem/essay mid-term exams covering 6 weeks' material

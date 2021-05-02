@@ -1,0 +1,6 @@
+Topics illustrated: well-behaved cross-sectional data. 40 observations, 4 predictors. Data are taken from used airplane reports in Flying Magazine (various issues from 1997 to 1999). Data are for educational use only and should not be viewed as a guide to aircraft performance. Cruise speed generally assumes 65% or 75% power at 8,000 ft (18,000 ft. for turbocharged aircraft) and is reported in knots indicated air speed (KIAS) or nautical miles per hour. Data were entered by statistics student Douglas H. Hogg, Jr.
+Year of production
+Number of propeller blades
+Turbocharged? (1=Yes, 0=No)
+Total horsepower (both engines if twin)
+Cruise speed at 65%-75% power (kts)

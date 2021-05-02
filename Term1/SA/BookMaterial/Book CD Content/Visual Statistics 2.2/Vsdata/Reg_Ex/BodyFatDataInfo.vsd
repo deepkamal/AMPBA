@@ -1,0 +1,19 @@
+252 male subjects, 18 variables. Data are from Roger W. Johnson, Fitting Percentage of Body Fat to Simple Body Measurements, Journal of Statistics Education, 1996. Original data were supplied by Dr. A. Garth Fisher, Human Performance Research Center, Brigham Young University, Provo, Utah. Some anomalies exist. For instance, the body densities for cases 48, 76, and 96 seem to have one digit in error as can be seen from the two body fat percentage values.  Note also a man (case 42) over 200 pounds in weight who is less than 3 feet tall (the height should presumably be 69.5 inches, not 29.5 inches).  Percent body fat estimates are truncated to zero when negative (case 182).
+Adiposity index = Weight/Height^2 (kg/m^2)
+Percent body fat using Brozek's equation: 457/Density - 414.2
+Percent body fat using Siri's equation: 495/Density - 450
+Density (gm/cm^3)
+Age (yrs)
+Weight (lbs)
+Height (inches)
+Fat Free Weight = (1 - fraction of body fat) * Weight, using Brozek's formula (lbs)
+Neck circumference (cm)
+Chest circumference (cm)
+Abdomen circumference (cm) "at the umbilicus and level with the iliac crest" 
+Hip circumference (cm)
+Thigh circumference (cm)
+Knee circumference (cm)
+Ankle circumference (cm)
+Extended biceps circumference (cm)
+Forearm circumference (cm)
+Wrist circumference (cm) "distal to the styloid processes"

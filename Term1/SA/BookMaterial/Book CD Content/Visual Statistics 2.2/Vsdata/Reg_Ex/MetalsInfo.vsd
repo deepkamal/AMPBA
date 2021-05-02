@@ -1,0 +1,4 @@
+Topics illustrated: time series data, collinearity, lack of causal model. 18 observations, 3 predictors. Data are from the Statistical Abstract of the United States, various years.
+Price in cents per pound (New York)
+Price in dollars per fine ounce
+Price in dollars per troy ounce

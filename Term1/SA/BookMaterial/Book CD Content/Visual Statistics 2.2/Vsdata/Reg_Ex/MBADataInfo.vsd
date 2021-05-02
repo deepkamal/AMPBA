@@ -1,0 +1,41 @@
+266 respondents, 40 variables. A questionnaire was administered to enrolled MBA students in six classes at a medium-size public AACSB-accredited business school in the north central U.S in September, 1990. This sampling procedure was repeated in February, 1998. If respondent gave a range of answers, the midpoint was entered in the database (e.g. 40-50 became 45).  Fractions were rounded to nearest whole number except that car age was rounded down (e.g. 1½ rounded to 1).
+Year survey was taken (1=1990, 2=1998)
+Gender of respondent (male=0, female=1)
+Approximate undergraduate GPA (1.0 to 4.0)
+1 if undergraduate major was business, 0 otherwise
+1 if undergraduate major was engineering, 0 otherwise
+1 if undergraduate major was science or math, 0 otherwise
+1 if undergraduate major was social science, 0 otherwise
+1 if undergraduate major was arts or humanities, 0 otherwise
+Your outside non-school work per week (hours)
+Your opinion of ideal number of children for married couple
+Counting self, number of children your parents had
+Difference between ideal and parents' children
+Your dominant parent on 1 to 5 scale (end anchors only: 1=clearly mother, 5=clearly father)
+1 if response is 1 or 2 on dominant parent question, 0 otherwise
+1 if response is 4 or 5 on dominant parent question, 0 otherwise
+Your perception of the MBA job market on 1 to 5 scale (end anchors only: 1=terrible, 5=excellent)
+1 if response is 1 or 2 on job market question, 0 otherwise
+1 if response is 1 or 2 on job market question, 0 otherwise
+How many miles from campus do you live (0=on campus)
+Number of schedule interruptions due to car problems last month
+College education of your more educated parent (years)
+1 if parent has 1 or more years of college, 0 otherwise
+1 if parent has 4 or more years of college, 0 otherwise
+1 if parent has more than 4 years of college, 0 otherwise
+Number of traffic tickets you received in last year (except parking)
+1 if liberal political orientation, 0 otherwise (choices were liberal, middle-of-road, conservative)
+1 if conservative political orientation, 0 otherwise (choices were liberal, middle-of-road, conservative)
+Age of car you usually drive (years)
+Times in last year you attended formal religious services
+How often do you read a daily newspaper (0=never, 1=occasionally, 2=regularly)
+1 if respondent reads newspaper occasionally or regularly, 0 otherwise
+1 if respondent reads newspaper regularly, 0 otherwise
+Did you engage in intermural college or high school sports ( 0=none, 1=one, 2=more than one)
+1 if respondent engaged in at least one sport, 0 otherwise
+1 if respondent engaged in more than one sport, 0 otherwise
+Can you conduct simple transactions in a foreign language? (0=no, 1=yes)
+How often do you exercise at aerobics, running, etc. (0=not at all, 1=sometimes, 2=regularly)
+1 if respondent exercises sometimes or regularly, 0 otherwise
+1 if respondent exercises regularly, 0 otherwise
+Which level MBA classes are you now taking (1=first year, 2=second year, 3=third year)

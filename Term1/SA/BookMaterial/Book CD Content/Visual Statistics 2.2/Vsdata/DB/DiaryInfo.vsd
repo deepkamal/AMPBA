@@ -1,0 +1,33 @@
+This database contains 29 variables describing the household's characteristics, income, food expenses, and the average weekly expenditure on grocery items over two weeks for 200 households. You may take a sample of the households or use the entire database. Data is a sample from 3,626 households who kept an expenditure diary during the 4th quarter of 1989 (adjusted to 1999 dollars). Source: U.S. Bureau of Labor Statistics, Consumer Expenditure Survey, 1991.
+6 variables describing the household.
+The number of people in the household.
+Binary variable coded 1 if there are children in the household, 0 if not.
+The number of children in the household.
+Binary variable coded 1 if there are adults over age 64 in the household, 0 if not.
+The number of adults over age 64 in the household.
+Binary variable coded 1 for urban, 0 for rural.
+6 variables describing the household's income and expenditures on food in general.
+Average weekly income (net of taxes) for the household.
+Binary variable coded 1 if the household received food stamps during the last 12 months, 0 if not.
+The average weekly amount of food stamps received over the last 12 months.
+The average weekly amount spent on groceries over the last year.
+The amount spent on food away from home during the diary week.
+The amount spent on food for home use during the diary week.
+17 variables describing the amount spent on types of grocery items.
+The amount spent on cereals during the diary week.
+The amount spent on bake products during the diary week.
+The amount spent on beef and pork during the diary week.
+The amount spent on poultry during the diary week.
+The amount spent on seafood during the diary week.
+The amount spent on dairy products (including eggs) during the diary week.
+The amount spent on fresh fruits and vegetables during the diary week.
+The amount spent on processed fruits and vegetables during the diary week.
+The amount spent on candy and other sweets during the diary week.
+The amount spent on non-alcoholic beverages during the diary week.
+The amount spent on oils during the diary week.
+The amount spent on other food items during the diary week.
+The amount spent on alcoholic beverages during the diary week.
+The amount spent on smoking supplies during the diary week.
+The amount spent on pet food during the diary week.
+The amount spent on housecleaning supplies during the diary week.
+The amount spent on non-prescription drugs during the diary week.

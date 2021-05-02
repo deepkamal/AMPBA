@@ -1,0 +1,79 @@
+.nav {
+	COLOR: #000000;
+	FONT-SIZE: 11px;
+	TEXT-DECORATION: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.nav:hover {
+	TEXT-DECORATION: underline;
+}
+.navLocked {
+	FONT-SIZE: 11px;
+	TEXT-DECORATION: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.navLocked:hover {
+	FONT-STYLE: italic; 
+	TEXT-DECORATION: underline
+}
+.author {
+	FONT-FAMILY: verdana, arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.booktitle {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 16px; 
+	FONT-FAMILY: verdana, arial, sans-serif
+}
+.footer {
+	FONT-SIZE: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.bannertitle {
+	COLOR: #FFFFFF;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 20px;
+	FONT-FAMILY: verdana, arial, sans-serif;
+	text-transform: uppercase;
+	line-height: 18px;
+}
+.content {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.bannernav {
+    COLOR: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.bannerbackground {
+	background-color: #FFFFFF;
+}
+.Help {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	TEXT-DECORATION: none;
+	color: #000000;
+}
+.Help:hover {
+	TEXT-DECORATION: underline;
+}
+.CDtitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #000000;
+	background-color: #99CCCC;
+}
+.spacer {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+}
+.CTBheadings {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000099;
+}

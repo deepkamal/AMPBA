@@ -1,0 +1,10 @@
+Topics illustrated: multicollinearity (overall versus pairwise collinearity), effect of sample size on significance, outliers. 250 observations, 8 predictors. Data are from an independent research study of turbofan thrust by master's degree students Ken Harness and Echung Su. All data have been transformed linearly to maintain confidentiality of product performance data.
+Order in which the test was performed
+Turbine temperature (deg F)
+Takeoff airflow (lb/sec)
+Turbine speed (rpm)
+Main oil temp (deg F)
+Tajeoff oil pressure (psi)
+Total run time (hours)
+Total number of thermal cycles
+Takeoff thrust (lbs)

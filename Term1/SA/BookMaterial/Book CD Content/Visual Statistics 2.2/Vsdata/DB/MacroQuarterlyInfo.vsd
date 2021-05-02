@@ -1,0 +1,191 @@
+119 quarterly observations (1970:1-1999:3), 174 variables divided into 16 categories (Time Period Variables, Elections, State of the Economy, Productivity, GDP or GNP, Income, Consumption, Investment and Savings, Government Budget, Exports and Imports, Compensation, Corporate Profits, Prices, Labor Force, Interest Rates, and Money Supply). All data are in current dollars and seasonally adjusted annual rates unless otherwise stated. Source: Economic data from FRED database, Federal Reserve of St. Louis, January 2000, <http://www.stls.frb.org/fred/> and election data from Statistical Abstract of the United States.
+7 variables describing the time period.
+Year
+Quarter
+Period number - January 1970 is period 1
+Binary variable coded 1 if first quarter, 0 if not.
+Binary variable coded 1 if second quarter, 0 if not.
+Binary variable coded 1 if third quarter, 0 if not.
+Binary variable coded 1 if fourth quarter, 0 if not.
+21 variables describing election results at the national and state level.
+12 months before a Presidential election
+6 months before Congressional elections
+Binary variable coded 1 if President is a Republican, 0 if not
+Binary variable coded 1 if President is a Democrat 0 if not
+Number of Democrats in House of Representatives
+Number of Republicans in House of Representatives
+Number of Democrats in Senate
+Number of Republicans in Senate
+Number of Democratic governors
+Number of Republican governors
+Number of states where Democrats control the legislature
+Number of states where Democrats and Republicans each control one house
+Number of states where Republicans control the legislature
+Binary variable coded 1 if Democrats control the House of Representatives, 0 if not
+Binary variable coded 1 if Republicans control the House of Representatives, 0 if not
+Binary variable coded 1 if Democrats control the Senate, 0 if not
+Binary variable coded 1 if Republicans control the Senate, 0 if not
+Binary variable coded 1 if the majority of the governors are Democratic, 0 if not
+Binary variable coded 1 if the majority of the governors are Republican 0 if not
+Binary variable coded 1 if the majority of state legislators are Democratic, 0 if not
+Binary variable coded 1 if the majority of state legislators are Republican, 0 if not
+10 variables describing the state of the economy.
+Number of months in the quarter that the economy is in a recession
+Index of leading economic indicators 1992 = 100 (Conference Board)
+Index of coincidental economic indicators 1992 = 100 (Conference Board)
+Index of lagging economic indicators 1992 = 100 (Conference Board)
+Total industry capacity utilization (percent of capacity), seasonally adjusted
+Manufacturing capacity utilization (percent of capacity), seasonally adjusted
+Production index, 1992=100, seasonally adjusted.
+Consumer sentiment (66Q1 = 100), 2nd month of quarter, not seasonally adjusted (University of Michigan)
+Single family housing starts (thousands), seasonally adjusted annual rate
+Real private residential fixed investment in billions of dollars, seasonally adjusted annual rate
+5 variables describing U.S. productivity 
+Index of output per hour of all persons in the business sector (1992=100), seasonally adjusted
+Index of output per hour of all persons in the nonfarm business sector (1992=100), seasonally adjusted
+Index of output per hour of all persons in manufacturing (1992=100), seasonally adjusted
+Index of labor costs in the nonfarm business sector (1992=100), seasonally adjusted
+Index of labor costs in the manufacturing sector (1992=100), seasonally adjusted
+9 variables measuring Gross Domestic Product and Gross National Product
+Gross Domestic Product, billions of dollars, seasonally adjusted annual rate
+Real Gross Domestic Product in billions of 1992 dollars, seasonally adjusted annual rate
+Real Gross Domestic Product in billions of 1996 chained dollars, seasonally adjusted annual rate
+Gross National Product, billions of dollars, seasonally adjusted annual rate
+Real Gross National Product in billions of 1992 dollars, seasonally adjusted annual rate
+Real Gross National Product in billions of chained 1996 dollars, seasonally adjusted annual rate
+Real potential Gross Domestic Product in billions of chained 1992 dollars, seasonally adjusted annual rate
+Final sales of domestic output in billions of dollars, seasonally adjusted annual rate
+Real final sales of domestic output in billions of 1996 chained dollars, seasonally adjusted annual rate
+8 variables describing personal income and taxes
+National income in billions of dollars, seasonally adjusted annual rate
+Real national income in billions of dollars, seasonally adjusted annual rate
+Personal income, billions of dollars, seasonally adjusted annual rate
+Real personal income in billions of 1996 chained dollars, seasonally adjusted annual rate
+Disposable personal income, billions of dollars, seasonally adjusted annual rate
+Real disposable personal income in billions of chained 1996 dollars, seasonally adjusted annual rate
+Personal income taxes, billions of dollars, seasonally adjusted annual rate
+Real personal income taxes in billions of 1996 chained dollars, seasonally adjusted annual rate
+13 variables describing consumption and savings in the U.S.
+Personal consumption expenditures, billions of dollars, seasonally adjusted annual rate
+Real personal consumption expenditures in billions of chained 1996 dollars, seasonally adjusted annual rate
+Durable good expenditures, billions of dollars, seasonally adjusted annual rate
+Durable good expenditures in billions of chained 1996 dollars, seasonally adjusted annual rate
+Nondurable good expenditures, billions of dollars, seasonally adjusted annual rate
+Nondurable good expenditures in billions of chained 1996 dollars, seasonally adjusted annual rate
+Service expenditures, billions of dollars, seasonally adjusted annual rate
+Service expenditures in billions of chained 1996 dollars, seasonally adjusted annual rate
+Personal savings, billions of dollars, seasonally adjusted annual rate
+Real personal savings in billions of chained 1996 dollars, seasonally adjusted annual rate
+Personal savings rate in percent, seasonally adjusted
+Retail sales, millions of dollars, seasonally adjusted         
+Real retail sales adjusted using CPI (1982-84 = 100), millions of dollars, seasonally adjusted
+5 variables describing U.S. investment and total gross savings
+Gross private domestic investment in billions of dollars, seasonally adjusted annual rate
+Gross private domestic investment in billions of 1996 chained dollars, seasonally adjusted annual rate
+Net foreign investment in billions of dollars, seasonally adjusted annual rate
+Gross private saving in billions of dollars, seasonally adjusted annual rate
+Total gross saving in billions of dollars, seasonally adjusted annual rate
+22 variables describing the federal, state and local, and total government budget
+Federal government consumption and gross Investment in billions of dollars, seasonally adjusted annual rate
+Real federal government consumption and gross Investment in billions of chained 1996 dollars, seasonally adjusted annual rate
+Federal government consumption and gross Investment expenditures on defense in billions of dollars, seasonally adjusted annual rate
+Federal government grants to state and local governments in billions of dollars, seasonally adjusted annual rate
+All federal government expenses in billions of dollars, seasonally adjusted annual rate (includes Social Security, Medicare, interest payments, etc.)
+All federal government revenue in billions of dollars, seasonally adjusted annual rate
+Federal government budget surplus (+) or deficit (-) in billions of dollars, seasonally adjusted annual rate
+State and local government consumption and gross Investment in billions of dollars, seasonally adjusted annual rate
+Real state and local government consumption and gross Investment in billions of dollars, seasonally adjusted annual rate
+All state and local government expenses in billions of dollars, seasonally adjusted annual rate
+All state and local government revenue in billions of dollars, seasonally adjusted annual rate
+State and local government budget surplus (+) or deficit (-) in billions of dollars, seasonally adjusted annual rate
+All government consumption and gross Investment in billions of dollars, seasonally adjusted annual rate
+Real total government consumption and gross Investment in billions of dollars, seasonally adjusted annual rate
+All government expenses in billions of dollars, seasonally adjusted annual rate
+All government revenue in billions of dollars, seasonally adjusted annual rate
+Total government budget surplus (+) or deficit (-) in billions of dollars, seasonally adjusted annual rate
+Federal government debt, end of quarter, billions of dollars, not seasonally adjusted
+Federal government debt held by foreign investors, end of quarter, billions of dollars, not seasonally adjusted
+Federal government debt held by Federal Reserve Banks, end of quarter, billions of dollars, not seasonally adjusted
+Federal government debt held by private investors, end of quarter, billions of dollars, not seasonally adjusted
+Federal government debt held by the public, end of quarter, billions of dollars, not seasonally adjusted
+6 variables describing exports and imports
+Net exports of goods and services, billions of dollars, seasonally adjusted annual rate
+Real net exports of goods and services in billions of chained 1996 dollars, seasonally adjusted annual rate
+Exports of goods and services, billions of dollars, seasonally adjusted annual rate
+Real exports of goods and services in billions of chained 1996 dollars, seasonally adjusted annual rate
+Imports of goods and services, billions of dollars, seasonally adjusted annual rate
+Real imports of goods and services in billions of chained 1996 dollars, seasonally adjusted annual rate
+5 variables describing corporate profits, taxes and dividends
+Corporate profits with inventory valuation adjustment and capital consumption adjustment, billions of dollars, seasonally adjusted annual rate
+Corporate profits after taxes with inventory valuation adjustment and capital consumption adjustment, billions of dollars, seasonally adjusted annual rate
+Corporate taxes, billions of dollars, seasonally adjusted annual rate
+Corporate dividends, billions of dollars, seasonally adjusted annual rate
+S&P 500 Composite, total return monthly dividend reinvestment prior to 1988, switched to daily reinvestment in 1988
+5 variables describing employee compensation
+Index of compensation per hour in the nonfarm business sector (1992 = 100), seasonally adjusted
+Index of real compensation per hour in the nonfarm business sector (1992 = 100), seasonally adjusted
+Index of compensation per hour in the business sector (1992 = 100), seasonally adjusted
+Compensation to employees, billions of dollars, seasonally adjusted annual rate
+Wages and salaries to employees, billions of dollars, seasonally adjusted annual rate
+10 variables describing prices in the U.S.
+Consumer price index for all urban consumers, seasonally adjusted, 1982-84 = 100
+Consumer price index for Energy, all urban consumers seasonally adjusted, 1982-84 = 100
+Consumer price index for Food, all urban consumers seasonally adjusted, 1982-84 = 100
+Producer Price Index for consumer finished goods, seasonally adjusted, 1982 = 100
+Producer Price Index for finished goods, seasonally adjusted, 1982 = 100
+Producer Price Index for capital equipment, seasonally adjusted, 1982 = 100
+GDP chain-type price index (1996 = 100)
+Inflation over the past month annualized, based on CPI, seasonally adjusted
+Inflation over the past 12 months, based on CPI, seasonally adjusted
+Average oil price during quarter in dollars per barrel, West Texas Intermediate (prior 1982, posted price)
+22 variables describing the population, labor force, and employment
+Civilian unemployment rate - all workers (percent)
+Number of unemployed (thousands) - all civilian workers
+Number of employed (thousands) - all civilian workers
+Civilian labor force (thousands)
+Median duration (weeks) of unemployment, seasonally adjusted
+Number of civilians unemployed less than 5 weeks, seasonally adjusted (thousands)
+Number of civilians unemployed more than 15 weeks, seasonally adjusted (thousands)
+Index of help wanted advertising in newspapers (1987 = 100)
+Civilian noninstitutional population 16 years and over, not seasonally adjusted (thousands)
+Percent of civilian employed out of civilian noninstitutional population16 years and over
+Total population (thousands)
+Number employed in manufacturing, seasonally adjusted (thousands)
+Number employed in government, seasonally adjusted (thousands)
+Number employed in services, seasonally adjusted (thousands)
+Number employed in retail trade industry, seasonally adjusted (thousands)
+Number employed in transportation and public utilities industry, seasonally adjusted (thousands)
+Number employed in wholesale trade industry, seasonally adjusted (thousands)
+Number employed in construction industry, seasonally adjusted (thousands)
+Number employed in finance, insurance, and real estate, seasonally adjusted (thousands)
+Number employed in mining, seasonally adjusted (thousands)
+Number employed in service producing industries, seasonally adjusted (thousands)
+Number employed in goods producing industries, seasonally adjusted (thousands)
+12 variables describing interest rates.
+Federal Reserve discount rate
+Bank prime interest rate
+Federal Funds interest rate
+3 month Treasury Bill interest rate, auction average
+6 month Treasury Bill interest rate, auction average
+1 year government bond constant maturity rate
+3 year government bond constant maturity rate
+5 year government bond constant maturity rate
+10 year government bond constant maturity rate
+20 year government bond constant maturity rate (1986:1-1993:9 estimated from 30 year bonds)
+6 month certificate of deposit rate
+30 year FHA mortgage rate
+14 variables describing the money supply.
+Demand deposits at commercial banks, seasonally adjusted (billions)
+Saving deposits at commercial banks, seasonally adjusted (billions)
+Saving deposits at thrift institutions, seasonally adjusted (billions)
+Saving deposits at all financial institutions, seasonally adjusted (billions)
+Currency in circulation, seasonally adjusted (billions)
+Annualized percent change in M0, seasonally adjusted (percent)
+Currency, demand deposits, and other check deposits, seasonally adjusted (billions)
+Annualized percent change in M1, seasonally adjusted (percent)
+M1 + savings and small time deposits, seasonally adjusted (billions)
+Annualized percent change in M2, seasonally adjusted (percent)
+M2 + large time deposits + Eurodollars + term RP's, seasonally adjusted (billions)
+Annualized percent change in M3, seasonally adjusted (percent)
+St. Louis Adjusted Monetary Base, seasonally adjusted (billions)
+Federal Reserve Board Adjusted Monetary Base, seasonally adjusted (billions)

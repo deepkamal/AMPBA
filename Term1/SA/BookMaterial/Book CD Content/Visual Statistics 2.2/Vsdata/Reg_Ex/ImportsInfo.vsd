@@ -1,0 +1,6 @@
+Problems illustrated: severe multicollinearity, spurious correlation (non-causal) due to upward trend. 26 cases, 4 predictors. Data are from David P. Doane, Exploring Statistics with the IBM PC, Addison-Wesley Publishing Co., 1988, p. 296-297. Like the Longley data, this data set is not proposed as a reasonable model, but rather as a challenging test of the accuracy of a regression algorithm and to illustrate extreme variance inflation.
+U.S. total exports of goods and services (billions)
+U.S. total imports of goods and services (billions
+U.S. total personal consumption expenditures (billions)
+U.S. total personal income (billions)
+U.S. total currency + demand and other check deposits (billions)

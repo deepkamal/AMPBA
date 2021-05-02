@@ -1,0 +1,1 @@
+[#prodName: "9780073344928", #windowsLaunch: "LA\index.html", #osxLaunch: "LA:index.html", #classicLaunch: "LA:index.html"]

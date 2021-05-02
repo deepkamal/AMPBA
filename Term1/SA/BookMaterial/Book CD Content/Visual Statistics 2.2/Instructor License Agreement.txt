@@ -1,0 +1,81 @@
+Copyright (c) 1997-2001 by The McGraw-Hill Companies, All 
+rights reserved.
+
+Visual Statistics software and worktext are protected by both 
+U.S. copyright laws and international copyright treaty 
+provisions.
+
+The McGraw-Hill Companies grants you a non-exclusive 
+license to use the software in accordance with the following 
+terms.  Visual Statistics software and worktext are licensed 
+material and remain the property of The McGraw-Hill 
+Companies.
+
+If you are a full-time or part-time INSTRUCTOR at an 
+educational institution The McGraw-Hill Companies grants 
+you, and only you, the right to use either the INSTRUCTOR 
+COMPACT or INSTRUCTOR COMPLETE setup type on 
+your work, home, or portable computer.  You may also 
+authorize someone at your educational institution to use your 
+CD to install a RESTRICTED SITE LICENSE in computer 
+labs using either the LAB COMPUTER TYPICAL - FREE or 
+LAB COMPUTER SPECIAL - FREE setup types. 
+
+If you purchase a one-year LIMITED SITE LICENSE you 
+agree to have software that will enforce the 10 simultaneous 
+user restriction, and that all client computers will run Visual 
+Statistics from the server. You will not install Visual Statistics 
+in any manner that circumvents these requirements. You 
+also agree to keep the Serial Code confidential. Sharing the 
+code with others is a license violation.  This unrestricted 
+license is not transferable.
+
+If you purchase a one-year UNLIMITED SITE LICENSE you 
+agree to keep the Serial Code confidential. Sharing the code 
+with others is a license violation. This unrestricted license is 
+not transferable.
+
+The McGraw-Hill Companies further grants you the right to 
+transfer this free license, the software, the worktext, and the 
+CD to another party provided that the other party accepts all 
+terms of this agreement; you destroy all copies of the 
+software, both physical and electronic; and you uninstall the 
+software from your computer(s).  The unrestricted site 
+licenses are NOT transferable.
+
+Failure to comply with any of these terms will terminate this 
+agreement, your right to use the software, and may result in 
+either criminal or civil penalties or both.  You may choose to 
+terminate this agreement at any time.  Upon termination of 
+this agreement, you must immediately destroy the software, 
+all copies of the software, both physical and electronic, and 
+uninstall the software from you computer(s).
+
+If any Visual Statistics graph, table or other image is printed 
+in a publication, a proper citation to Visual Statistics, the 
+authors, and McGraw-Hill Companies must be given.  The 
+McGraw-Hill Companies and the authors are not responsible 
+for misuse or inappropriate use of the product. 
+
+The media on which the software is furnished is warranted to 
+be free of defects in workmanship and material under normal 
+use for a period of ninety (90) days from the date of 
+purchase.  The sole responsibility of Irwin/McGraw-Hill will 
+be to replace the defective media if it is returned, with proof 
+of purchase date, to the publisher.
+
+THE SOFTWARE IS LICENSED "AS IS" WITHOUT 
+WARRANTY AS TO ITS PERFORMANCE.  EXCEPT FOR 
+THE MEDIA WARRANTY PROVIDED ABOVE, THERE ARE 
+NO OTHER WARRANTIES EXPRESSED OR IMPLIED.  IN 
+NO EVENT SHALL THE MCGRAW-HILL COMPANIES, OR 
+THE AUTHORS, BE RESPONSIBLE FOR ANY INDIRECT 
+OR CONSEQUENTIAL DAMAGES OR LOST PROFITS, 
+EVEN IF THE MCGRAW-HILL COMPANIES HAVE BEEN 
+ADVISED OF SUCH DAMAGE.  SOME STATES DO NOT 
+ALLOW THE EXCLUSION OR LIMITATION OF IMPLIED 
+WARRANTIES OR LIABILITY FOR INCIDENTAL OR 
+CONSEQUENTIAL DAMAGES, SO THE ABOVE 
+LIMITATION MAY NOT APPLY TO YOU.
+
+

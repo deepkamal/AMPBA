@@ -1,0 +1,4 @@
+Topics illustrated: outliers, significance versus fit. 130 observations, 2 predictors. Data are from Allen L. Shoemaker, "What's Normal? -- Temperature, Gender, and Heart Rate," Journal of Statistics Education, 1996.
+Gender (1 = male, 2 = female)
+Heart rate (beats per minute)
+Body temperature (degrees Fahrenheit)
