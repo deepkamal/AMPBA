@@ -1,0 +1,44 @@
+---
+title: "AMPBA SA3 Batch 15 - Individual Assignment"
+author: "Deep Kamal Singh - 12020053"
+date: "11/07/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##  Homework PART-A
+
+The Current Population Survey (CPS), undertaken by the U.S. Census Bureau, periodically conducts a variety of surveys on a variety of topics. In this example we look at a cross- section of 1,289 persons interviewed in March 1995 to study the factors that determine hourly wage (in dollars) in this sample.16 Keep in mind that these 1,289 observations are a sample from a much bigger population. We will consider these 1289 observations as a population for our purpose.
+
+
+```{r library}
+library(openxlsx)
+setwd("/Users/dks/AMPBA/Term3/SA3/HW1/")
+```
+
+### The variables used in the analysis are defined as follows:
+
+**Wage**: Hourly wage in dollars, which is the dependent variable.
+
+*The explanatory variables, or regressors, are as follows:*
+
+**Female**: Gender, coded F for female, M for male
+
+**Nonwhite**: Race, coded N for non-white workers, W for white workers
+
+**Union**: Union status, coded M if in a union member, N otherwise
+
+**Education**: Education (in years)
+
+**Exper**: Potential work experience (in years), defined as age minus years of schooling minus 6. (It is assumed that schooling starts at age 6.)
+
+**Age**: Age of the worker
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
